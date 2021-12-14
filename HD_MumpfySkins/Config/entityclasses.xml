@@ -1,4 +1,5 @@
 <?xml version="1.0"?>
+	<!-- Ozz: Updated mesh pointer for radiated zombies from the A19 location to the new A20 file -->
 <configs>
     <append xpath="/entity_classes">
 	
