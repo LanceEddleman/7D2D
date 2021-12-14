@@ -1,0 +1,5 @@
+Update.txt
+
+Minor modifications, changed the radiated "mesh" pointer from A19 to the new location/file for A20
+
+To use this update all you have to do is repalce the existing "entityclasses.xml" with the one attached.
