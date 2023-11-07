@@ -1,0 +1,439 @@
+<configs>
+	<append xpath="/items">
+	<!-- gunShotgunT3AutoShotgun -->
+	<item name="ZPop G3 Railgun"> <!-- was autoshotgun -->
+		<property name="ItemTypeIcon" value="diamond"/>
+		<property name="CustomIcon" value="gunShotgunT3AutoShotgun"/>
+		<property name="CustomIconTint" value="102, 102, 255"/>
+		<property name="TintColor" value="102, 102, 255"/>
+		<property name="DescriptionKey" value="ZPopG3RailgunDesc"/>
+		<property name="DisplayType" value="rangedShotgun"/>
+		<!-- <property name="HoldType" value="76"/> -->
+		<property name="HoldType" value="48"/>
+		<property name="CrosshairOnAim" value="true"/>
+		<property name="CrosshairUpAfterShot" value="true"/>
+		<!-- <property name="Meshfile" value="@:Other/Items/Weapons/Ranged/SawedOffPumpShotgun/SawedOffPumpShotgunPrefab.prefab"/> -->
+		<property name="Meshfile" value="@:Other/Items/Weapons/Ranged/Pump Shotgun/pumpShotgunPrefab.prefab"/>
+		<property name="Material" value="MMachineGunParts"/> <property name="Weight" value="8"/>
+		<property name="DropMeshfile" value="@:Other/Items/Weapons/Ranged/Pump Shotgun/pumpShotgunPrefab.prefab"/>
+
+		<!-- All tags -->
+		<property name="Tags" value="G3SC,G3BP,ZPopG3S2Rb,weapon,ranged,holdBreathAiming,reloadPenalty,gun,shotgun,shortRange,revolver,pistol,launcher,barrelAttachments,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,stock,magazine,drumMagazine,firingMode,bottomAttachments,selfLoading,perkDeadEye,attFortitude,perkMachineGunner,perkBookAutoWeapons,attachmentsIncluded,canHaveCosmetic"/>
+		<!-- 
+		<property name="Tags" value="G3SC,G3BP,ZPopG3S2Rb,weapon,ranged,holdBreathAiming,reloadPenalty,gun,shotgun,shortRange,revolver,pistol,launcher,barrelAttachments,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,stock,magazine,drumMagazine,firingMode,bottomAttachments,selfLoading,attPerception,perkDeadEye,attStrength,attAgility,perkGunslinger,attFortitude,perkMachineGunner,perkBookAutoWeapons,perkDemolitionsExpert,9mmGun,attachmentsIncluded,bowDrawPenalty,archery,bow,canHaveCosmetic"/>
+		 -->
+		<property name="RepairTools" 			value="ZPopG3Recharger"/>
+		<property name="DegradationBreaksAfter" value="false"/>
+
+		<property name="SoundJammed" 		value="weapon_jam"/>
+		<property name="Sound_Sight_In" 	value="rifle_sight_in"/>
+		<property name="Sound_Sight_Out" 	value="rifle_sight_out"/>
+
+		<property name="RepairExpMultiplier" 	value="10.8"/>
+		<property name="EconomicValue" 			value="666"/>
+		<!-- <property name="UnlockedBy" 			value="perkAutoWeaponsMachineGuns"/> -->
+		<property name="UnlockedBy" 			value="perkDeadEye,perkMachineGunner,perkAutoWeaponsMachineGuns"/>
+		<property name="ShowQuality" 			value="true"/>
+		<property name="Group" 					value="Ammo/Weapons,Ranged Weapons"/>
+
+		<property name="Attachments" 			value="meleeToolFlashlight02"/>
+		<property name="LightSource" 			value="lightSource"/> 
+		<property name="ActivateObject" 		value="Attachments/flashlight/lightSource"/>
+		<property name="AttachmentFlashlight" 	value="flashlight02"/> 
+		<property name="LightValue" 			value=".45"/>
+
+		<property class="Action0">
+			<property name="Class" value="Ranged"/>
+			<property name="Delay" value="0.3"/>
+			<property name="Magazine_items" value="G3Caseless,G3ArmorPen,G3Heat,G3Rad,G3Cracker"/>
+			<property name="Sound_start" value="m60_fire"/>
+			<property name="Sound_loop" value="m60_fire"/>
+			<property name="Sound_empty" value="dryfire"/>
+			<property name="Sound_reload" value="sniperrifle_reload"/>
+			<property name="Sound_end" value="m60_fire_end"/>
+
+			<property name="Particles_muzzle_fire" value="gunfire_m60"/>
+			<property name="Particles_muzzle_smoke" value="gunfire_smoke"/>
+			<property name="Particles_muzzle_fire_fpv" value="gunfire_m60_fpv"/>
+			<property name="Particles_muzzle_smoke_fpv" value="gunfire_smoke_fpv"/>
+			<property name="BurstFireRate" 	value="0.5"/>
+			<property name="AutoReload" 	value="true"/>
+			<property name="Reload_time" 	value="12"/>
+			<requirement name="CVarCompare" cvar="_underwater" operation="LT" value=".98"/>
+		</property>
+
+		<property class="Action1">
+			<property name="Class" 				value="Zoom"/>
+			<property name="Zoom_max_out" 		value="55"/>
+			<property name="Zoom_max_in" 		value="55"/>
+			<property name="ScopeCameraOffset" 	value="-0.0008,-0.015,0"/>
+		</property>
+
+
+		<!-- Directly from Snufkin weapons kronos -->
+		<!-- ****************** -->
+		<effect_group name="Deco">
+			<triggered_effect trigger="onSelfPrimaryActionUpdate" action="SetTransformActive" active="false"  transform_path="SawedOffPumpShotgun_Mesh"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AttachPrefabToHeldItem" prefab="@:Other/Items/Weapons/Ranged/SniperRifle/SniperRifle.fbx" local_offset="0,-.015,-.05" parent_transform="Attachments"/>
+			<triggered_effect trigger="onSelfPrimaryActionUpdate" action="AttachPrefabToHeldItem" prefab="@:Other/Items/Weapons/Ranged/SniperRifle/SniperRifle.fbx" local_offset="0,-.015,-.05" parent_transform="Attachments"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AttachPrefabToHeldItem" prefab="Entities/Traps/AutoTurret/Auto_TurretPrefab" local_offset="0,-.36,-.22" parent_transform="Attachments"/>
+			<triggered_effect trigger="onSelfPrimaryActionUpdate" action="SetTransformActive" active="false"  parent_transform="Attachments" transform_path="Base_LOD0"/>
+			<triggered_effect trigger="onSelfPrimaryActionUpdate" action="SetTransformActive" active="false"  parent_transform="Attachments" transform_path="Base_LOD1"/>
+			<triggered_effect trigger="onSelfPrimaryActionUpdate" action="SetTransformActive" active="false"  parent_transform="Attachments" transform_path="Base_LOD2"/>
+			<triggered_effect trigger="onSelfEquipStart" action="SetTransformActive" active="false"  parent_transform="Attachments" transform_path="Rotate_LOD0"/>
+			<triggered_effect trigger="onSelfEquipStart" action="SetTransformActive" active="false"  parent_transform="Attachments" transform_path="Rotate_LOD1"/>
+			<triggered_effect trigger="onSelfEquipStart" action="SetTransformActive" active="false"  parent_transform="Attachments" transform_path="Rotate_LOD2"/>
+			<triggered_effect trigger="onSelfEquipStart" action="SetTransformActive" active="false"  parent_transform="Attachments" transform_path="Pitch_LOD1"/>
+			<triggered_effect trigger="onSelfEquipStart" action="SetTransformActive" active="false"  parent_transform="Attachments" transform_path="Pitch_LOD2"/>
+			<triggered_effect trigger="onSelfPrimaryActionUpdate" action="SetTransformActive" active="false"  parent_transform="Attachments" transform_path="turret_cone"/>
+				<triggered_effect trigger="onSelfPrimaryActionUpdate" action="AddPart" part="Belt1" prefab="@:Other/Items/Weapons/Ranged/Pistol/PistolPrefab.prefab" parentTransform="Attachments" localPos="0,.019,0.015" localRot="0,180,0"/>
+				<triggered_effect trigger="onSelfEquipStart" action="SetTransformActive" active="false" transform_path="Clip_M"/>
+				<triggered_effect trigger="onSelfEquipStart" action="SetTransformActive" active="false" transform_path="Gun_M"/>
+				<triggered_effect trigger="onSelfPrimaryActionUpdate" action="AddPart" part="Belt2" prefab="@:Other/Items/Mods/Scopes/ak_mounting_bracketPrefab.prefab" parentTransform="Handle" localPos="-0.01,0.02,0.08" localRot="0,0,0"/>
+				<triggered_effect trigger="onSelfEquipStart" action="AddPart" part="Belt3" prefab="@:Other/Items/Weapons/Ranged/M60/m60.fbx" parentTransform="Handle" localPos=".09,-.1,-.25" localRot="90,5,10"/>
+			<triggered_effect trigger="onSelfEquipStart" action="SetTransformActive" active="false"  parent_transform="Handle" transform_path="gun_MESH"/>
+			<triggered_effect trigger="onSelfEquipStart" action="SetTransformActive" active="false"  parent_transform="Handle" transform_path="ammoBelt_MESH"/>
+			<triggered_effect trigger="onSelfPrimaryActionUpdate" action="AddPart" part="Shell1" prefab="@:Other/Items/Weapons/Ranged/SawedOffPumpShotgun/ShotgunShell.fbx" parentTransform="ammoBelt" localPos="0,0,0" localRot="-90,0,0"/>
+			<triggered_effect trigger="onSelfPrimaryActionUpdate" action="AddPart" part="Shell2" prefab="@:Other/Items/Weapons/Ranged/SawedOffPumpShotgun/ShotgunShell.fbx" parentTransform="ammoBelt1" localPos=".01,0,0" localRot="-90,0,0"/>
+			<triggered_effect trigger="onSelfPrimaryActionUpdate" action="AddPart" part="Shell3" prefab="@:Other/Items/Weapons/Ranged/SawedOffPumpShotgun/ShotgunShell.fbx" parentTransform="ammoBelt2" localPos=".02,0,0" localRot="-90,0,0"/>
+			<triggered_effect trigger="onSelfPrimaryActionUpdate" action="AddPart" part="Shell4" prefab="@:Other/Items/Weapons/Ranged/SawedOffPumpShotgun/ShotgunShell.fbx" parentTransform="ammoBelt3" localPos=".03,0,0" localRot="-90,0,0"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemovePart" part="Belt1"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemovePart" part="Belt2"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemovePart" part="Belt3"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemovePart" part="Shell1"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemovePart" part="Shell2"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemovePart" part="Shell3"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemovePart" part="Shell4"/>
+		</effect_group>
+		<!-- ****************** -->
+		<effect_group name="ZPop7">
+			<passive_effect name="MaxRange" operation="base_set" value="150" tags="perkMachineGunner"/>
+			<passive_effect name="DamageFalloffRange" operation="base_set" value="100" tags="perkMachineGunner"/>
+			<passive_effect name="DamageFalloffRange" operation="perc_add" value="-1,4" tags="perkMachineGunner"/>		
+			<passive_effect name="EntityDamage" operation="base_add" value="-1.5,1.5" tags="perkMachineGunner"/>
+			<passive_effect name="BlockDamage" operation="base_add" value="-3" tags="perkMachineGunner"/>					
+			<passive_effect name="EntityDamage" operation="perc_add" value="-.15,.15" tags="perkMachineGunner"/>
+			<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkMachineGunner"/>
+			<passive_effect name="BlockDamage" operation="perc_add" value="-.15,.15" tags="perkMachineGunner"/>
+			<passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkMachineGunner"/>
+			<passive_effect name="DegradationMax" operation="perc_add" value="-.2,.2" tags="perkMachineGunner"/>
+			<passive_effect name="WeaponHandling" operation="perc_add" value="-.08,.08" tags="perkMachineGunner"/>
+			<passive_effect name="RoundsPerMinute" operation="base_set" value="300" tags="perkMachineGunner"/>
+			<passive_effect name="BurstRoundCount" operation="base_set" value="400" tags="perkMachineGunner"/>
+			<passive_effect name="RoundsPerMinute" operation="perc_add" value="-.05,.05" tags="perkMachineGunner"/>
+			<passive_effect name="MagazineSize" operation="base_set" value="42" tags="perkMachineGunner"/>
+			<passive_effect name="MagazineSize" operation="perc_add" value="-.122,.122"/>
+			<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="2" tags="perkMachineGunner"/>
+
+			<passive_effect name="SpreadDegreesVertical" operation="base_set" value="2.8" tags="perkMachineGunner"/>
+			<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="2.8" tags="perkMachineGunner"/>
+			<passive_effect name="SpreadMultiplierAiming" operation="base_set" value=".15" tags="perkMachineGunner"/>
+			<passive_effect name="SpreadMultiplierCrouching" operation="base_set" value=".8" tags="perkMachineGunner"/>
+			<passive_effect name="SpreadMultiplierWalking" operation="base_set" value="1.5" tags="perkMachineGunner"/>
+			<passive_effect name="SpreadMultiplierRunning" operation="base_set" value="2.2" tags="perkMachineGunner"/>
+ 			<passive_effect name="KickDegreesVerticalMin" operation="base_set" value="0" tags="perkMachineGunner"/>
+			<passive_effect name="KickDegreesVerticalMax" operation="base_set" value="0" tags="perkMachineGunner"/>
+			<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="0" tags="perkMachineGunner"/>
+			<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value="0" tags="perkMachineGunner"/>
+			<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="0,1.15" tags="perkMachineGunner"/>
+			<passive_effect name="WeaponHandling" operation="base_set" value=".8" tags="perkMachineGunner"/>
+			<passive_effect name="DegradationMax" operation="base_set" value="1250,4000" tier="1,6" tags="perkMachineGunner,perkBookAutoWeapons"/>
+			<passive_effect name="DegradationPerUse" operation="base_set" value="4" tags="perkMachineGunner,perkBookAutoWeapons"/>
+
+			<passive_effect name="ModSlots" operation="base_set" value="1,2,3,4,5,6" tier="1,2,3,4,5,6"/>
+			<passive_effect name="ModPowerBonus" operation="perc_add" value=".25" tags="EntityDamage,BlockDamage"/>
+			<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+		</effect_group>
+	</item>
+
+	<!-- Recahrger -->
+	<item name="ZPopG3Recharger">
+		<property name="ItemTypeIcon" value="diamond"/>
+		<property name="CustomIcon" value="modGunMeleeNiCdBattery"/>
+		<property name="CustomIconTint" value="50, 255, 255"/>
+		<property name="DescriptionKey" value="ZPopG3RechargerDesc"/>
+		<property name="HoldType" value="45"/>
+		<property name="Tags" value="junk"/>
+		<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+		<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+		<property name="Material" value="Msteel"/>
+		<property name="Stacknumber" value="500"/>
+		<property name="EconomicValue" value="186"/>
+		<property name="RepairTime" value="15"/>
+		<property name="RepairAmount" value="5000"/>
+		<property name="Group" value="Resources"/>
+	</item>
+
+	<!-- Caseless Round -->
+	<item name="G3Caseless">
+		<property name="ItemTypeIcon" value="oxygen"/>
+		<property name="Extends" value="ammo762mmBulletBall"/>
+		<property name="Tags" value="ammo,ammo762mm"/>
+		<property name="DisplayType" value="ammoBulletAP"/>
+		<property name="EconomicValue" value="10"/>
+		<property name="DescriptionKey" value="G3CaselessDesc"/>
+		<property name="UnlockedBy" value="perkDeadEye,perkMachineGunner"/>
+		<property name="HoldType" value="45"/>
+		<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+		<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+		<property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons"/>
+		<property name="Material" value="Mbrass"/>
+		<property name="MeltTimePerUnit" value=".7"/>
+		<property name="CustomIcon" value="caselessround"/>
+		<property name="Stacknumber" value="1500"/>
+		<property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons"/>
+
+		<effect_group name="G3Caseless" tiered="false">
+			<passive_effect name="EntityDamage" operation="base_set" value="60" tags="perkDeadEye,perkMachineGunner"/>
+			<passive_effect name="BlockDamage" operation="base_set" value="8" tags="perkDeadEye,perkMachineGunner"/>
+			<passive_effect name="BlockDamage" operation="base_add" value="15" tags="barrelExplosive"/>
+			<passive_effect name="DamageModifier" operation="perc_add" value="1" tags="earth"/>
+			<passive_effect name="DamageModifier" operation="perc_add" value="4" tags="wood"/>
+		</effect_group>
+	</item>
+
+	<item name="G3ArmorPen">
+		<property name="ItemTypeIcon" value="zombie"/>
+		<property name="Extends" value="G3Caseless"/>
+		<!-- <property name="DisplayType" value="ammoBulletAP"/> -->
+		<property name="DescriptionKey" value="G3ArmorPenDesc"/>
+		<property name="UnlockedBy" value="perkSniperAPAmmo"/>
+		<property name="CustomIcon" value="armorpenround"/>
+		<property name="Stacknumber" value="1500"/>
+		<property name="EconomicValue" value="12"/>
+
+		<effect_group name="G3ArmorPen" tiered="false">
+			<property name="Damage_type" value="Piercing"/>
+			<passive_effect name="EntityDamage" operation="base_set" value="70" tags="perkDeadEye,perkMachineGunner"/>
+			<passive_effect name="EntityDamage" operation="base_add" value="-12">
+				<requirement name="ItemHasTags" tags="perkMachineGunner"/></passive_effect>
+
+			<passive_effect name="BlockDamage" operation="base_set" value="12" tags="perkDeadEye,perkMachineGunner"/>
+			<passive_effect name="BlockDamage" operation="base_add" value="18" tags="barrelExplosive"/>
+			<passive_effect name="TargetArmor" operation="perc_add" value="-.5" tags="perkDeadEye,perkMachineGunner"/><display_value name="dTargetArmor" value="-.5"/>
+			<passive_effect name="EntityPenetrationCount" operation="base_set" value="1"/><display_value name="dTargetPenetration" value="1"/>
+			<passive_effect name="DegradationPerUse" operation="perc_add" value=".1" tags="perkDeadEye,perkMachineGunner"/><display_value name="dDegradationPerUse" value=".1"/>
+			<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="earth"/>
+			<passive_effect name="DamageModifier" operation="perc_add" value="6" tags="wood"/>
+			<passive_effect name="DismemberChance" operation="perc_subtract" value="0.5" tags="head"/>
+		</effect_group>
+
+		<effect_group name="perkPenetrator" tiered="false">
+			<passive_effect name="TargetArmor" operation="perc_add" value="-.1" tags="perkDeadEye,perkMachineGunner">
+				<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="1"/></passive_effect>
+			<passive_effect name="TargetArmor" operation="perc_add" value="-.15" tags="perkDeadEye,perkMachineGunner">
+				<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="2"/></passive_effect>
+			<passive_effect name="TargetArmor" operation="perc_add" value="-.2" tags="perkDeadEye,perkMachineGunner">
+				<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="3"/></passive_effect>
+			<passive_effect name="TargetArmor" operation="perc_add" value="-.3" tags="perkDeadEye,perkMachineGunner">
+				<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="4"/></passive_effect>
+		</effect_group>
+		
+		<effect_group tiered="false">
+			<!-- Explosive -->
+			<property name="Damage_type" value="Piercing"/>
+			<property name="Explosion.ParticleIndex" value="4"/>
+			<property name="Explosion.RadiusEntities" value="2"/>
+			<property name="Explosion.EntityDamage" value="5"/>
+			<property name="Explosion.DamageBonus.stone" value="0.01"/>
+			<property name="Explosion.DamageBonus.metal" value="0.005"/>
+			<property name="Explosion.DamageBonus.earth" value="0.02"/>
+			<property name="Explosion.DamageBonus.wood" value="0.05"/>
+			<property name="Explosion.DamageBonus.water" value="0"/>
+
+			<passive_effect name="TargetArmor" operation="perc_add" value="-.1" tags="perkDeadEye,perkMachineGunner">
+				<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="1"/>
+			</passive_effect>
+			<passive_effect name="TargetArmor" operation="perc_add" value="-.2" tags="perkDeadEye,perkMachineGunner">
+				<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="2"/></passive_effect>
+			<passive_effect name="TargetArmor" operation="perc_add" value="-.3" tags="perkDeadEye,perkMachineGunner">
+				<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="3"/></passive_effect>
+			<passive_effect name="TargetArmor" operation="perc_add" value="-.4" tags="perkDeadEye,perkMachineGunner">
+				<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="4"/></passive_effect>
+		</effect_group>
+
+		<effect_group tiered="false">
+			<requirement name="CVarCompare" cvar="bleedCounter" operation="LT" value="@$maxBleedCounter" target="other"/>
+				<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" target="other" cvar="bleedCounter" operation="add" value="1"/>
+		</effect_group>
+		<effect_group tiered="false">
+			<requirement name="CVarCompare" cvar="bleedCounter" operation="GT" value="0" target="other"/>
+				<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" buff="buffInjuryBleeding"/>
+		</effect_group>
+	</item>
+
+	<item name="G3Heat">
+		<property name="ItemTypeIcon" value="fire"/>
+		<property name="Extends" value="G3Caseless"/>
+		<property name="Tags" value="ammo,ammo762mm"/>
+		<property name="DisplayType" value="ammoBulletHP"/>
+		<property name="CustomIcon" value="fireround"/>
+		<property name="DescriptionKey" value="G3HeatDesc"/>
+		<property name="Stacknumber" value="1500"/>
+		<property name="EconomicValue" value="16"/>
+		<property name="UnlockedBy" value="perkRangersFlamingArrows"/>
+		<property name="Damage_type" value="Heat"/>
+
+		<effect_group name="G3Heat" tiered="false">
+			<passive_effect name="EntityDamage" operation="base_set" value="65" tags="perkDeadEye,perkMachineGunner"/>
+			<passive_effect name="BlockDamage" operation="base_set" value="12" tags="perkDeadEye,perkMachineGunner"/>
+			<passive_effect name="BlockDamage" operation="base_add" value="18" tags="barrelExplosive"/>
+			<passive_effect name="DamageModifier" operation="perc_add" value="-0.7" tags="earth"/>
+			<passive_effect name="DamageModifier" operation="perc_add" value="12" tags="wood"/>
+			<passive_effect name="DamageModifier" operation="perc_set" value="15" tags="cloth"/>
+			<passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth,metal"/>
+		</effect_group>
+
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" target="other" range="2.7" cvar="buffBurningMolotovDuration" operation="set" value="16">
+				<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacMolotov" operation="Equals" value="0"/></triggered_effect>
+			<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" target="other" range="2.7" cvar="buffBurningMolotovDuration" operation="set" value="17">
+				<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacMolotov" operation="NotEquals" value="0"/></triggered_effect>
+			<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" range="2.7" buff="buffBurningMolotov">
+				<requirement name="CVarCompare" target="other" cvar="_underwater" operation="LT" value="0.3"/>
+			</triggered_effect>
+
+			<display_value name="dExDamageFire" value="250"/>
+			<passive_effect name="EntityDamage" operation="base_set" value="5" tags="perkDemolitionsExpert"/>
+			<passive_effect name="BlockDamage" operation="base_set" value="5" tags="perkDemolitionsExpert"/>
+			<display_value name="dExRadius" value="3"/>
+			<display_value name="dDuration" value="16"/>
+
+			<triggered_effect trigger="onSelfWaterSubmerge" action="ResetHeldItem"/>
+		</effect_group>
+	</item>
+
+	<item name="G3Rad">
+		<property name="ItemTypeIcon" value="radiation"/>
+		<property name="Extends" value="G3Caseless"/>
+		<property name="Tags" value="ammo,ammo762mm"/>
+		<property name="HoldType" value="45"/>
+		<property name="Meshfile" value="@:Other/Items/Weapons/Ranged/Vomit/vomitBulbPrefab.prefab"/>
+		<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+		<property name="HandMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+		<property name="Material" value="Mbrass"/>
+		<property name="MeltTimePerUnit" value=".4"/>
+		<property name="CustomIcon" value="gammaround"/>
+		<property name="DisplayType" value="ammoBulletHP"/>
+		<property name="DescriptionKey" value="G3RadDesc"/>
+		<property name="Stacknumber" value="1200"/>
+		<property name="EconomicValue" value="17"/>
+		<property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons"/>
+		<property name="Damage_type" value="radiation"/>
+		<property name="UnlockedBy" value="perkRangersFlamingArrows,perkDeadEye"/>
+		<property class="Action1">
+			<property name="Class" value="Projectile"/>
+			<property name="DamageEntity" value="70"/>
+			<property name="DamageBlock" value="15"/>
+			<property name="Velocity" value="50"/>
+			<property name="FlyTime" value="2"/>
+			<property name="LifeTime" value="12"/>
+			<property name="CollisionRadius" value="1.5"/>
+			<property name="DamageBonus.earth" value="1"/>
+			<property name="Explosion.ParticleIndex" value="7"/>
+			<property name="Explosion.RadiusEntities" value="2"/>
+			<property name="Explosion.EntityDamage" value="10"/>
+		</property>
+
+		<effect_group name="G3Rads" tiered="false">
+			<passive_effect name="EntityDamage" operation="base_set" value="65" tags="perkDeadEye"/>
+			<passive_effect name="BlockDamage" operation="base_set" value="12" tags="perkDeadEye"/>
+			<passive_effect name="BlockDamage" operation="base_add" value="18" tags="barrelExplosive"/>
+			<passive_effect name="DamageModifier" operation="perc_add" value="-0.7" tags="earth"/>
+			<passive_effect name="DamageModifier" operation="perc_add" value="12" tags="wood"/>
+			<passive_effect name="DamageModifier" operation="perc_set" value="15" tags="wood,cloth"/>
+			<passive_effect name="DamageModifier" operation="perc_set" value="1" tags="earth,metal"/>
+			<triggered_effect trigger="onSelfDamagedOther" action="Ragdoll" target="other" duration="10" force="400000"/>
+			<triggered_effect trigger="onProjectileImpact" action="AddBuff" target="positionAOE" range="10" buff="buffRadiationGamma"/>
+			<triggered_effect trigger="onProjectileImpact" action="AddBuff" target="positionAOE" range="10" buff="buffTwitchRadiation"/>
+		</effect_group>
+
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" target="other" range="2.7" cvar="buffBurningMolotovDuration" operation="set" value="16">
+				<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacMolotov" operation="Equals" value="0"/></triggered_effect>
+			<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" target="other" range="2.7" cvar="buffBurningMolotovDuration" operation="set" value="17">
+				<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacMolotov" operation="NotEquals" value="0"/></triggered_effect>
+			<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" range="2.7" buff="buffBurningMolotov">			
+				<requirement name="CVarCompare" target="other" cvar="_underwater" operation="LT" value="0.3"/>
+			</triggered_effect>
+
+			<display_value name="dExDamageFire" value="225"/>
+			<passive_effect name="EntityDamage" operation="base_set" value="5" tags="perkDemolitionsExpert"/>
+			<passive_effect name="BlockDamage" operation="base_set" value="5" tags="perkDemolitionsExpert"/>
+			<display_value name="dExRadius" value="3"/>
+			<display_value name="dDuration" value="16"/>
+
+			<triggered_effect trigger="onSelfWaterSubmerge" action="ResetHeldItem"/>
+		</effect_group>
+	</item>
+
+	<item name="G3Cracker">
+		<property name="ItemTypeIcon" value="explosion"/>
+		<property name="Extends" value="G3Caseless"/>
+		<property name="Tags" value="ammo"/>
+		<property name="HoldType" value="45"/>
+		<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+		<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+		<property name="Material" value="Mbrass"/>
+		<property name="MeltTimePerUnit" value=".4"/>
+		<property name="CustomIcon" value="crackerround"/>
+		<property name="DisplayType" value="ammoBulletHP"/>
+		<property name="DescriptionKey" value="G3CrackerDesc"/>
+		<property name="Stacknumber" value="900"/>
+		<property name="EconomicValue" value="25"/>
+		<property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons"/>
+		<property name="Damage_type" value="Piercing"/>
+		<property name="UnlockedBy" value="perkDeadEye"/>
+		<!-- 
+		<property name="Explosion.ParticleIndex" value="13"/>
+		<property name="Explosion.RadiusBlocks" value="4"/>
+		<property name="Explosion.RadiusEntities" value="5"/>
+		<property name="Explosion.BlastPower" value="75"/>
+		<property name="FuseTime" value="6"/>
+		<property name="FusePrimeOnActivate" value="true"/>
+		<property name="ExplodeOnHit" value="true"/>
+		<property name="StickPercent" value=".5"/>
+
+		<property class="Action1">
+			<property name="Class" value="Projectile"/>
+			<property name="DamageEntity" value="90"/>
+			<property name="DamageBlock" value="20"/>
+			<property name="Explosion.EntityDamage" value="25"/>
+			<property name="Explosion.BlockDamage" value="10"/>
+			<property name="DamageBonus.wood" value="4"/>
+			<property name="Explosion.ParticleIndex" value="4"/>
+			<property name="Explosion.RadiusBlocks" value="3"/>
+			<property name="Explosion.RadiusEntities" value="4"/>
+			
+			<property name="Explosion.DamageBonus.stone" value="0.3"/>
+			<property name="Explosion.DamageBonus.metal" value="0.1"/>
+			<property name="Explosion.DamageBonus.earth" value="0.0"/>
+			<property name="Explosion.DamageBonus.wood" value="0.5"/>
+			<property name="Explosion.DamageBonus.water" value="0"/>
+			<display_value name="dExRadius" value="4"/>
+		</property>
+		 -->
+		<effect_group name="G3Cracker" tiered="false">
+			<passive_effect name="EntityDamage" operation="base_set" value="99" tags="perkDeadEye,perkMachineGunner"/>
+			<passive_effect name="EntityDamage" operation="base_add" value="6"/>
+			<passive_effect name="BlockDamage" operation="base_set" value="25" tags="perkDeadEye,perkMachineGunner"/>
+			<passive_effect name="BlockDamage" operation="base_add" value="10"/>
+			<passive_effect name="DamageModifier" operation="perc_add" value="5" tags="wood"/>
+			<passive_effect name="DamageModifier" operation="perc_set" value="0.1" tags="wood"/>
+			<passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth,water"/>
+			<passive_effect name="DamageModifier" operation="perc_set" value="0.5" tags="stone"/>
+			<passive_effect name="DamageModifier" operation="perc_add" value="1.2" tags="metal"/>
+			<display_value name="dExRadius" value="3"/>
+			<triggered_effect trigger="onSelfDamagedOther" action="Ragdoll" target="other" duration="5" force="400000"/>
+			<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffShocked" duration="3" />
+		</effect_group>
+
+		<effect_group tiered="false">
+			<passive_effect name="BlockDamage" operation="base_set" value="10" tags="perkDemolitionsExpert"/>
+			<passive_effect name="EntityDamage" operation="base_set" value="341" tags="perkDemolitionsExpert"/>
+			<display_value name="dExRadius" value="5"/>
+		</effect_group>
+	</item>
+
+	</append>
+</configs>

@@ -1,0 +1,55 @@
+<configs>
+	<set xpath="item_modifiers/item_modifier[@name='modGeneralMaster']/property[@name='Stacknumber']/@value">6</set>
+
+	<append xpath="/item_modifiers">
+		<item_modifier name="ZPop G3 BatteryPack" installable_tags="ZPop G3 Railgun,G3BP,G3SC,ZPopG3S2Rb,weapon,gun,ranged,holdBreathAiming,reloadPenalty,gun,shotgun,shortRange,revolver,pistol,launcher,barrelAttachments,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,stock,magazine,drumMagazine,firingMode,bottomAttachments,attPerception,perkDeadEye,attStrength,attAgility,perkGunslinger,attFortitude,perkMachineGunner,perkBookAutoWeapons,perkDemolitionsExpert,9mmGun,attachmentsIncluded" modifier_tags="G3BP" type="attachment">
+
+			<property name="ItemTypeIcon" value="diamond"/>
+			<property name="Extends" value="modGeneralMaster"/>
+			<property name="CustomIcon" value="batterybank"/>
+			<property name="CustomIconTint" value="42, 42, 255"/>
+			<property name="DescriptionKey" value="ZPopG3-BPDesc"/>
+			<effect_group tiered="false">
+				<passive_effect name="MagazineSize" operation="perc_add" value=".5"/>
+				<passive_effect name="DegradationMax" operation="base_add" value="25" />
+			</effect_group>
+		</item_modifier>
+
+		<item_modifier name="ZPop G3 SuperConductor" installable_tags="ZPop G3 Railgun,G3SC,G3BP,ZPopG3S2Rb,weapon,barrelAttachments,turretRanged,smallTopAttachments,mediumTopAttachments,largeTopAttachments,sideAttachments,turretMelee,gun,ranged,railGunBattery,railGunSuperConductor,firingMode,turretRanged,shotgun,stock,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine" modifier_tags="G3SC" type="attachment">
+			<property name="ItemTypeIcon" value="diamond"/>
+			<property name="Extends" value="modGeneralMaster" />
+			<property name="Stacknumber" value="10"/>
+			<property name="CustomIcon" value="resourceSpring"/>
+			<property name="CustomIconTint" value="51, 51, 255" />
+			<property name="DescriptionKey" value="ZPopG3-SCDesc"/>
+			<property name="Group" value="Mods,Tool/Weapon Mods"/>
+			<effect_group tiered="false">
+				<passive_effect name="BurstRoundCount" operation="base_set" value="500" />
+				<passive_effect name="DegradationMax" operation="base_subtract" value="100" />
+
+				<passive_effect name="WeaponHandling" operation="perc_add" value=".08"/>
+				<passive_effect name="DamageFalloffRange" operation="perc_add" value=".2"/>
+				<passive_effect name="MaxRange" operation="perc_add" value=".2"/>
+				<passive_effect name="SpreadMultiplierHip" operation="perc_add" value=".1"/>
+				<passive_effect name="SpreadMultiplierAiming" operation="perc_add" value="-.05"/>
+
+			</effect_group>
+		</item_modifier>
+
+		<item_modifier name="ZPopG3S2Rb" installable_tags="ZPop G3 Railgun,G3SC,G3BP,ZPop G3 S2R,weapon,barrelAttachments,turretRanged,smallTopAttachments,mediumTopAttachments,largeTopAttachments,sideAttachments,turretMelee,gun,ranged,railGunBattery,railGunSuperConductor,firingMode,turretRanged,shotgun,stock,magazine,drumMagazine,modGunShotgunTubeExtenderMagazine" modifier_tags="ZPopG3S2Rb" type="attachment">
+			<property name="ItemTypeIcon" value="diamond"/>
+			<property name="Extends" value="modGeneralMaster" />
+			<property name="Stacknumber" value="10"/>
+			<property name="CustomIcon" value="mineCandyTin"/>
+			<property name="CustomIconTint" value="1A1DE7"/>
+			<!-- <property name="CustomIcon" value="resourceSpring"/> -->
+			<!-- <property name="CustomIconTint" value="255, 255, 51" /> -->
+			<property name="DescriptionKey" value="ZPopG3S2RbDesc"/>
+			<property name="Group" value="Mods,Tool/Weapon Mods"/>
+			<effect_group tiered="false">
+				<passive_effect name="BurstRoundCount" operation="base_set" value="500" />
+				<passive_effect name="DegradationMax" operation="base_subtract" value="100" />
+			</effect_group>
+		</item_modifier>
+  </append>
+</configs>
