@@ -301,20 +301,13 @@
 		<property name="ItemTypeIcon" value="radiation"/>
 		<property name="Extends" value="G3Caseless"/>
 		<property name="Tags" value="ammo,ammo762mm"/>
-		<property name="HoldType" value="45"/>
-		<property name="Meshfile" value="@:Other/Items/Weapons/Ranged/Vomit/vomitBulbPrefab.prefab"/>
-		<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
-		<property name="HandMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
-		<property name="Material" value="Mbrass"/>
-		<property name="MeltTimePerUnit" value=".4"/>
+		<property name="DisplayType" value="G3Rads"/>
 		<property name="CustomIcon" value="gammaround"/>
-		<property name="DisplayType" value="ammoGrenadeContact"/>
 		<property name="DescriptionKey" value="G3RadsDesc"/>
 		<property name="Stacknumber" value="1200"/>
-		<property name="EconomicValue" value="17"/>
-		<property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons"/>
-		<property name="Damage_type" value="radiation"/>
+		<property name="EconomicValue" value="18"/>
 		<property name="UnlockedBy" value="craftingExplosives,perkDeadEye"/>
+		<property name="Damage_type" value="radiation"/>
 
 		<effect_group name="G3Rads" tiered="false">
 			<passive_effect name="EntityDamage" operation="base_set" value="80" tags="perkDeadEye"/>
@@ -325,10 +318,6 @@
 			<passive_effect name="DamageModifier" operation="perc_set" value="15" tags="wood,cloth"/>
 			<passive_effect name="DamageModifier" operation="perc_set" value="1" tags="earth,metal"/>
 
-			<triggered_effect trigger="onSelfDamagedOther" action="Ragdoll" target="other" duration="10" force="400000" />
-			<triggered_effect trigger="onProjectileImpact" action="AddBuff" target="positionAOE" range="10" buff="buffRadiationGamma" />
-			<triggered_effect trigger="onProjectileImpact" action="AddBuff" target="positionAOE" range="10" buff="buffTwitchRadiation" />
-
 			<triggered_effect trigger="onProjectileImpact" action="ModifyCVar" target="other" cvar="$buffBurningMolotovDuration" operation="set" value="24">
 				<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacMolotov" operation="Equals" value="0"/></triggered_effect>
 			<triggered_effect trigger="onProjectileImpact" action="ModifyCVar" target="other" cvar="$buffBurningMolotovDuration" operation="set" value="25">
@@ -338,13 +327,13 @@
 				<requirement name="CVarCompare" target="other" cvar="_underwater" operation="LT" value="0.3"/>
 			</triggered_effect>
 
-			<passive_effect name="EntityDamage" operation="base_set" value="5" tags="perkDemolitionsExpert"/>
-			<passive_effect name="BlockDamage" operation="base_set" value="5" tags="perkDemolitionsExpert"/>
+			<triggered_effect trigger="onSelfDamagedOther" action="Ragdoll" target="other" duration="10" force="400000" />
+			<triggered_effect trigger="onProjectileImpact" action="AddBuff" target="positionAOE" range="4" buff="buffRadiationGamma" />
+			<triggered_effect trigger="onProjectileImpact" action="AddBuff" target="positionAOE" range="4" buff="buffTwitchRadiation" />
 
 			<display_value name="EntityDamageFire" value="250"/>
 			<display_value name="BurnDuration" value="25"/>
 			<display_value name="dStatStunEffect" value="10"/>
-
 		</effect_group>
 
 		<effect_group name="G3RadsBurn" tiered="false">
@@ -362,19 +351,13 @@
 	<item name="G3Cracker">
 		<property name="ItemTypeIcon" value="explosion"/>
 		<property name="Extends" value="G3Caseless"/>
-		<property name="Tags" value="ammo"/>
-		<property name="HoldType" value="45"/>
-		<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
-		<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
-		<property name="Material" value="Mbrass"/>
-		<property name="MeltTimePerUnit" value=".4"/>
+		<property name="Tags" value="ammo,ammo762mm"/>
+		<property name="DisplayType" value="G3Cracker"/>
 		<property name="CustomIcon" value="crackerround"/>
-		<property name="DisplayType" value="ammoBulletHP"/>
 		<property name="DescriptionKey" value="G3CrackerDesc"/>
 		<property name="Stacknumber" value="900"/>
 		<property name="EconomicValue" value="25"/>
-		<property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons"/>
-		<property name="Damage_type" value="Piercing"/>
+		<property name="Damage_type" value="Bashing"/>
 		<property name="UnlockedBy" value="perkDeadEye"/>
 
 		<effect_group name="G3Cracker" tiered="false">
@@ -392,15 +375,9 @@
 			<passive_effect name="DamageModifier" operation="perc_set" value="0.5" tags="stone"/>
 			<passive_effect name="DamageModifier" operation="perc_add" value="1.2" tags="metal"/>
 			<triggered_effect trigger="onSelfDamagedOther" action="Ragdoll" target="other" duration="5" force="400000"/>
-			<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffShocked" duration="3" />
+			<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffShocked" duration="10" />
 
-			<passive_effect name="EntityDamage" operation="base_set" value="5" tags="perkDemolitionsExpert"/>
-			<passive_effect name="BlockDamage" operation="base_set" value="5" tags="perkDemolitionsExpert"/>
-			<display_value name="dExDamageFire" value="256"/>
-			<display_value name="dDuration" value="25"/>
-			<display_value name="dStatStunEffect" value="10"/>
-			<display_value value="$buffShockedDisplay"/>
-			<display_value_format value="time"/>
+			<display_value name="dStatStunEffect" value="0,10"/>
 		</effect_group>
 
 	</item>
