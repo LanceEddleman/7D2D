@@ -11,11 +11,11 @@ Often extensions for wants/needs based on other mods and basic game tweaks that 
 - A21 ToDo list:<br />
 \* Items = completed<br />
 	\* Update Railgun: Ammo types, Field conversions based on TFP changes
-	<br />Create recipe for painkiller and vitamin from old sham sandwich
-	<br />Create recipe for casserole from old sham sandwich, beer
-	<br />Create 2nd winter log recipe that uses cloth in place of paper
-	<br />Create recipes for food that use old sham sandwich 
-	<br />Create recipes for food/drink that use beer
+	<br />\* Create recipe for painkiller and vitamin from old sham sandwich
+	<br />Cancel- Create recipe for casserole from old sham sandwich, beer
+	<br />\* Create 2nd winter log recipe that uses cloth in place of paper
+	<br />\* Create recipes for food that use old sham sandwich 
+	<br />\* Create recipes for food/drink that use beer
 	<br />Create a healing block based off of healing bed to be used for base floor tiles
 	<br />Add patch for snowberry return mod to work with living off the land perk
 	<br />Determine and work around dew collector placement limitations
