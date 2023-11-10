@@ -1,0 +1,42 @@
+<configs>
+
+	<append xpath="/ui_display_info/item_display">
+		<item_display_info display_type="G3Caseless" display_group="groupAmmo">
+			<display_entry name="EntityDamage" display_type="Decimal1" title_key="statEntityDamageRanged" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin"/>
+			<display_entry name="BlockDamage" display_type="Decimal1" title_key="statBlockDamage" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin"/>
+		</item_display_info>
+
+		<item_display_info display_type="G3ArmorPen" display_group="groupAmmo">
+			<display_entry name="EntityDamage" display_type="Decimal1" title_key="statEntityDamageRanged" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin"/>
+			<display_entry name="BlockDamage" display_type="Decimal1" title_key="statBlockDamage" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin"/>
+			<display_entry name="dTargetArmor" title_key="statTargetArmor" display_type="Percent" display_leading_plus="true" negative_preferred="true" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin"/>
+			<display_entry name="dTargetPenetration" title_key="statTargetPenetration" tags="perkGunslinger,perkBoomstick,perkDeadEye,perkMachineGunner,perkBookAutoWeapons,perkTurrets,perkArchery,admin"/>
+			<display_entry name="BleedDuration" title_key="statbleedDuration" display_type="Time"/>
+		</item_display_info>
+
+		<item_display_info display_type="G3Heat" display_group="groupAmmo">
+			<display_entry name="EntityDamage" display_type="Decimal1" title_key="statEntityDamageRanged" tags="perkDeadEye,admin"/>
+			<display_entry name="BlockDamage" display_type="Decimal1" title_key="statBlockDamage" tags="perkDeadEye,admin"/>
+			<display_entry name="EntityDamageFire" title_key="EntityDamageFire"/>
+			<display_entry name="BurnDuration" title_key="BurnDuration" display_type="Time"/>
+		</item_display_info>
+
+		<item_display_info display_type="G3Rads" display_group="groupAmmo">
+			<display_entry name="EntityDamage" display_type="Decimal1" title_key="statEntityDamageRanged" tags="perkDeadEye,admin"/>
+			<display_entry name="BlockDamage" display_type="Decimal1" title_key="statBlockDamage" tags="perkDeadEye,admin"/>
+			<display_entry name="EntityDamageFire" title_key="EntityDamageFire"/>
+			<display_entry name="BurnDuration" title_key="BurnDuration" display_type="Time"/>
+			<display_entry name="dStatStunEffect" title_key="statStunEffect" display_type="Time"/>
+		</item_display_info>
+
+		<item_display_info display_type="G3Cracker" display_group="groupAmmo">
+			<display_entry name="EntityDamage" display_type="Decimal1" title_key="statEntityDamageRanged" tags="perkDeadEye,admin"/>
+			<display_entry name="BlockDamage" display_type="Decimal1" title_key="statBlockDamage" tags="perkDeadEye,admin"/>
+			<display_entry name="dStatStunEffect" title_key="statStunEffect" display_type="Time"/>
+			<display_entry name="dShockAOERadius" title_key="statShockAOERadius" display_type="Decimal2"/>
+			<display_entry name="dDuration" title_key="statDuration" display_type="Time"/>
+		</item_display_info>
+
+	</append>
+
+</configs>
