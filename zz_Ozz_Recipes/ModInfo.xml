@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<Name value="OzzRecipes" />
+	<DisplayName value="Ozzland Recipes" />
+	<Description value="Ozzland Recipes, small tweeks and a few new items to use parts often wasted in the world" />
+	<Author value="Ozzland" />
+	<Version value="1.6" compat="A18-A21.1" />
+	<Website value="https://7daystodie.com" />
+</xml>

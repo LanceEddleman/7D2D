@@ -1,0 +1,5 @@
+Key,Source,Context,Changes,English
+cntHardenedChestSecureDesc,blocks,Container,KgNone,Big Fancy Chest.
+cntHardenedChestSecureDesc,resources,wood,KgNone,Log burning wood.
+foodBeerBites,items,Food,New,"Beer Bread Pudding"
+foodBeerBitesDesc,items,Food,"Beer Bread Pudding","It's green, it's lumpy, it's edible, it tastes like $&@% but you can live off it.\n"

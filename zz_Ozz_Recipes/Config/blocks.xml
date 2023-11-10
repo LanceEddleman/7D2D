@@ -1,0 +1,135 @@
+<Ozzland>
+
+<!--	// MODLET:			OZZ - New Storage Blocks.
+		// EAC:				Friendly
+		// BUILD:			A18b155
+		// DISCLAIMER:		Be advised, this modlet is created/tested against the stated build.
+		// TERMS OF USE:	N/A
+		// CREDITS:			Ozzland (author)
+-->
+
+	<!-- Gas Storage Container -->
+	<insertAfter xpath="/blocks/block[@name='cntBarrelGasOld']">
+		<block name="Gas Storage Container">
+			<property name="CreativeMode" value="Player" />
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="CustomIcon" value="cntBarrelGasSingle00" />
+			<property name="Shape" value="ModelEntity" />
+			<property name="Model" value="Entities/Industrial/barrelGasPrefab" />
+			<property name="LootList" value="120" />
+			<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket" />
+			<property name="Material" value="Mmetal_hard" /> <property name="MaxDamage" value="1500"/>
+			<property name="UseGlobalUV" value="L,L,L,L,L,L"/>
+			<property name="Place" value="TowardsPlacerInverted" />
+			<property name="Path" value="solid" />
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="CanDecorateOnSlopes" value="false" />
+			<property name="DescriptionKey" value="cntBarrelGroupDesc" />
+			<property name="Class" value="SecureLoot"/>
+			<drop event="Harvest" name="resourceScrapIron" count="3,6" tag="allToolsHarvest" />
+			<drop event="Destroy" count="0" />
+			<drop event="Fall" name="scrapMetalPile" count="1,5" prob="0.75" stick_chance="1" />
+			<property name="FilterTags" value="fdecor,fother,floot,ffurniture" />
+			<property class="RepairItems"> <property name="resourceScrapIron" value="10"/> </property>
+			<property name="DowngradeBlock" value="Gas Storage Container Unlocked"/>
+			<drop event="Destroy" count="0"/>
+			<property name="Group" value="Basics,Building"/>
+		</block>
+
+		<block name="Gas Storage Container Unlocked">
+			<property name="CreativeMode" value="None"/>
+			<property name="CustomIcon" value="cntBarrelGasSingle00"/>
+			<property name="Class" value="Loot"/>
+			<property name="LootList" value="120"/>
+			<property name="Material" value="Mmetal_hard" /> <property name="MaxDamage" value="1500"/>
+			<property name="Shape" value="ModelEntity" />
+			<property name="Model" value="Entities/Industrial/barrelGasPrefab"/>
+			<property name="UseGlobalUV" value="L,L,G,G,G,G"/>
+			<property class="RepairItems"> <property name="resourceScrapIron" value="10"/> </property>
+			<drop event="Destroy" count="0"/>
+			<property name="FilterTags" value="fdecor,fother,floot,ffurniture"/>
+		</block>
+	</insertAfter>
+
+	<insertAfter xpath="/blocks/block[@name='cntMedicineCabinetClosedRandomLootHelper']">
+		<block name="Medical Storage">
+			<property name="ImposterExclude" value="true"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="Material" value="Mmetal_medium" /> <property name="MaxDamage" value="1000"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="Path" value="solid"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="cntPillCaseClosed"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/LootContainers/pill_case_closedPrefab.prefab"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="DescriptionKey" value="furnitureGroupDesc"/>
+			<property name="LootList" value="15"/>
+			<property name="Class" value="SecureLoot"/>
+			<drop event="Destroy" name="resourceBrokenGlass" count="1,2"/>
+			<property class="RepairItems"> <property name="resourceScrapIron" value="10"/> </property>
+			<property name="DowngradeBlock" value="Medical Storage Unlocked"/>
+			<drop event="Destroy" count="0"/>
+			<property name="Group" value="Basics,Building"/>
+			<property name="FilterTags" value="fdecor,fother,floot,ffurniture"/>
+		</block>
+
+		<block name="Medical Storage Unlocked">
+			<property name="CreativeMode" value="None"/>
+			<property name="CustomIcon" value="cntPillCaseClosed"/>
+			<property name="Class" value="Loot"/>
+			<property name="LootList" value="7"/>
+			<property name="Shape" value="ModelEntity" />
+			<property name="Model" value="@:Entities/LootContainers/pill_case_closedPrefab.prefab"/>
+			<property name="Material" value="Mmetal_medium" /> <property name="MaxDamage" value="1000"/>
+			<property class="RepairItems"> <property name="resourceScrapIron" value="10"/> </property>
+			<drop event="Destroy" count="0"/>
+			<property name="FilterTags" value="fdecor,fother,floot,ffurniture"/>
+		</block>
+	</insertAfter>
+	
+		<append xpath="/blocks/block[@name='metalTrussingBlock']">
+			<property class="UpgradeBlock">
+			<property name="ToBlock" value="concreteShapes:cube"/>
+				<property name="Item" value="resourceConcreteMix"/>
+				<property name="ItemCount" value="10"/>
+				<property name="UpgradeHitCount" value="4"/>
+			</property>
+			<property name="FilterTags" value="fconstruction"/>
+		</append>
+	
+	<append xpath="//block[contains(@name, 'shippingContainer')]">
+		<property name="EconomicValue" value="500"/>
+		<property name="EconomicBundleSize" value="1"/>
+		<property name="SellableToTrader" value="true"/>
+		<property name="Weight" value="150"/>
+		<drop event="Harvest" name="resourceForgedIron" count="10" tag="allHarvest"/>
+		<drop event="Fall" name="scrapMetalPile" count="10" prob="0.75" stick_chance="1"/>
+		<property class="UpgradeBlock">
+			<property name="ToBlock" value="shippingContainerWall"/>
+			<property name="Item" value="resourceForgedSteel"/>
+			<property name="ItemCount" value="10"/>
+			<property name="UpgradeHitCount" value="4"/>
+		</property>
+	</append>
+
+	<append xpath="/blocks">
+		<block name="shippingContainerWall">
+			<property name="Extends" value="shippingContainerDoorFrameGreen"/>
+			<property name="Material" value="Mmetal_hard"/>
+			<property name="MaxDamage" value="5000"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Industrial/shippingContainerSideTextBluePrefab"/>
+			<property name="CanPickup" value="false"/>
+			<property class="RepairItems">
+				<property name="resourceForgedIron" value="4"/>
+				<property name="resourceForgedSteel" value="2"/>
+			</property>
+			<drop event="Harvest" name="resourceForgedIron" count="15" tag="allHarvest"/>
+			<drop event="Harvest" name="resourceForgedSteel" count="5" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="resourceForgedIron" count="15" prob="0.75" stick_chance="1"/>
+			<property name="FilterTags" value="MC_building,SC_automotive"/>
+		</block>
+	</append>
+</Ozzland>

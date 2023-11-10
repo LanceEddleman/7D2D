@@ -1,0 +1,87 @@
+<Ozzland>
+
+<!--	// MODLET:			OZZ - Recipes Updates-Items.
+		// BUILD:			A18b155-A21.1
+		// CREDITS:			Ozzland (author)
+-->
+
+	<append xpath="/items/item[@name='resourceAcid']">
+		<property name="UnlockedBy" value="perkMasterChef"/>
+	</append>
+
+	<append xpath="/items">
+		<item name="ColdWinterLogs">
+			<property name="CustomIcon" value="WinterLogs"/>
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="@:Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="MresourceWood"/>
+			<property name="Weight" value="50"/>
+			<property name="Stacknumber" value="10000"/>
+			<property name="FuelValue" value="1200"/>
+			<property name="EconomicValue" value="25"/>
+			<property name="EconomicBundleSize" value="10000"/>
+			<property name="Group" value="Resources"/>
+			<property name="FilterTags" value="fdecor,fother,floot,ffurniture"/>
+		</item>
+	</append>
+
+	<!-- Food Add-Ins -->
+	<insertAfter xpath="/items/item[@name='foodHoboStew']">
+		<item name="foodBeerBites">
+			<property name="Extends" value="foodShamChowder"/>
+			<property name="CustomIcon" value="foodShamChowder"/>
+			<property name="CustomIconTint" value="103, 151, 115"/>
+			<property name="TintColor" value="103, 151, 115"/>
+			<property name="Tags" value="food,foodSkill"/>
+			<property name="HoldType" value="31"/>
+			<property name="DisplayType" value="foodBeerBites"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/parcelPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mplants"/>
+			<property name="Stacknumber" value="25"/>
+			<property name="EconomicValue" value="110"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property name="CraftingIngredientTime" value="10"/>
+			<property name="UnlockedBy" value="craftingFood"/>
+			<effect_group tiered="false" name="Food Tier 3">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="45"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="45"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="15"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="25"/>
+
+				<display_value name="dFortitude" value="1"/>
+				<display_value name="dDuration" value="300"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffShamChowderDuration" operation="add" value="300"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffShamChowderDuration" operation="set" value="600">
+					<requirement name="CVarCompare" cvar="$buffShamChowderDuration" operation="GT" value="600"/></triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables,buffShamChowder"/>
+			</effect_group>
+		</item>
+	</insertAfter>
+
+
+	<!-- Append groups for new craftable foods in items.xml -->
+
+	<append xpath="/items/item[@name='foodCanPasta']">
+		<property name="Group" value="Medical"/>
+	</append>
+	<append xpath="/items/item[@name='foodCanPeas']">
+		<property name="Group" value="Medical"/>
+	</append>
+	<append xpath="/items/item[@name='foodCanStock']">
+		<property name="Group" value="Medical"/>
+	</append>
+	<append xpath="/items/item[@name='foodCanBeef']">
+		<property name="Group" value="Medical"/>
+	</append>
+	<append xpath="/items/item[@name='foodCanLamb']">
+		<property name="Group" value="Medical"/>
+	</append>
+	<append xpath="/items/item[@name='foodCanTuna']">
+		<property name="Group" value="Medical"/>
+	</append>
+	
+	<!-- Set group for new craftable foods in items.xml -->
+		<set xpath="/items/item[@name='resourceAnimalFat']/property[@name='Group']/@value">Food/Cooking,Medical</set>
+</Ozzland>
