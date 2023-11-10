@@ -3,7 +3,6 @@
 	// MODLET:			OZZ - Healing beds and blocks.
 	// CREDITS:			Ozzland (author)
 -->
-
 	<!-- Healing Block Floor Covering -->
 	<append xpath="/recipes">
 		<recipe name="HealingFloorCover" count="1" craft_time="25" craft_area="chemistryStation" tags="chemStationCrafting">
