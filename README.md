@@ -11,7 +11,9 @@ Often extensions for wants/needs based on other mods and basic game tweaks that 
 - A21 ToDo list:
 '* Items = completed
 	'* Update Railgun: Ammo types, Field conversions based on TFP changes
-	\nCreate recipe for painkiller and vitamin from old sham sandwich
+	<br />
+	Create recipe for painkiller and vitamin from old sham sandwich
+	<br />
 	Create recipe for casserole from old sham sandwich, beer
 	Create 2nd winter log recipe that uses cloth in place of paper
 	Create recipes for food that use old sham sandwich 
