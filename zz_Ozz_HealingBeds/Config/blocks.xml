@@ -1,0 +1,51 @@
+<Ozzland>
+
+	<!-- Basic Slow Heal, 1pt every 3 seconds -->
+	<append xpath="/blocks/block[@name='bedroll']">
+		<property name="BuffsWhenWalkedOn" value="buffHealBedRoll"/>
+	</append>
+	<append xpath="/blocks/block[(contains(@name, 'bedroll'))
+		or (contains(@name, 'gurneyBed'))
+		or (contains(@name, 'bunkBed'))
+		or (contains(@name, 'mattress'))
+		or (contains(@name, 'BedMessy'))]">
+		<property name="BuffsWhenWalkedOn" value="buffHealBedRoll"/>
+	</append>
+
+	<!-- Basic Fast Heal, 3pt every 2seconds -->
+	<append xpath="/blocks/block[@name='hospitalBed']">
+		<property name="BuffsWhenWalkedOn" value="buffHealhospitalBed"/>
+	</append>
+	<append xpath="/blocks/block[@name='bed02']">
+		<property name="BuffsWhenWalkedOn" value="buffHealhospitalBed"/>
+	</append>
+
+	<insertAfter xpath="/blocks/block[@name='metalRivetSheet']">
+		<block name="HealingFloorCover">
+    		<property name="CustomIcon" value="securityGatePlate" />
+			<property name="DisplayType" value="blockHardened"/>
+			<property name="Material" value="Mmetal_hard"/>
+			<property name="Shape" value="New"/>
+			<property name="Model" value="security_gate_plate" />
+			<property name="Texture" value="446" />
+			<property name="ImposterExchange" value="imposterPlate" param1="144" />
+			<property name="WaterFlow" value="permitted" />
+			<property name="Collide" value="movement,melee,rocket" />
+			<property name="ImposterExchange" value="imposterPlate" param1="143" />
+		    <property name="HandleFace" value="Bottom" />
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property class="RepairItems">
+				<property name="resourceForgedIron" value="2"/>
+			</property>
+    		<drop event="Harvest" name="resourceScrapIron" count="50" tag="allHarvest" />
+			<drop event="Destroy" name="resourceScrapIron" count="15,50"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.6" stick_chance="1" />
+			<property name="SortOrder1" value="B338" />
+			<property name="SortOrder2" value="0000" />
+			<property name="FilterTags" value="MC_outdoor,SC_decor,MC_building,SC_doors,SC_windows"/>
+			<property name="BuffsWhenWalkedOn" value="buffHealBedRoll"/>
+		</block>
+	</insertAfter>
+
+</Ozzland>

@@ -1,0 +1,86 @@
+<Ozzland>	
+<!--
+	// MODLET:			OZZ - Healing Beds
+	// EAC:				Friendly
+	// BUILD:			A19.2 b4
+	// CREDITS:			Ozzland (author)
+-->
+
+<insertAfter xpath="//buff[@name='buffHealHealth']">
+
+	<buff name="buffHealBedRoll" name_key="buffHealHealthName" description_key="buffHealHealthDesc">
+		<stack_type value="ignore" />
+		<update_rate value="2" />
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffHealBedRoll" />
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffHealBedRoll2" />
+		</effect_group>
+	</buff>
+	<buff name="buffHealBedRoll2" name_key="buffHealHealthName" description_key="buffHealHealthDesc" icon="ui_game_symbol_add" icon_color="240, 250, 130">
+		<stack_type value="ignore" />
+		<display_value value=".healHealthAmountDisplay" />
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyStats" stat="Health" operation="add" value="1" />
+		</effect_group>
+
+		<effect_group name="display">
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".healHealthAmountDisplay" operation="set" value="1" />
+		</effect_group>
+
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffHealBedRoll2" />
+		</effect_group>
+	</buff>
+
+	<buff name="buffHealBeds" name_key="buffHealHealthName" description_key="buffHealHealthDesc">
+		<stack_type value="ignore" />
+		<update_rate value="1" />
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffHealBeds" />
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffHealBeds2" />
+		</effect_group>
+	</buff>
+	<buff name="buffHealBeds2" name_key="buffHealHealthName" description_key="buffHealHealthDesc" icon="ui_game_symbol_add" icon_color="51,204,51">
+		<stack_type value="ignore" />
+		<display_value value=".healHealthAmountDisplay" />
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyStats" stat="Health" operation="add" value="1" />
+		</effect_group>
+
+		<effect_group name="display">
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".healHealthAmountDisplay" operation="set" value="1" />
+		</effect_group>
+
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffHealBeds2" />
+		</effect_group>
+	</buff>
+
+	<buff name="buffHealhospitalBed" name_key="buffHealHealthName" description_key="buffHealHealthDesc">
+		<stack_type value="ignore" />
+		<update_rate value="1" />
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffHealhospitalBed" />
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffHealhospitalBed2" />
+		</effect_group>
+	</buff>
+	<buff name="buffHealhospitalBed2" name_key="buffHealHealthName" description_key="buffHealHealthDesc" icon="ui_game_symbol_add" icon_color="51,204,51">
+		<stack_type value="ignore" />
+		<display_value value=".healHealthAmountDisplay" />
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyStats" stat="Health" operation="add" value="3" />
+		</effect_group>
+
+		<effect_group name="display">
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".healHealthAmountDisplay" operation="set" value="3" />
+		</effect_group>
+
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffHealhospitalBed2" />
+		</effect_group>
+	</buff>
+
+</insertAfter>
+
+
+</Ozzland>

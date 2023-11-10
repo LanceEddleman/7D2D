@@ -30,9 +30,7 @@
 	<insertAfter xpath="/items/item[@name='foodHoboStew']">
 		<item name="foodBeerBites">
 			<property name="Extends" value="foodShamChowder"/>
-			<property name="CustomIcon" value="foodShamChowder"/>
-			<property name="CustomIconTint" value="103, 151, 115"/>
-			<property name="TintColor" value="103, 151, 115"/>
+			<property name="CustomIcon" value="BeerBites"/>
 			<property name="Tags" value="food,foodSkill"/>
 			<property name="HoldType" value="31"/>
 			<property name="DisplayType" value="foodBeerBites"/>

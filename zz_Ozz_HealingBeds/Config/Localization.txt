@@ -1,0 +1,4 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english
+buffHealBedRollName,buffs,buff,,,Health Recovery Bedrolls -ozz
+buffHealBedRollDesc,buffs,Buff,,,You are recovering health -ozz
+HealingFloorCoverDesc,buffs,Buff,"Healing Floor Cover",,"You are recovering health\nYou feel better being here. -ozz"
