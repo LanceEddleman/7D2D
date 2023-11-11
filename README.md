@@ -10,13 +10,20 @@ Often extensions for wants/needs based on other mods and basic game tweaks that 
 
 - A21 ToDo list:<br />
 \* = completed<br />
-	\* Update Railgun: Ammo types, Field conversions based on TFP changes
-	<br />\* Create recipe for painkiller and vitamin from old sham sandwich
-	<br />\* Create 2nd winter log recipe that uses cloth in place of paper
-	<br />\* Create recipes for food that use old sham sandwich 
-	<br />\* Create recipes for food/drink that use beer
-	<br />\* Create a healing block based off of healing bed to be used for base floor tiles
-	<br />\* Add patch for snowberry return mod to work with living off the land perk
-	<br />\* Determine and work around dew collector placement limitations
-	<br />
+	<br />Oct 3-Oct 10
+	\* Gen+Ozz - Update Railgun: Ammo types, Field conversions based on TFP changes
+	<br />\* Ozz - Create recipe for painkiller and vitamin from old sham sandwich
+	<br />\* Ozz - Create 2nd winter log recipe that uses cloth in place of paper
+	<br />\* Ozz - Create recipes for food that use old sham sandwich 
+	<br />\* Ozz - Create recipes for food/drink that use beer
+	<br />\* Ozz - Create a healing block based off of healing bed to be used for base floor tiles
+	<br />\* Gen+Ozz - Add patch for snowberry return mod to work with living off the land perk
+	<br />\* Ozz - Determine and work around dew collector placement limitations
 	<br />Cancelled- Create recipe for casserole from old sham sandwich, beer
+	<br />Oct 11
+	<br />\* Gen - Update Rabsy brighter headlight to A21, changed b7 to b2
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
