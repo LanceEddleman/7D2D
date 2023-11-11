@@ -1,0 +1,45 @@
+<Ozzland>
+	<!-- Added from Lavendarjosh: Josh's QoL Perks -->
+
+	<!-- decreases lockpicking time and lockpick break chance -->
+	<set xpath="/progression/perks/perk[@name='perkLockPicking']/effect_group/passive_effect[@name='LockPickTime']/@value">.25,.75</set>
+	<set xpath="/progression/perks/perk[@name='perkLockPicking']/effect_group/passive_effect[@name='LockPickBreakChance']/@value">.3,.9</set>
+	
+	<!-- improves Treasure Hunter radius decrease -->
+	<set xpath="/progression/perks/perk[@name='perkTreasureHunter']/effect_group/passive_effect[@name='TreasureBlocksPerReduction']/@value">0,-4,-6,-8</set>
+		
+	<!-- decreases Slow Metabolism food & water consumption for stamina  -->
+	<set xpath="/progression/perks/perk[@name='perkSlowMetabolism']/effect_group/passive_effect[@name='WaterLossPerStaminaPointGained']/@value">-.1,-.5</set>
+	<set xpath="/progression/perks/perk[@name='perkSlowMetabolism']/effect_group/passive_effect[@name='FoodLossPerStaminaPointGained']/@value">-.1,-.5</set>
+	
+	<!-- decreases jump stamina consumption  -->
+	<set xpath="/progression/perks/perk[@name='perkParkour']/effect_group/passive_effect[@name='StaminaLoss']/@value">-.2,-.8</set>
+	
+	<!-- adds 20% run speed bonus per level to Rule One Cardio -->
+	<append xpath="/progression/perks/perk[@name='perkRuleOneCardio']/effect_group">
+		<passive_effect name="RunSpeed" operation="perc_add" level="1,3" value="0.2,0.6"/>
+	</append>
+
+	<!-- From LordHesbic - Hesbic - Extend Turret Active Range -->
+	<!-- 
+	Changes the Robotics Inventer Perk (perkTurrets) to expand the range you can be from a turret and keep it awake
+		Default Values
+		Level 0) Nothing			: 10 Blocks
+		Level 1) Science Projects	: 14 Blocks 
+		Level 2) Basic Robotics		: 15 Blocks 
+		Level 3) Automated Weaponry	: 16 Blocks 
+		Level 4) Advanced Robotics	: 17 Blocks 
+		Level 5) Robotics Expert	: 18 Blocks 
+		
+		New Values
+		Level 0) Nothing			: 20 Blocks
+		Level 1) Science Projects	: 28 Blocks 
+		Level 2) Basic Robotics		: 30 Blocks 
+		Level 3) Automated Weaponry	: 32 Blocks 
+		Level 4) Advanced Robotics	: 34 Blocks 
+		Level 5) Robotics Expert	: 36 Blocks 
+	-->
+		<!-- <set xpath="/progression/perks/perk[@name='perkTurrets']/effect_group/passive_effect[@name='JunkTurretActiveRange'][@value='10,14,15,16,17,18']/@value">20,28,30,32,34,36</set> -->
+		<set xpath="/progression/perks/perk[@name='perkTurrets']/effect_group/passive_effect[@name='JunkTurretActiveRange'][@value='10,14,15,16,17,18']/@value">15,21,23,27,30,32</set>
+
+</Ozzland>

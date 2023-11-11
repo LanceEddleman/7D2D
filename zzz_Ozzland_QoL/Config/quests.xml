@@ -1,0 +1,10 @@
+<Ozzland>
+<!--	
+	// MODLET:			OZZ - Quests
+	// BUILD:			A20.6
+	// TERMS OF USE:	N/A
+	// CREDITS:			Ozzland (author)
+-->
+	<set xpath="/quests/quest/objective[@type='POIStayWithin']/property[@name='radius']/@value">75</set>
+
+</Ozzland>

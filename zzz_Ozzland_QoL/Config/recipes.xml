@@ -1,0 +1,10 @@
+<Ozzland>
+	<append xpath="/recipes">
+		<recipe name="CementFiller" count="1" craft_area="cementMixer" tags="cementMixerCrafting">
+			<ingredient name="resourceCrushedSand" count="3"/>
+			<ingredient name="resourceRockSmall" count="10"/>
+			<ingredient name="resourcePotassiumNitratePowder" count="2"/>
+			<ingredient name="resourceCement" count="10"/>
+		</recipe>
+	</append>
+</Ozzland>

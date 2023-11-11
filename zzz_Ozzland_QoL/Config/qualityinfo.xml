@@ -1,0 +1,22 @@
+<Ozzland>
+
+<!--
+	// MODLET:			OZZ - Quality colors
+	// EAC:				Friendly
+	// BUILD:			A19.6
+	// DISCLAIMER:		Modlet created/tested against stated build only.
+	// TERMS OF USE:	N/A
+	// CREDITS:			Ozzland (author)
+
+	// reds: C11B17,993366,CC3333
+-->
+	<set xpath="//quality[@key='0']/@color">808080</set>
+	<set xpath="//quality[@key='1']/@color">9C8867</set>
+	<set xpath="//quality[@key='2']/@color">CC3333</set>
+	<set xpath="//quality[@key='3']/@color">CF7F29</set>
+	<set xpath="//quality[@key='4']/@color">CCCC00</set>
+	<set xpath="//quality[@key='5']/@color">42C234</set>
+	<set xpath="//quality[@key='6']/@color">315DCE</set>
+
+
+</Ozzland>

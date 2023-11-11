@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<Name value="Ozzland_QualityOfLife_Updates" />
+	<DisplayName value="Ozzland Quality of Life updates" />
+	<Description value="Game MODifications for 7 Days To Die" />
+	<Author value="Ozzland" />
+	<Version value="1.2.2" compat="A19.2,20.6,A21.1" />
+	<Website value="https://7daystodie.com" />
+</xml>
