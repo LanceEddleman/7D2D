@@ -8,9 +8,8 @@ All gen mods should be tagged by original creator. Alterations to these mods was
 - Ozz_Mods - Mods created by me
 Often extensions for wants/needs based on other mods and basic game tweaks that better fit my groups play style.
 
-- A21 ToDo list:<br />
-\* = completed<br />
-	<br />Oct 3-Oct 10
+- A21 ToDo list: &nbsp &nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp\* = completed<br />
+	<br />Oct 3-Oct 10<br />
 	\* Gen+Ozz - Update Railgun: Ammo types, Field conversions based on TFP changes
 	<br />\* Ozz - Create recipe for painkiller and vitamin from old sham sandwich
 	<br />\* Ozz - Create 2nd winter log recipe that uses cloth in place of paper
