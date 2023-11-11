@@ -91,6 +91,8 @@
 	<set xpath="/blocks/block[@name='plantedYucca3HarvestPlayer']/drop[@event='Destroy'][@name='plantedYucca1']/@prob">1</set>
 	<!-- Mushroom -->
 	<set xpath="/blocks/block[@name='plantedMushroom3HarvestPlayer']/drop[@event='Destroy'][@name='plantedMushroom1']/@prob">1</set>
+	<!-- Snowberry -->
+	<set xpath="/blocks/block[@name='plantedSnowberry3HarvestPlayer']/drop[@event='Destroy'][@name='plantedSnowberry1']/@prob">1</set>
 	<!-- End of Planted Crops Modifiers -->
 
 </Ozzland>

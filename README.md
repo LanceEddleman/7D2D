@@ -16,7 +16,7 @@ Often extensions for wants/needs based on other mods and basic game tweaks that 
 	<br />\* Create recipes for food that use old sham sandwich 
 	<br />\* Create recipes for food/drink that use beer
 	<br />\* Create a healing block based off of healing bed to be used for base floor tiles
-	<br />Add patch for snowberry return mod to work with living off the land perk
-	<br />Determine and work around dew collector placement limitations
+	<br />\* Add patch for snowberry return mod to work with living off the land perk
+	<br />\* Determine and work around dew collector placement limitations
 	<br />
 	<br />Cancelled- Create recipe for casserole from old sham sandwich, beer
