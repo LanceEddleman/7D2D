@@ -1,5 +1,24 @@
 <Ozzland>
 
+	<!-- Wine barrel hp changes -->
+	<append xpath="/blocks/block[(contains(@name, 'wineBarrelPlayer'))
+		or (contains(@name, 'wineBarrelPlayerSecure'))
+		or (contains(@name, 'wineBarrelSetPlayer'))
+		or (contains(@name, 'wineBarrelSetPlayerSecure'))
+		or (contains(@name, 'wineBarrelPlainPlayer'))
+		or (contains(@name, 'wineBarrelPlainPlayerSecure'))]">
+		<property name="MaxDamage" value="500"/>
+	</append>
+<!-- Not working to change bedrock look
+	<append xpath="/blocks/block[@name='terrBedrock']">
+		<property name="Texture" value="382,382,382,382,382,382"/>
+		<property name="UiBackgroundTexture" value="382"/>
+		<property name="CustomIcon" value="tentBiohazardWallGrey"/>
+		<property name="CustomIconTint" value="505050"/>
+		<property name="TintColor" value="505050"/>
+		<property name="Map.Color" value="160, 160, 160"/>
+	</append> -->
+
 	<!-- Spotlight rotations -->
 	<set xpath="//block[@name='spotlightPlayer']/property[@name='OnlySimpleRotations']/@value">false</set>
 

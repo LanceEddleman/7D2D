@@ -8,9 +8,9 @@ All gen mods should be tagged by original creator. Alterations to these mods was
 - Ozz_Mods - Mods created by me
 Often extensions for wants/needs based on other mods and basic game tweaks that better fit my groups play style.
 
-- A21 ToDo list: 																			\* = completed<br />
-	<br />Oct 3-Oct 10<br />
-	\* Gen+Ozz - Update Railgun: Ammo types, Field conversions based on TFP changes
+- A21 Updates: 	\* = completed
+	<br />Oct 3-Oct 10
+	<br />\* Gen+Ozz - Update Railgun: Ammo types, Field conversions based on TFP changes
 	<br />\* Ozz - Create recipe for painkiller and vitamin from old sham sandwich
 	<br />\* Ozz - Create 2nd winter log recipe that uses cloth in place of paper
 	<br />\* Ozz - Create recipes for food that use old sham sandwich 
@@ -21,8 +21,10 @@ Often extensions for wants/needs based on other mods and basic game tweaks that 
 	<br />Cancelled- Create recipe for casserole from old sham sandwich, beer
 	<br />Oct 11
 	<br />\* Gen - Update Rabsy brighter headlight to A21, changed b7 to b2
-	<br />
-	<br />
-	<br />
-	<br />
-	<br />
+	<br />\* Ozz - Add clothing pocket mod to bandana, had missed a tag for pocketMod option
+	<br />\* Add hit points to wine barrel for drink storage
+	<br />\* Add size to fridges for storage
+	<br />\* Add recipe for cat and dog taco food
+	<br />\* GT500 car quieter top end, dks Gt500 -not adding to git
+	<br />\* Add more Dye colors, converted HH_43_Dyes_ArtisanLab -not adding to git
+	<br />\* Add end of quest tier extra skillpoints, EpicSpire's Trader Tier Rewards -not adding to git

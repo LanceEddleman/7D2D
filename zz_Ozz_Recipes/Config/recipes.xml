@@ -1066,6 +1066,15 @@
 			<ingredient name="foodCropCorn" count="2"/>
 		</recipe>
 	</insertAfter>
+	<insertAfter xpath="/recipes/recipe[@name='foodFishTacos']">
+		<recipe name="foodCatDogTacos" count="1" craft_area="campfire" craft_tool="toolCookingGrill" tags="perkMasterChef">
+			<ingredient name="foodCanCatfood" count="2"/>
+			<ingredient name="foodCanDogfood" count="2"/>
+			<ingredient name="foodCornMeal" count="2"/>
+			<ingredient name="resourceCropGoldenrodPlant" count="2"/>
+		</recipe>
+	</insertAfter>
+
 
 	<!-- For cleaning out your forge if you move -->
 	<set xpath="/recipes/recipe[@name='resourceClayLump']/@craft_time">0.1</set>

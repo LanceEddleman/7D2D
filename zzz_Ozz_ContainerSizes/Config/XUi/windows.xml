@@ -1,0 +1,8 @@
+<configs>
+
+	<!-- <removeattribute xpath="//window[@name='windowLooting']/panel/label/@anchor_left" /> -->
+	<!-- <removeattribute xpath="//window[@name='windowLooting']/panel/label/@anchor_right" /> -->
+	
+	<!-- <removeattribute xpath="//window[@name='windowLooting']/panel/label/@pos" /> -->
+	<!-- <setattribute xpath="//window[@name='windowLooting']/panel[@name='header']/label[@name='lootName']" name="justify">right</setattribute> -->
+</configs>

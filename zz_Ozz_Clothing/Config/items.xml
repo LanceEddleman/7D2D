@@ -1,0 +1,83 @@
+<Ozzland>
+
+<!--
+	// MODLET:			Ozz Clothing Changes
+	// BUILD:			A21.1,A18b155
+	// VERSION:			1.0.1
+	// CREDITS:			Ozzland (author)
+-->
+
+	<!-- Clothes -->
+ 	<append xpath="/items/item[contains(@name, 'apparel')]"><property name="ShowQuality" value="true"/></append>
+
+	<setattribute xpath="/items/item[contains(@name, 'apparel')]/effect_group" name="tiered">true</setattribute>
+	<setattribute xpath="/items/item[contains(@name, 'apparel')]/effect_group/passive_effect[@name='ModSlots']" name="tier">1,6</setattribute>
+	<set xpath="//item[contains(@name, 'apparel')]/effect_group/passive_effect[@name='ModSlots']/@value">1,2,3,4,5,5</set>
+
+	<!-- <set xpath="/items/item[@name='apparelGothBoots']/property[@name='Tags']/@value">head,clothing,canHaveCosmetic</set> -->
+
+
+	<remove xpath="/items/item[@name='apparelBandana']/property[@name='Tags']"/>
+	<append xpath="/items/item[@name='apparelBandana']">
+		<property name="Tags" value="head,clothing,pocketMod,canHaveCosmetic"/>
+	</append>
+	
+
+	<remove xpath="/items/item[contains(@name, 'apparelGothBoots')]/effect_group"/>
+	<append xpath="/items/item[@name='apparelGothBoots']">
+		<property name="Extends" value="armorScrapBoots"/>
+		<property name="CustomIcon" value="apparelGothBoots" />
+		<property name="Group" value="Clothing,Armor,TCArmor"/>
+		<property name="Tags" value="lowerbody,feet,clothing,canHaveCosmetic,armor,armorFeet,lightArmor,heavyArmor,heavyArmorPenalty,heavyArmorDeg"/>
+		<effect_group name="military armor" tiered="true">
+			<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+			<passive_effect name="PhysicalDamageResist" operation="base_add" value="7.49,10.7" tier="1,6"/>
+			<passive_effect name="ElementalDamageResist" operation="base_add" value="7.49,10.7" tier="1,6" tags="heat,electrical"/>
+			<passive_effect name="BuffResistance" operation="base_add" value="0.054" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,critResistDisplay"/>
+			<passive_effect name="DegradationMax" operation="base_set" value="175,350" tier="1,6"/>
+			<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="heavyArmorDeg"/>
+			<passive_effect name="Mobility" operation="perc_add" value="-.06"/>
+			<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.045" tags="walking"/>
+			<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.09" tags="running"/>
+			<display_value name="dStaminaChangeOT" value="-.9"/>
+			<passive_effect name="NoiseMultiplier" operation="perc_add" value=".2"/><display_value name="dNoiseMultiplier" value=".2"/>
+		</effect_group>
+	</append>
+
+
+	<!-- Armor -->
+	<setattribute xpath="/items/item[contains(@name, 'armor')]/effect_group" name="tiered">true</setattribute>
+	<setattribute xpath="/items/item[contains(@name, 'armor')]/effect_group/passive_effect[@name='ModSlots']" name="tier">1,6</setattribute>
+	<set xpath="//item[contains(@name, 'armor')]/effect_group/passive_effect[@name='ModSlots']/@value">1,2,3,4,5,6</set>
+
+	<setattribute xpath="/items/item[contains(@name, 'armor')]/effect_group/passive_effect[@name='PhysicalDamageResist']" name="tiered">1,2,3,4,5,6</setattribute>
+	<set xpath="/items/item[contains(@name, 'armor')]/effect_group/passive_effect[@name='PhysicalDamageResist']/@operation">base_set</set>
+
+	<remove xpath="/items/item[contains(@name, 'armorSteel')]/effect_group[@name='steel armor']/passive_effect[@name='PhysicalDamageResist']"/>
+	<remove xpath="/items/item[contains(@name, 'armorSteel')]/effect_group[@name='steel armor']/passive_effect[@name='ElementalDamageResist']"/>
+	<append xpath="/items/item[contains(@name, 'armorSteel')]/effect_group[@name='steel armor']">
+		<passive_effect name="PhysicalDamageResist" operation="base_add" value="0,4.29" tier="1,6"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_add" value="8.21,11.71" tier="1,6"/>
+		<passive_effect name="ElementalDamageResist" operation="base_add" value="0,4.29" tier="1,6"/>
+		<passive_effect name="ElementalDamageResist" operation="base_add" value="8.21,11.71" tier="1,6" tags="heat,electrical"/>
+	</append>
+
+	<remove xpath="/items/item[contains(@name, 'armorIron')]/effect_group[@name='iron armor']/passive_effect[@name='PhysicalDamageResist']"/>
+	<remove xpath="/items/item[contains(@name, 'armorIron')]/effect_group[@name='iron armor']/passive_effect[@name='ElementalDamageResist']"/>
+	<append xpath="/items/item[contains(@name, 'armorIron')]/effect_group[@name='iron armor']">
+		<passive_effect name="PhysicalDamageResist" operation="base_add" value="0,3.75" tier="1,6"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_add" value="7.25,10.25" tier="1,6"/>
+		<passive_effect name="ElementalDamageResist" operation="base_add" value="0,3.75" tier="1,6"/>
+		<passive_effect name="ElementalDamageResist" operation="base_add" value="7.25,10.25"  tier="1,6" tags="heat,electrical"/>
+	</append>
+
+	<remove xpath="/items/item[contains(@name, 'armorMilitary')]/effect_group[@name='military armor']/passive_effect[@name='PhysicalDamageResist']"/>
+	<remove xpath="/items/item[contains(@name, 'armorMilitary')]/effect_group[@name='military armor']/passive_effect[@name='ElementalDamageResist']"/>
+	<append xpath="/items/item[contains(@name, 'armorMilitary')]/effect_group[@name='military armor']">
+		<passive_effect name="PhysicalDamageResist" operation="base_add" value="0,3.27" tier="1,6"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_add" value="6.23,8.93" tier="1,6"/>
+		<passive_effect name="ElementalDamageResist" operation="base_add" value="0,3.27" tier="1,6"/>
+		<passive_effect name="ElementalDamageResist" operation="base_add" value="6.23,8.93"  tier="1,6" tags="heat,electrical"/>
+	</append>
+
+</Ozzland>

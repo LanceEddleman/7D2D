@@ -1,0 +1,24 @@
+<configs>
+
+<!--
+	// MODLET:			Ozz Clothes Item Modifers
+	// EAC:				Friendly
+	// BUILD:			A18b155
+	// VERSION:			1.0.0
+	// DISCLAIMER:		Be advised, this modlet is created/tested against the stated build.
+	// TERMS OF USE:	N/A
+	// CREDITS:			Ozzland (author)
+-->
+
+	<set xpath="/item_modifiers/item_modifier[@name='modArmorInsulatedLiner']/@installable_tags">armor,clothing</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modArmorCoolingMesh']/@installable_tags">armor,clothing</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modArmorImprovedFittings']/@installable_tags">armor,clothing</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modArmorCustomizedFittings']/@installable_tags">armor,clothing</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modArmorWaterPurifier']/@installable_tags">armor,clothing</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modArmorPlatingBasic']/@installable_tags">armor,clothing</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modArmorMuffledConnectors']/@installable_tags">armor,clothing</set>
+
+	<!-- <set xpath="/item_modifiers/item_modifier[contains(@name, 'modDye')]/@installable_tags">head,clothing,armor,weapon,tool,vehicle</set> -->
+
+
+</configs>

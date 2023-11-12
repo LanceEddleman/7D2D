@@ -1,0 +1,185 @@
+<Ozzland>
+	<!-- vehicle storage max is 90 slots in vanilla -->
+	<!-- vehicleBicycle storage -->
+	<!-- <set xpath="/lootcontainers/lootcontainer[@id='76']/@size">9,2</set> -->
+	<!-- vehicleMinibike storage -->
+	<!-- <set xpath="/lootcontainers/lootcontainer[@id='77']/@size">9,4</set> -->
+	<!-- vehicleMotorcycle storage -->
+	<!-- <set xpath="/lootcontainers/lootcontainer[@id='78']/@size">9,6</set> -->
+	<!-- vehicle4x4Truck storage -->
+	<!-- <set xpath="/lootcontainers/lootcontainer[@id='79']/@size">10,9</set> -->
+	<!-- vehicleGyrocopter storage -->
+	<!-- <set xpath="/lootcontainers/lootcontainer[@id='80']/@size">9,6</set> -->
+
+<!-- <set xpath="//lootcontainer[@id='1']/@size">6,6</set> -->     <!-- empty, storage containers the player crafts, cntSecureStorageChest -->
+<!-- <set xpath="//lootcontainer[@id='4']/@size">4,4</set> -->     <!-- "bag" container that gets dropped when another loot container is destroyed -->
+<!-- <set xpath="//lootcontainer[@id='5']/@size">7,7</set> -->     <!-- cntStorageGeneric, paintable cube storage containers the player crafts -->
+<!-- <set xpath="//lootcontainer[@id='6']/@size">4,3</set> -->     <!-- wallSafe / deskSafe -->
+<!-- <set xpath="//lootcontainer[@id='7']/@size">6,6</set> -->     <!-- gun safe -->
+<!-- <set xpath="//lootcontainer[@id='8']/@size">4,2</set> -->     <!-- kitchen sink, cupboards (lower), cleaning chemicals, plates, silverware, pots and pans -->
+<!-- <set xpath="//lootcontainer[@id='9']/@size">4,2</set> -->     <!-- backpack, place where people stash things -->
+<!-- <set xpath="//lootcontainer[@id='10']/@size">3,1</set> -->     <!-- garbage, cntTrashPile -->
+<!-- <set xpath="//lootcontainer[@id='11']/@size">4,2</set> -->     <!-- stove/oven, cooking pots and pans rotten food -->
+<!-- <set xpath="//lootcontainer[@id='12']/@size">4,2</set> -->     <!-- POI storage box that looks like the player-built one -->
+<!-- <set xpath="//lootcontainer[@id='13']/@size">3,1</set> -->     <!-- laundry basket -->
+<!-- <set xpath="//lootcontainer[@id='14']/@size">3,1</set> -->     <!-- misc metal container mailbox -->
+<!-- <set xpath="//lootcontainer[@id='15']/@size">4,2</set> -->     <!-- misc storage, cardboard boxes -->
+<!-- <set xpath="//lootcontainer[@id='16']/@size">3,2</set> -->     <!-- metal garbage can -->
+<!-- <set xpath="//lootcontainer[@id='17']/@size">2,2</set> -->     <!-- canned or dry food cupboard -->
+<!-- <set xpath="//lootcontainer[@id='18']/@size">2,2</set> -->     <!-- washing machine -->
+<!-- <set xpath="//lootcontainer[@id='19']/@size">4,3</set> -->     <!-- cars -->
+<!-- <set xpath="//lootcontainer[@id='20']/@size">4,2</set> -->     <!-- fridge -->
+<!-- <set xpath="//lootcontainer[@id='21']/@size">3,2</set> -->     <!-- microwave oven -->
+<!-- <set xpath="//lootcontainer[@id='22']/@size">4,2</set> -->     <!-- garage stuff -->
+<!-- <set xpath="//lootcontainer[@id='24']/@size">4,1</set> -->     <!-- metal desk -->
+<!-- <set xpath="//lootcontainer[@id='25']/@size">2,2</set> -->     <!-- Birdnest -->
+<!-- <set xpath="//lootcontainer[@id='34']/@size">4,2</set> -->     <!-- Supply Crate General -->
+<!-- <set xpath="//lootcontainer[@id='35']/@size">2,2</set> -->     <!-- tree hollowed stump -->
+<!-- <set xpath="//lootcontainer[@id='36']/@size">2,2</set> -->     <!-- suitcase / luggage -->
+<!-- <set xpath="//lootcontainer[@id='37']/@size">3,1</set> -->     <!-- Bath tub -->
+<!-- <set xpath="//lootcontainer[@id='38']/@size">4,3</set> -->     <!-- Shamway Manager's Safe -->
+<!-- <set xpath="//lootcontainer[@id='39']/@size">4,3</set> -->     <!-- Brew Master's Safe -->
+<!-- <set xpath="//lootcontainer[@id='40']/@size">3,3</set> -->     <!-- military munitions ammo box -->
+<!-- <set xpath="//lootcontainer[@id='41']/@size">4,3</set> -->     <!-- cntLootChestHero, small, fancy chest -->
+<!-- <set xpath="//lootcontainer[@id='42']/@size">3,3</set> -->     <!-- ntNightstandClosed and dressers, wooden desk -->
+<!-- <set xpath="//lootcontainer[@id='43']/@size">3,2</set> -->     <!-- lockers -->
+<!-- <set xpath="//lootcontainer[@id='44']/@size">3,2</set> -->     <!-- file cabinet -->
+<!-- <set xpath="//lootcontainer[@id='45']/@size">3,1</set> -->     <!-- cooler loot -->
+<!-- <set xpath="//lootcontainer[@id='46']/@size">3,1</set> -->     <!-- trash compactor -->
+<!-- <set xpath="//lootcontainer[@id='47']/@size">3,3</set> -->     <!-- fridge -->
+<set xpath="//lootcontainer[@name='refrigerator']/@size">6,2</set>		     <!-- fridge -->
+<set xpath="//lootcontainer[@name='refrigeratorNOPOP']/@size">8,9</set>	     <!-- fridge -->
+<!-- <set xpath="//lootcontainer[@id='48']/@size">2,2</set> -->     <!-- purse -->
+<!-- <set xpath="//lootcontainer[@id='49']/@size">3,2</set> -->     <!-- bookcase -->
+<!-- <set xpath="//lootcontainer[@id='50']/@size">3,3</set> -->     <!-- shotgun Messiah -->
+<!-- <set xpath="//lootcontainer[@id='51']/@size">3,3</set> -->     <!-- pop n pills -->
+<!-- <set xpath="//lootcontainer[@id='52']/@size">3,3,</set> -->     <!-- beer cooler -->
+<!-- <set xpath="//lootcontainer[@id='53']/@size">3,3,</set> -->     <!-- working stiffs -->
+<!-- <set xpath="//lootcontainer[@id='54']/@size">3,1</set> -->     <!-- shopping cart -->
+<!-- <set xpath="//lootcontainer[@id='55']/@size">2,2</set> -->     <!-- cash register -->
+<!-- <set xpath="//lootcontainer[@id='56']/@size">3,2</set> -->     <!-- Apache Artifact Chest -->
+<!-- <set xpath="//lootcontainer[@id='57']/@size">2,2</set> -->     <!-- cntCharcoalGrillClosed -->
+<!-- <set xpath="//lootcontainer[@id='58']/@size">2,2</set> -->     <!-- shopping basket -->
+<!-- <set xpath="//lootcontainer[@id='59']/@size">3,3</set> -->     <!-- Shamway Cardboard Loot -->
+<!-- <set xpath="//lootcontainer[@id='60']/@size">3,3</set> -->     <!-- Bookstore bookcase -->
+<!-- <set xpath="//lootcontainer[@id='61']/@size">3,3</set> -->     <!-- cntBuriedLootStashChest, treasure_taylor -->
+<!-- <set xpath="//lootcontainer[@id='63']/@size">3,2</set> -->     <!-- mountain man loot -->
+<!-- <set xpath="//lootcontainer[@id='64']/@size">3,2</set> -->     <!-- gas pump loot -->
+<!-- <set xpath="//lootcontainer[@id='65']/@size">2,2</set> -->     <!-- Toilet -->
+<!-- <set xpath="//lootcontainer[@id='66']/@size">4,2</set> -->     <!-- dumpster -->
+<!-- <set xpath="//lootcontainer[@id='69']/@size">10,9</set> -->     <!-- cntGreenDrawer -->
+<!-- <set xpath="//lootcontainer[@id='70']/@size">4,3</set> -->     <!-- EntityLootContainerRegular, rare random drop off regular zombies  -->
+<!-- <set xpath="//lootcontainer[@id='71']/@size">4,3</set> -->     <!-- EntityLootContainerStrong, rare random drop off strong zombies -->
+<!-- <set xpath="//lootcontainer[@id='72']/@size">4,3</set> -->     <!-- cntFetchQuestSatchel -->
+<!-- <set xpath="//lootcontainer[@id='73']/@size">4,3</set> -->     <!-- EntityLootContainerBoss, rare random drop off bosses -->
+<!-- <set xpath="//lootcontainer[@id='74']/@size">4,3</set> -->     <!-- EntityLootContainerBandit -->
+<!-- <set xpath="//lootcontainer[@id='75']/@size">2,2</set> -->     <!-- cntGasGrillClosed -->
+<!-- <set xpath="//lootcontainer[@id='76']/@size">4,1</set> -->     <!-- vehicleBicycle storage -->
+<!-- <set xpath="//lootcontainer[@id='77']/@size">4,2</set> -->     <!-- vehicleMinibike -->
+<!-- <set xpath="//lootcontainer[@id='78']/@size">5,2</set> -->     <!-- vehicleMotorcycle -->
+<!-- <set xpath="//lootcontainer[@id='79']/@size">6,4</set> -->     <!-- vehicle4x4Truck -->
+<!-- <set xpath="//lootcontainer[@id='80']/@size">5,1</set> -->     <!-- vehicleGyrocopter -->
+<!-- <set xpath="//lootcontainer[@id='83']/@size">4,3</set> -->     <!-- army truck -->
+<!-- <set xpath="//lootcontainer[@id='84']/@size">3,2</set> -->     <!-- metal clothes rack, pants -->
+<!-- <set xpath="//lootcontainer[@id='85']/@size">3,2</set> -->     <!-- metal clothes rack, shirts -->
+<!-- <set xpath="//lootcontainer[@id='86']/@size">3,2</set> -->     <!-- store shelves, food -->
+<!-- <set xpath="//lootcontainer[@id='87']/@size">3,2</set> -->     <!-- food store crate -->
+<!-- <set xpath="//lootcontainer[@id='88']/@size">3,2</set> -->     <!-- construction supplies shipping crate -->
+<!-- <set xpath="//lootcontainer[@id='89']/@size">3,2</set> -->     <!-- bookstore shipping crate -->
+<!-- <set xpath="//lootcontainer[@id='90']/@size">3,2</set> -->     <!-- car parts shipping crate -->
+<!-- <set xpath="//lootcontainer[@id='91']/@size">2,2</set> -->     <!-- cntCollapsedForge -->
+<!-- <set xpath="//lootcontainer[@id='92']/@size">2,2</set> -->     <!-- cntCollapsedWorkbench -->
+<!-- <set xpath="//lootcontainer[@id='93']/@size">2,2</set> -->     <!-- cntCollapsedCementMixer -->
+<!-- <set xpath="//lootcontainer[@id='94']/@size">2,2</set> -->     <!-- cntCollapsedChemistryStation -->
+<!-- <set xpath="//lootcontainer[@id='95']/@size">4,4</set> -->     <!-- cntLootCrateHero, Hero / Hidden Stash Cardboard Loot -->
+<!-- <set xpath="//lootcontainer[@id='96']/@size">4,1</set> -->     <!-- cntLootCrateLabEquipment Lab equipment and medical items -->
+<!-- <set xpath="//lootcontainer[@id='97']/@size">2,2</set> -->     <!-- cntCollapsedBatterybank -->
+<!-- <set xpath="//lootcontainer[@id='98']/@size">2,2</set> -->     <!-- cntCollapsedGeneratorbank -->
+<!-- <set xpath="//lootcontainer[@id='99']/@size">3,1</set> -->     <!-- cntWaterCoolerFull -->
+<!-- <set xpath="//lootcontainer[@id='100']/@size">3,2</set> -->     <!-- cntWeaponsBagSmall -->
+<!-- <set xpath="//lootcontainer[@id='101']/@size">3,3</set> -->     <!-- cntWeaponsBagLarge -->
+<!-- <set xpath="//lootcontainer[@id='102']/@size">3,3</set> -->     <!-- cntBuriedFoodStashChest -->
+<!-- <set xpath="//lootcontainer[@id='103']/@size">4,3</set> -->     <!-- Loot block with basic equipment for testing prefabs -->
+<!-- <set xpath="//lootcontainer[@id='104']/@size">4,3</set> -->     <!-- Weapon loot test  qualBaseTemplate, testTemplate  -->
+<!-- <set xpath="//lootcontainer[@id='105']/@size">4,3</set> -->     <!-- Tool loot test -->
+<!-- <set xpath="//lootcontainer[@id='108']/@size">3,1</set> -->     <!-- cntAmmoPileSmall -->
+<!-- <set xpath="//lootcontainer[@id='109']/@size">4,1</set> -->     <!-- cntAmmoPileMedium -->
+<!-- <set xpath="//lootcontainer[@id='110']/@size">5,1</set> -->     <!-- cntAmmoPileLarge -->
+<!-- <set xpath="//lootcontainer[@id='111']/@size">3,1</set> -->     <!-- cntFoodPileSmall -->
+<!-- <set xpath="//lootcontainer[@id='112']/@size">4,1</set> -->     <!-- cntFoodPileMedium -->
+<!-- <set xpath="//lootcontainer[@id='113']/@size">5,1</set> -->     <!-- cntFoodPileLarge -->
+<!-- <set xpath="//lootcontainer[@id='114']/@size">3,1</set> -->     <!-- medicalPileSmall -->
+<!-- <set xpath="//lootcontainer[@id='115']/@size">4,1</set> -->     <!-- medicalPileMedium -->
+<!-- <set xpath="//lootcontainer[@id='116']/@size">5,1</set> -->     <!-- medicalPileLarge -->
+<!-- <set xpath="//lootcontainer[@id='117']/@size">3,2</set> -->     <!-- cntUtilityCartFull -->
+<!-- <set xpath="//lootcontainer[@id='118']/@size">2,1</set> -->     <!-- cntCoffeeMaker, cntCoffeeMakerCommercial -->
+<!-- <set xpath="//lootcontainer[@id='119']/@size">4,1</set> -->     <!-- cntSodaFountain -->
+<!-- <set xpath="//lootcontainer[@id='120']/@size">3,1</set> -->     <!-- fuel cntBarrelGasOld -->
+<!-- <set xpath="//lootcontainer[@id='121']/@size">6,3</set> -->     <!-- cntHardenedChestSecure, hero, big, fancy chest  -->
+<!-- <set xpath="//lootcontainer[@id='122']/@size">3,3</set> -->     <!-- cntBuriedWeaponChest -->
+<!-- <set xpath="//lootcontainer[@id='123']/@size">4,1</set> -->     <!-- closet hanger, cntModularClosetClosed -->
+<!-- <set xpath="//lootcontainer[@id='124']/@size">4,1</set> -->     <!-- cntRollingToolBoxClosed -->
+<!-- <set xpath="//lootcontainer[@id='125']/@size">3,1</set> -->     <!-- cntToolBoxClosed -->
+<!-- <set xpath="//lootcontainer[@id='126']/@size">3,2</set> -->     <!-- store shelves, hardware -->
+<!-- <set xpath="//lootcontainer[@id='127']/@size">3,1</set> -->     <!--  -->
+<!-- <set xpath="//lootcontainer[@id='128']/@size">3,2</set> -->     <!-- cntFreezerGroceriesMiddleFullClosed -->
+<!-- <set xpath="//lootcontainer[@id='129']/@size">3,2</set> -->     <!-- cntFreezerBeveragesMiddleFullClosed -->
+<!-- <set xpath="//lootcontainer[@id='129']/@size">2,2</set> -->     <!-- Home Brewery wineBarrel -->
+<!-- <set xpath="//lootcontainer[@id='130']/@size">3,2</set> -->     <!-- cntClothesShelfJeans01 -->
+<!-- <set xpath="//lootcontainer[@id='130']/@size">2,2</set> -->     <!-- Home Brewery wineBarrelSet -->
+<!-- <set xpath="//lootcontainer[@id='131']/@size">2,2</set> -->     <!-- medicine cabinets -->
+<!-- <set xpath="//lootcontainer[@id='131']/@size">2,2</set> -->     <!-- Home Brewery wineBarrelPlain -->
+<!-- <set xpath="//lootcontainer[@id='132']/@size">3,2</set> -->     <!-- cntDisplayCaseAmmoLeftBroken, copy of cntAmmoPileMedium -->
+<!-- <set xpath="//lootcontainer[@id='133']/@size">2,2</set> -->     <!-- cntShoesPileSneakers -->
+<!-- <set xpath="//lootcontainer[@id='134']/@size">2,2</set> -->     <!-- cntShoesPileSneakers -->
+<!-- <set xpath="//lootcontainer[@id='135']/@size">2,2</set> -->     <!-- cntBookPile01 -->
+<!-- <set xpath="//lootcontainer[@id='136']/@size">2,2</set> -->     <!-- cntBookShelfSingleBottomFull01 -->
+<!-- <set xpath="//lootcontainer[@id='137']/@size">4,2</set> -->     <!-- cntGunRackWallArmor -->
+<!-- <set xpath="//lootcontainer[@id='138']/@size">4,2</set> -->     <!-- cntGunRackWallGuns01 -->
+<!-- <set xpath="//lootcontainer[@id='139']/@size">4,2</set> -->     <!-- JunkDrone -->
+<!-- <set xpath="//lootcontainer[@id='140']/@size">3,2</set> -->     <!-- cntStoreShelfElectronicsSingle -->
+<!-- <set xpath="//lootcontainer[@id='141']/@size">2,2</set> -->     <!-- clothes shelf, shirts -->
+<!-- <set xpath="//lootcontainer[@id='142']/@size">2,2</set> -->     <!-- metal clothes rack, pants -->
+<!-- <set xpath="//lootcontainer[@id='143']/@size">2,2</set> -->     <!-- wineBarrel -->
+<!-- <set xpath="//lootcontainer[@id='144']/@size">4,2</set> -->     <!-- Service Trucks TEMP LOOT TABLE -->
+<!-- <set xpath="//lootcontainer[@id='145']/@size">4,2</set> -->     <!-- Ambulance TEMP LOOT TABLE -->
+<!-- <set xpath="//lootcontainer[@id='156']/@size">3,2</set> -->     <!-- MEDICAL SUPPLY PILES -->
+<!-- <set xpath="//lootcontainer[@id='157']/@size">4,4</set> -->     <!-- VENDING MACHINE -->
+<!-- <set xpath="//lootcontainer[@id='158']/@size">6,5</set> -->     <!-- HARDENED CHEST -->
+<!-- <set xpath="//lootcontainer[@id='159']/@size">3,3</set> -->     <!-- MEDICINE CABINETS -->
+<!-- <set xpath="//lootcontainer[@id='160']/@size">3,3</set> -->     <!-- WATER COOLER/PLASTIC BARRELS -->
+<!-- <set xpath="//lootcontainer[@id='170']/@size">4,2</set> -->     <!-- Vehicle Blocks -->
+<!-- <set xpath="//lootcontainer[@id='171']/@size">4,2</set> -->     <!-- EMS Vehicle Blocks -->
+<!-- <set xpath="//lootcontainer[@id='172']/@size">5,2</set> -->     <!-- Police/Military Vehicle Blocks -->
+<!-- <set xpath="//lootcontainer[@id='173']/@size">4,2</set> -->     <!-- Damaged Vehicle Blocks -->
+<!-- <set xpath="//lootcontainer[@id='193']/@size">2,1</set> -->     <!-- FRK_Beehive -->
+<!-- <set xpath="//lootcontainer[@id='194']/@size">2,1</set> -->     <!-- FRK_Chicken_Coop -->
+<!-- <set xpath="//lootcontainer[@id='199']/@size">4,4</set> -->     <!-- Lootable Vending Machines Mod -->
+<!-- <set xpath="//lootcontainer[@id='200']/@size">4,1</set> -->     <!-- Lootable Corps Mod -->
+<!-- <set xpath="//lootcontainer[@id='208']/@size">4,1</set> -->     <!-- palletWhiteBags -->
+<!-- <set xpath="//lootcontainer[@id='209']/@size">4,1</set> -->     <!-- palletBrownBoxes -->
+<!-- <set xpath="//lootcontainer[@id='210']/@size">4,1</set> -->     <!-- palletBricks -->
+<!-- <set xpath="//lootcontainer[@id='211']/@size">4,1</set> -->     <!-- palletBlueTarp -->
+<!-- <set xpath="//lootcontainer[@id='212']/@size">4,1</set> -->     <!-- storeShelving01 -->
+<!-- <set xpath="//lootcontainer[@id='213']/@size">4,1</set> -->     <!-- storeShelving01Double -->
+<!-- <set xpath="//lootcontainer[@id='214']/@size">4,1</set> -->     <!-- storeShelving01Top -->
+<!-- <set xpath="//lootcontainer[@id='215']/@size">4,1</set> -->     <!-- storeShelving01TopDouble -->
+<!-- <set xpath="//lootcontainer[@id='225']/@size">5,5</set> -->     <!--  -->
+<!-- <set xpath="//lootcontainer[@id='231']/@size">4,2</set> -->     <!-- bodyBagBlackFull, bodyBagYellowFull,bodyBagPileFull,bodyBagPileMixFull,bodyBagPairFull,bodyBagPairYellowFull,bodyBagPairMixedFull -->
+<!-- <set xpath="//lootcontainer[@id='232']/@size">4,1</set> -->     <!-- goreBlockHumanCorpse,goreBlockHumanBones -->
+<!-- <set xpath="//lootcontainer[@id='247']/@size">3,1</set> -->     <!-- Home Brewery wineBarrelPlain -->
+<!-- <set xpath="//lootcontainer[@id='249']/@size">3,1</set> -->     <!-- goreBlockHumanCorpse,GoreBlockHumanBones, Miscellaneous Loot -->
+<!-- <set xpath="//lootcontainer[@id='250']/@size">3,1</set> -->     <!-- School Desk, Tables -->
+<!-- <set xpath="//lootcontainer[@id='251']/@size">3,1</set> -->     <!-- Tables, Picnic Table -->
+<!-- <set xpath="//lootcontainer[@id='252']/@size">3,1</set> -->     <!-- Couches and Sofas -->
+<!-- <set xpath="//lootcontainer[@id='253']/@size">3,1</set> -->     <!-- Church Pews -->
+<!-- <set xpath="//lootcontainer[@id='254']/@size">3,1</set> -->     <!-- Park Bench A & B -->
+<!-- <set xpath="//lootcontainer[@id='255']/@size">4,2</set> -->     <!-- Wild West Wagon -->
+<!-- <set xpath="//lootcontainer[@id='256']/@size">3,1</set> -->     <!-- Ice Machine -->
+
+<!-- <set xpath="//lootcontainer[@id='472']/@size">3,2</set> -->     <!-- Zombiepedia Skillpoints -->
+<!-- <set xpath="//lootcontainer[@id='666']/@size">4,2</set> -->     <!-- special things by hsngrms A19 -->
+<!-- <set xpath="//lootcontainer[@id='932']/@size">8,6</set> -->     <!-- BRDM2 -->
+<!-- <set xpath="//lootcontainer[@id='933']/@size">8,4</set> -->     <!-- MRAP -->
+
+</Ozzland>
