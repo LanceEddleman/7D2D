@@ -19,8 +19,8 @@ Often extensions for wants/needs based on other mods and basic game tweaks that 
 	<br />\* Gen+Ozz - Add patch for snowberry return mod to work with living off the land perk
 	<br />\* Ozz - Determine and work around dew collector placement limitations
 	<br />Cancelled- Create recipe for casserole from old sham sandwich, beer
-	<br />Oct 11
-	<br />\* Gen - Update Rabsy brighter headlight to A21, changed b7 to b2
+	<br />Oct 11-12
+	<br />\* Gen - Update Rabsy brighter headlight to A21, changed b7 to b2 -not adding to git
 	<br />\* Ozz - Add clothing pocket mod to bandana, had missed a tag for pocketMod option
 	<br />\* Add hit points to wine barrel for drink storage
 	<br />\* Add size to fridges for storage
@@ -28,3 +28,4 @@ Often extensions for wants/needs based on other mods and basic game tweaks that 
 	<br />\* GT500 car quieter top end, dks Gt500 -not adding to git
 	<br />\* Add more Dye colors, converted HH_43_Dyes_ArtisanLab -not adding to git
 	<br />\* Add end of quest tier extra skillpoints, EpicSpire's Trader Tier Rewards -not adding to git
+	<br />\* Find Behemoth and add to loot table
