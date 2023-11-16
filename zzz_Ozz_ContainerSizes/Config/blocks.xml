@@ -1,0 +1,25 @@
+<Ozzland>
+	<insertAfter xpath="/blocks/block[@name='cntLockersShortClosed']">
+		<block name="playerLocker">
+			<property name="Extends" value="cntLockersShortClosed" param1="Class,LootList,DowngradeBlock"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="Loot"/>
+			<property name="LootList" value="playerLockers"/>
+			<property name="CustomIcon" value="cntLockersShortClosed"/>
+			<property name="DescriptionKey" value="playerLockersDesc"/>
+			<property name="Material" value="Mmetal_hard"/>
+			<property name="Model" value="@:Entities/LootContainers/locker_ver3_lootPrefab.prefab"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property class="RepairItems">
+				<property name="resourceForgedIron" value="4"/>
+				<property name="resourceMetalPipe" value="2"/>
+				<property name="resourceMechanicalParts" value="2"/>
+			</property>
+			<drop event="Destroy" name="resourceScrapIron" count="3,15"/>
+			<property name="SortOrder1" value="B483"/>
+			<property name="SortOrder2" value="0001"/>
+			<property name="Group" value="MC_playerBlocks,MC_building,SC_loot,Decor/Miscellaneous"/>
+		</block>
+	</insertAfter>
+
+</Ozzland>

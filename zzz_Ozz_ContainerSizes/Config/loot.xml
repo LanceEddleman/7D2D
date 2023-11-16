@@ -34,6 +34,9 @@
 <!-- <set xpath="//lootcontainer[@id='24']/@size">4,1</set> -->     <!-- metal desk -->
 <!-- <set xpath="//lootcontainer[@id='25']/@size">2,2</set> -->     <!-- Birdnest -->
 <!-- <set xpath="//lootcontainer[@id='34']/@size">4,2</set> -->     <!-- Supply Crate General -->
+
+<!-- <set xpath="//lootcontainer[@name='storageCrate']/@size">8,9</set> -->		<!-- storageCrate -->
+
 <!-- <set xpath="//lootcontainer[@id='35']/@size">2,2</set> -->     <!-- tree hollowed stump -->
 <!-- <set xpath="//lootcontainer[@id='36']/@size">2,2</set> -->     <!-- suitcase / luggage -->
 <!-- <set xpath="//lootcontainer[@id='37']/@size">3,1</set> -->     <!-- Bath tub -->
@@ -42,7 +45,13 @@
 <!-- <set xpath="//lootcontainer[@id='40']/@size">3,3</set> -->     <!-- military munitions ammo box -->
 <!-- <set xpath="//lootcontainer[@id='41']/@size">4,3</set> -->     <!-- cntLootChestHero, small, fancy chest -->
 <!-- <set xpath="//lootcontainer[@id='42']/@size">3,3</set> -->     <!-- ntNightstandClosed and dressers, wooden desk -->
-<!-- <set xpath="//lootcontainer[@id='43']/@size">3,2</set> -->     <!-- lockers -->
+<!-- <set xpath="//lootcontainer[@id='43']/@size">8,9</set> -->     <!-- lockers -->
+<!-- *** Lockers Player -->
+	<append xpath="/lootcontainers">
+		<lootcontainer name="playerLockers" count="0" size="8,9" sound_open="UseActions/open_locker" sound_close="UseActions/close_locker">
+			<item name="cobweb"/>
+		</lootcontainer>
+	</append>
 <!-- <set xpath="//lootcontainer[@id='44']/@size">3,2</set> -->     <!-- file cabinet -->
 <!-- <set xpath="//lootcontainer[@id='45']/@size">3,1</set> -->     <!-- cooler loot -->
 <!-- <set xpath="//lootcontainer[@id='46']/@size">3,1</set> -->     <!-- trash compactor -->

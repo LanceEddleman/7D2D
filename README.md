@@ -9,10 +9,21 @@ All gen mods should be tagged by original creator. Alterations to these mods was
 Often extensions for wants/needs based on other mods and basic game tweaks that better fit my groups play style.
 
 - A21 Updates: 	\* = completed
+	<br />Oct 14-15
+	<br />\* Gen - Gup Zombies, fix loot group names, make specific zombie type -not added to git
+	<br />\* Gen - KhaineGB TPF Behemoth fix loot group, make specific loot -not added to git
+	<br />\* Ozz - Change fridge container sizes
+	<br />\* Ozz - Create new player locker, large storage size 8,9
+	<br />\* Ozz - Change storage containers sizes, group hoarders complaining...
+	<br />	review stacksizes
+	<br />	Change dks Gt500 top speed sound file to VehicalMadness cop car top speed file
+
+	<br />
 	<br />Oct 13
 	<br />\* Gen - Update KhaineGB TPF Behemoth loot list and drop chance -not added to git
 	<br />\* Gen - Inject zombie lootable and loot list for GupA21 zombies -not added to git
 	<br />\* Gen - lower noise as much as i can determine for dks GT500 car -not adding to git
+
 	<br />
 	<br />Oct 11-12
 	<br />\* Gen - Update Rabsy brighter headlight to A21, changed b7 to b2 -not adding to git
@@ -24,6 +35,7 @@ Often extensions for wants/needs based on other mods and basic game tweaks that 
 	<br />\* Add more Dye colors, converted HH_43_Dyes_ArtisanLab -not adding to git
 	<br />\* Add end of quest tier extra skillpoints, EpicSpire's Trader Tier Rewards -not adding to git
 	<br />\* Find Behemoth and add to loot table
+
 	<br />
 	<br />Oct 3-Oct 10
 	<br />\* Gen+Ozz - Update Railgun: Ammo types, Field conversions based on TFP changes
