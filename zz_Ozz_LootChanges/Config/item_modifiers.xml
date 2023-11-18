@@ -1,0 +1,9 @@
+<config>
+
+	<append xpath="/item_modifiers/item_modifier[contains(@name, 'Dye')]">
+		<property name="EconomicValue" value="100"/>
+		<property name="EconomicBundleSize" value="1"/>
+		<property name="SellableToTrader" value="true"/>
+	</append>
+
+</config>

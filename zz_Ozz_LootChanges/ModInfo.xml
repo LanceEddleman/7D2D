@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<Name value="OzzLootChanges" />
+	<DisplayName value="Ozzland Loot Changes" />
+	<Description value="Game MODifications 7D2D" />
+	<Author value="Ozzland" />
+	<Version value="1.2" compat="A21.1" />
+	<Website value="https://7daystodie.com" />
+</xml>

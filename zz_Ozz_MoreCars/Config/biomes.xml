@@ -1,0 +1,25 @@
+<Ozzland>
+
+	<set xpath="//decoration[@blockname='carWrecksRandomHelper' or @blockname='carsRandomHelper']/@prob">0.31</set>
+
+	<append xpath="//decorations">
+		<decoration type="block" blockname="MoreCarsPlaceholder" prob="0.001" randomrotation="true" />
+		<decoration type="block" blockname="MoreCarsPlaceholder" onslopes="true" prob="0.0035" randomrotation="true" />
+	</append>
+
+	<set xpath="//poi/blockontop[@blockname='carWrecksRandomHelper' or @blockname='carsRandomHelper']/@prob">1</set>
+	<append xpath="//poi">
+		<blockontop blockname="MoreCarsPlaceholder" prob="1" randomrotation="true" />
+		<blockontop blockname="MoreCarsPlaceholder" prob="1" randomrotation="true" />
+		<blockontop blockname="MoreCarsPlaceholder" prob="1" randomrotation="true" />
+		<blockontop blockname="carsRandomHelper" prob="1" randomrotation="true" />
+		<blockontop blockname="MoreCarsPlaceholder" prob="1" randomrotation="true" />
+		<blockontop blockname="carsRandomHelper" prob="1" randomrotation="true" />
+		<blockontop blockname="MoreCarsPlaceholder" prob="1" randomrotation="true" />
+		<blockontop blockname="carsRandomHelper" prob="1" randomrotation="true" />
+		<blockontop blockname="carsRandomHelper" prob="1" randomrotation="true" />
+		<blockontop blockname="carsRandomHelper" prob="1" randomrotation="true" />
+		<blockontop blockname="MoreCarsPlaceholder" prob="1" randomrotation="true" />
+	</append>
+
+</Ozzland>

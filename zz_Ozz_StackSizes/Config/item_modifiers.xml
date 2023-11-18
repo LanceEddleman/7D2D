@@ -1,0 +1,14 @@
+<Ozzland>
+	<!--
+		// MODLET:			OZZ - Better stack sizes.
+		// INFO:			Changes mods to also ahve a stack option, remember you ctrl click to get only one item as they donot show the count of items on mods.
+		// EAC:				Friendly
+		// BUILD:			A17.2
+		// DISCLAIMER:		Be advised, this modlet is created/tested against the stated build.
+		// TERMS OF USE:	N/A
+		// CREDITS:			Ozzland (author)
+	-->
+
+	<set xpath="/item_modifiers/item_modifier/property[@name='Stacknumber']/@value">50</set>
+
+</Ozzland>

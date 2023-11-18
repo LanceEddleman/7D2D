@@ -1,0 +1,70 @@
+<config>
+
+	<!-- <remove xpath="//lootcontainers/lootcontainer[@id='25']" /> -->
+	<append xpath="/lootcontainers/lootcontainer[@name='birdNest']">
+		<item name="foodEgg" count="1,2" prob="0.5"/>
+		<item name="resourceFeather" count="0,8" prob="0.5"/>
+		<item name="foodRawMeat" count="0,2" prob="0.15"/>
+		<item name="resourceCloth" count="0,5" prob="0.15"/>
+		<item name="resourceScrapPolymers" count="0,5" prob="0.15"/>
+		<item name="resourceYuccaFibers" count="0,5" prob="0.15"/>
+	</append>
+
+<!-- Drawers, sounds/sizes -->
+	<set xpath="/lootcontainers/lootcontainer[@name='playerDrawer']/@size">9,10</set>
+	<set xpath="//lootcontainer[@name='playerDrawer']/@sound_open">UseActions/open_fridge</set>
+	<set xpath="//lootcontainer[@name='playerDrawer']/@sound_close">UseActions/close_fridge</set>
+
+	<set xpath="/lootcontainers/lootcontainer[@name='morticianDrawer']/@size">9,10</set>
+	<set xpath="/lootcontainers/lootcontainer[@name='morticianDrawer']/@sound_open">UseActions/open_file_cabinet</set>
+	<set xpath="/lootcontainers/lootcontainer[@name='morticianDrawer']/@sound_close">UseActions/close_file_cabinet</set>
+
+ <!-- A request to find bycle parts in Dumpsters -->
+	<append xpath="/lootcontainers/lootcontainer[@name='dumpster']">
+		<item group="bicycleParts" loot_prob_template="Low"/>
+		<item group="schematicsVehiclesT0" loot_prob_template="veryLow"/>
+	</append>
+
+<!-- Millions of Bicycles in the world and not one findable in 7 Days lets fix it for early game stage.
+    You may find more than one bicycle at a time so share with friends, you can change probabilty Here 	-->
+	<append xpath="/lootcontainers/lootcontainer[@name='dumpster']"><item name="vehicleBicyclePlaceable" loot_prob_template="veryLow"/></append>
+
+<!-- Vehicle parts in Air-drops -->
+	<append xpath="/lootcontainers/lootgroup[@name='groupAirDrop']">
+	    <item group="vehiclePartsTiered"/>
+	</append>
+
+
+	<append xpath="/lootcontainers">
+		<lootcontainer name="zBody" count="1,3" size="4,2" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
+			<item name="resourceBulletCasing" prob="0.01"/>
+			<item name="gunHandgunT1Pistol" prob="0.01"/>
+			<item name="resourceCloth" count="2,7" prob="0.08"/>
+			<item group="groupApparelPants" prob="0.05"/>
+			<item name="apparelSuitPants" prob="0.1" mods="dye" mod_chance="0"/>
+			<item group="groupJunk" prob="0.5"/>
+		</lootcontainer>
+	</append>
+
+<!-- From: JaxTeller718-EggsInFridges -->
+	<insertBefore xpath="/lootcontainers/lootgroup[@name='groupFoodCommon']">
+		<lootgroup name="groupColdFridge">
+			<item name="foodEgg"/>
+		</lootgroup>
+	</insertBefore>
+
+	<append xpath="/lootcontainers/lootgroup[@name='groupRefrigerator01']">
+		<item group="groupColdFridge" loot_prob_template="low"/>
+	</append>
+
+<!-- New Military containers A21 -->
+	<insertBefore xpath="/lootcontainers/lootcontainer[@name='twitch_tier0weapon']">
+		<lootcontainer name="militaryContainers" size="6,2" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="qualBaseTemplate" destroy_on_close="empty">
+			<item name="armorMilitarySetParts" count="0,2" loot_prob_template="medLow"/>
+			<item group="groupMilitaryFootlocker" count="0,3" loot_prob_template="medLow"/>
+		</lootcontainer>
+	</insertBefore>
+
+
+
+</config>

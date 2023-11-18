@@ -1,0 +1,134 @@
+<Ozzland>
+<!--
+	// MODLET:			Ozzland - Stack Sizes.
+	// INFO:			Thought out stack sizes, various items given a more managable value.
+	// BUILD:			A17b199 - A21.1
+	// CREDITS:			Ozzland (author) 
+-->
+	<set xpath="//block[@name='campfire']/property[@name='Stacknumber']/@value">5</set>
+	<set xpath="//block[@name='forge']/property[@name='Stacknumber']/@value">5</set>
+	<set xpath="//block[@name='workbench']/property[@name='Stacknumber']/@value">5</set>
+	<set xpath="//block[@name='cementMixer']/property[@name='Stacknumber']/@value">5</set>
+	<set xpath="//block[@name='chemistryStation']/property[@name='Stacknumber']/@value">5</set>
+
+	<set xpath="//block[@name='wallTorchLightPlayer']/property[@name='Stacknumber']/@value">25</set>
+	<set xpath="//block[@name='candleWallLightPlayer']/property[@name='Stacknumber']/@value">50</set>
+	<set xpath="//block[@name='burningBarrelPlayer']/property[@name='Stacknumber']/@value">5</set>
+	<set xpath="//block[@name='generatorbank']/property[@name='Stacknumber']/@value">5</set>
+	<set xpath="//block[@name='solarbank']/property[@name='Stacknumber']/@value">5</set>
+	<set xpath="//block[@name='batterybank']/property[@name='Stacknumber']/@value">5</set>
+	<set xpath="//block[@name='dartTrap']/property[@name='Stacknumber']/@value">10</set>
+	<set xpath="//block[@name='flamethrowerTrap']/property[@name='Stacknumber']/@value">10</set>
+	<set xpath="//block[@name='bladeTrap']/property[@name='Stacknumber']/@value">10</set>
+	<set xpath="//block[@name='autoTurret']/property[@name='Stacknumber']/@value">10</set>
+
+ 	<append xpath="//block[@name='woodLogPillar100']">
+		<property name="Stacknumber" value="500"/>
+	</append>
+	<set xpath="//block[@name='terrDestroyedWoodDebris']/property[@name='FuelValue']/@value">1600</set>
+	<append xpath="//block[@name='terrDestroyedWoodDebris']">
+		<property name="Stacknumber" value="1500"/>
+	</append>
+	<append xpath="/blocks/block[contains(@name, 'schoolDesk')]">
+		<property name="Stacknumber" value="5"/>
+	</append>
+ 	<append xpath="//block[@name='rustyIronTable']">
+		<property name="Stacknumber" value="5"/>
+	</append>
+	<append xpath="//block[@name='decoPicnicTable']">
+		<property name="Stacknumber" value="50"/>
+	</append>
+	<append xpath="//block[@name='sectionalPlaidCouchSofaMiddle']">
+		<property name="Stacknumber" value="50"/>
+	</append>
+	<append xpath="//block[@name='sectionalLeatherCouchSofaArm']">
+		<property name="Stacknumber" value="50"/>
+	</append>
+	<append xpath="//block[@name='driftwood']">
+		<property name="Stacknumber" value="100"/>
+	</append>
+	<append xpath="//block[@name='endTable']">
+		<property name="Stacknumber" value="100"/>
+	</append>
+	<append xpath="/blocks/block[contains(@name, 'bodyBag')]">
+		<property name="Stacknumber" value="50"/>
+	</append>
+	<append xpath="/blocks/block[contains(@name, 'lanternDecorLight')]">
+		<property name="Stacknumber" value="50"/>
+		<property name="CreativeMode" value="Player"/>
+	</append>
+	<append xpath="/blocks/block[contains(@name, 'flashlightDecor')]">
+		<property name="Stacknumber" value="15"/>
+		<property name="CreativeMode" value="Player"/>
+	</append>
+	<append xpath="//block[@name='roadBarricadeLight']">
+		<property name="Stacknumber" value="5"/>
+		<property name="CreativeMode" value="Player"/>
+	</append>
+	<append xpath="//block[@name='deskLampLight']">
+		<property name="Stacknumber" value="5"/>
+		<property name="CreativeMode" value="Player"/>
+	</append>
+	<append xpath="/blocks/block[contains(@name, 'tableLampLight')]">
+		<property name="Stacknumber" value="5"/>
+		<property name="CreativeMode" value="Player"/>
+	</append>
+	<append xpath="//block[@name='workLightPOI']">
+		<property name="Stacknumber" value="5"/>
+		<property name="CreativeMode" value="Player"/>
+	</append>
+	<append xpath="//block[@name='lightDisplayXRayFull']">
+		<property name="Stacknumber" value="5"/>
+		<property name="CreativeMode" value="Player"/>
+		<property name="Place" value="TowardsPlacerInverted"/>
+	</append>
+	<append xpath="//block[@name='lightDisplayXRayEmpty']">
+		<property name="Stacknumber" value="5"/>
+		<property name="CreativeMode" value="Player"/>
+		<property name="Place" value="TowardsPlacerInverted"/>
+	</append>
+
+	<append xpath="/blocks/block[@name='treeCactus04']">
+		<property name="Stacknumber" value="50"/>
+	</append>
+
+	<append xpath="/blocks/block[contains(@name, 'Chair')]">
+		<property name="Stacknumber" value="50"/>
+	</append>
+
+	<!-- Ozz, Pulled from Robeloto_XL -->
+	<append xpath="/blocks/block[@name='trapSpikesWoodMaster']">
+		<property name="Stacknumber" value="150"/>
+	</append>
+	<append xpath="/blocks/block[@name='trapSpikesScrapIronMaster']">
+		<property name="Stacknumber" value="150"/>
+	</append>
+	<append xpath="/blocks/block[@name='trapSpikesWoodMaster']">
+		<property name="Stacknumber" value="150"/>
+	</append>
+	<append xpath="/blocks/block[@name='mineCandyTin']">	
+		<property name="Stacknumber" value="50"/>
+	</append>
+	<append xpath="/blocks/block[@name='mineHubcap']">	
+		<property name="Stacknumber" value="50"/>
+	</append>
+	<append xpath="/blocks/block[@name='mineAirFilter']">
+		<property name="Stacknumber" value="50"/>
+	</append>
+	<append xpath="/blocks/block[@name='mineCookingPot']">
+		<property name="Stacknumber" value="50"/>
+	</append>
+	<append xpath="/blocks/block[@name='officeChair01']">	
+		<property name="Stacknumber" value="50"/>
+	</append>
+	<append xpath="/blocks/block[@name='woodChair1']">	
+		<property name="Stacknumber" value="150"/>
+	</append>
+	<append xpath="/blocks/block[@name='oldChair1']">	
+		<property name="Stacknumber" value="150"/>
+	</append>
+	<append xpath="/blocks/block[@name='burningBarrelPlayer']">	
+		<property name="Stacknumber" value="15"/>			
+	</append>
+
+</Ozzland>

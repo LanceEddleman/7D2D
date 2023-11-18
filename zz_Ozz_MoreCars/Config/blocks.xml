@@ -1,0 +1,8 @@
+<Ozzland>
+    <insertAfter xpath="/blocks/block[@name='semiFlatbedFrontTraderOnly']">
+        <block name="MoreCarsPlaceholder">
+            <property name="Extends" value="cntSedan01White"/>
+        </block>
+    </insertAfter>
+
+</Ozzland>

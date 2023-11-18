@@ -9,14 +9,24 @@ All gen mods should be tagged by original creator. Alterations to these mods was
 Often extensions for wants/needs based on other mods and basic game tweaks that better fit my groups play style.
 
 - A21 Updates: 	\* = completed
+	<br />Oct 16-17
+	<br />\* Ozz - Review / adjsut stacksizes, double current, still minimal but better
+	<br />\* Ozz - Change storage containers sizes, group hoarders complaining...
+	<br />\* Ozz - Make new military containers lootable
+	<br />\* Gen - Rename all gup zombies via localization -not added to git
+	<br />\* Gen - Change gup zombies to 100 hp on death for easy cleanup -not added to git
+	<br />\* Ozz - Ozz_MoreCars mod, Add more cards to world
+	<br />Look for / create traffic jam mod (like PZ) or make something like it
+	<br />Gen - add dk cars to morecars mod
+	<br />Gen - Update MoreContainer images and icons to show name of crates -not added to git
+	<br />Gen - add vehical madness cars to morecars mod
+
+	<br />
 	<br />Oct 14-15
 	<br />\* Gen - Gup Zombies, fix loot group names, make specific zombie type -not added to git
 	<br />\* Gen - KhaineGB TPF Behemoth fix loot group, make specific loot -not added to git
 	<br />\* Ozz - Change fridge container sizes
 	<br />\* Ozz - Create new player locker, large storage size 8,9
-	<br />\* Ozz - Change storage containers sizes, group hoarders complaining...
-	<br />	review stacksizes
-	<br />	Change dks Gt500 top speed sound file to VehicalMadness cop car top speed file
 
 	<br />
 	<br />Oct 13
@@ -28,13 +38,12 @@ Often extensions for wants/needs based on other mods and basic game tweaks that 
 	<br />Oct 11-12
 	<br />\* Gen - Update Rabsy brighter headlight to A21, changed b7 to b2 -not adding to git
 	<br />\* Ozz - Add clothing pocket mod to bandana, had missed a tag for pocketMod option
-	<br />\* Add hit points to wine barrel for drink storage
-	<br />\* Add size to fridges for storage
-	<br />\* Add recipe for cat and dog taco food
+	<br />\* Ozz - Add hit points to wine barrel for drink storage
+	<br />\* Ozz - Add recipe for cat and dog taco food
 	<br />\* GT500 car quieter top end, dks Gt500 -not adding to git
 	<br />\* Add more Dye colors, converted HH_43_Dyes_ArtisanLab -not adding to git
 	<br />\* Add end of quest tier extra skillpoints, EpicSpire's Trader Tier Rewards -not adding to git
-	<br />\* Find Behemoth and add to loot table
+	<br />\* Find Behemoth and add to loot table -not adding to git
 
 	<br />
 	<br />Oct 3-Oct 10

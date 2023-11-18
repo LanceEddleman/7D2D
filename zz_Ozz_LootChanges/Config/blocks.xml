@@ -1,0 +1,165 @@
+<configs>
+
+<!--	// MODLET:			OZZ - Chance to find bird/meat while destroying a bird's nest.
+		// EAC:				Friendly
+		// BUILD:			A17b197
+		// DISCLAIMER:		Be advised, this modlet is created/tested against the stated build.
+		// TERMS OF USE:	N/A
+		// CREDITS:			Ozzland (author)
+-->
+<!-- Birdnest changes -->
+	<!-- <remove xpath="//blocks/block[@name='cntBirdnest']" /> -->
+
+	<append xpath="/blocks/block[@name='treeMaster']">
+		<drop event="Harvest" name="foodEgg" tag="allToolsHarvest" prob="0.1" count="1,4"/>
+		<drop event="Harvest" name="resourceFeather" tag="allToolsHarvest" prob="0.1" count="1,4"/>
+	</append>
+
+	<append xpath="/blocks/block[@name='rockResource']">
+		<drop event="Harvest" name="resourceScrapBrass" count="1,12" prob="0.5" tag="allHarvest" />
+	</append >
+	<append  xpath="/blocks/block[@name='oreLeadBoulder']">
+		<drop event="Harvest" name="resourceScrapBrass" count="0,10" prob="0.25" tag="allHarvest" />
+	</append >
+<!--	
+	<append xpath="/blocks">
+	 
+			<block name="cntBirdnest">
+			<property name="Class" value="Loot"/>
+			<property name="Material" value="Mwood_weak"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="Shape" value="Ext3dModel"/> <property name="Texture" value="293"/>
+			<property name="Model" value="#Entities/LootContainers?birdnestPrefab.prefab"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="LootList" value="25"/>
+			<property name="Collide" value="melee,bullet,arrow,rocket"/>
+			<property name="FilterTags" value="floot,foutdoor"/>
+			<drop event="Harvest" name="foodRawMeat" count="1,2" prob="0.75" tag="allHarvest"/>
+			<drop event="Harvest" name="resourceYuccaFibers" count="1,2" prob="0.25" tag="allHarvest"/>
+		</block>
+ -->
+ <!-- 
+		<block name="cntBirdnest">
+			<drop event="Harvest" name="foodRawMeat" count="1,2" prob="0.75" tag="allHarvest"/>
+			<drop event="Harvest" name="resourceYuccaFibers" count="1,2" prob="0.25" tag="allHarvest"/>
+		</block>
+
+	</append>
+ -->
+<!-- Lootable Tire Stacks -->
+<!-- 
+	<append xpath="/blocks/block[contains(@name, 'CarTire')]">
+		<property name="Class" value="Loot" />
+		<property name="LootList" value="220" />
+		<property name="FilterTags" value="floot"/>
+	</append>
+
+	<append xpath="/blocks/block[contains(@name, 'CarWheel')]">
+		<property name="Class" value="Loot" />
+		<property name="LootList" value="220" />
+		<property name="FilterTags" value="floot"/>
+	</append>
+
+	<append xpath="/blocks/block[contains(@name, 'CarTire')]">
+		<drop event="Harvest" name="resourceOil" count="0,2" prob="0.1" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceMilitaryFiber" count="0,2" prob="0.01" tag="salvageHarvest"/>
+		<drop event="Destroy" name="resourceOil" count="0,2" prob="0.01"/>
+		<drop event="Destroy" name="resourceMilitaryFiber" count="0,2" prob="0.01"/>
+	</append>
+	<append xpath="/blocks/block[contains(@name, 'CarWheel')]">
+		<drop event="Harvest" name="resourceOil" count="0,2" prob="0.1" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceMilitaryFiber" count="0,2" prob="0.01" tag="salvageHarvest"/>
+		<drop event="Destroy" name="resourceOil" count="0,2" prob="0.01"/>
+		<drop event="Destroy" name="resourceMilitaryFiber" count="0,2" prob="0.01"/>
+	</append>
+ -->
+<!-- Treeseed/Treefarm Inhibitor -->
+<!-- 
+	<set xpath="//block[(contains(@name, 'treeOakLrg01'))
+		or (contains(@name, 'treePlantedOak41m'))
+		or (contains(@name, 'treeMountainPine48m'))
+		or (contains(@name, 'treePlantedMountainPine41m'))
+		or (contains(@name, 'treeWinterEverGreen'))
+		or (contains(@name, 'treeWinterPine28m'))
+		or (contains(@name, 'treePlantedWinterPine28m'))
+		]/drop[@event='Destroy']/@count">0,3</set>
+
+	<remove xpath="//block[(contains(@name, 'treeJuniper4m'))
+		or (contains(@name, 'treeOakSml01'))
+		or (contains(@name, 'treeOakMed01'))
+		or (contains(@name, 'treeOakMed02'))
+		or (contains(@name, 'treePlantedOak1m'))
+		or (contains(@name, 'treePlantedOak08m'))
+		or (contains(@name, 'treePlantedOak16m'))
+		or (contains(@name, 'treePlantedOak27m'))
+		or (contains(@name, 'treeMountainPine12m'))
+		or (contains(@name, 'treeMountainPine19m'))
+		or (contains(@name, 'treeMountainPine27m'))
+		or (contains(@name, 'treeMountainPine31m'))
+		or (contains(@name, 'treeMountainPine41m'))
+		or (contains(@name, 'treeMountainPineDry21m'))
+		or (contains(@name, 'treeFirLrg01'))
+		or (contains(@name, 'treePlantedMountainPine1m'))
+		or (contains(@name, 'treePlantedMountainPine12m'))
+		or (contains(@name, 'treePlantedMountainPine19m'))
+		or (contains(@name, 'treePlantedMountainPine27m'))
+		or (contains(@name, 'treeWinterPine13m'))
+		or (contains(@name, 'treeWinterPine19m'))
+		or (contains(@name, 'treePlantedWinterPine6m'))
+		or (contains(@name, 'treePlantedWinterPine13m'))
+		or (contains(@name, 'treePlantedWinterPine19m'))
+		]/drop[@event='Destroy']" />
+ -->
+
+<!-- <set xpath="//block[@name='cntShoppingCart']/property[@name='StabilitySupport']/@value">true</set> -->
+
+<!-- 
+	<insertAfter xpath="/blocks/block[@name='cntShoppingCart']">
+		<block name="ShoppingCartStorage">
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="Loot"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Path" value="solid"/>
+			<property name="Model" value="#Entities/LootContainers?shopping_cartPrefab.prefab"/> <property name="CustomIconTint" value="5b5bbd" />
+			<property name="ImposterExchange" value="imposterCTREighth" param1="111"/>
+			<property name="LootList" value="225"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+			<drop event="Harvest" name="resourceMechanicalParts" count="1,3" tag="salvageHarvest"/>
+			<drop event="Destroy" name="resourceScrapIron" count="1,15"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<property name="FilterTags" value="floot,ffurniture"/>
+			<property name="CustomIcon" value="cntShoppingCart"/> <property name="CustomIconTint" value="5b5bbd"/>
+		</block>
+	</insertAfter>
+ -->
+
+	<append xpath="//block[@name='goreBlockHumanCorpse' or
+							@name='npcAdvancedBatTemplate' or
+							@name='npcAdvancedAxeTemplate'
+							]">
+		<property name="Class" value="Loot"/>
+		<property name="LootList" value="zBody"/>
+	</append>
+	
+	<append xpath="//block[@name='bodyBagBlack']">
+		<property name="Class" value="Loot"/>
+		<property name="LootList" value="zBody"/>
+	</append>
+
+<!-- New Military containers A21 -->
+	<append xpath="//block[@name='palletCartonMilitaryBase' or
+							@name='palletCartonMilitaryCap' or
+							@name='palletCartonMilitaryTile' or
+							@name='palletCartonMilitaryTileCovered'
+							]">
+		<property name="Class" value="Loot"/>
+		<property name="LootList" value="militaryContainers"/>
+	</append>
+
+</configs>

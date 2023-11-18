@@ -1,0 +1,22 @@
+<configs>
+<!--	
+	// MODLET:			OZZ - Zombie Loot Drop Ratio
+	// EAC:				Friendly
+	// BUILD:			A18b143
+	// DISCLAIMER:		Be advised, this modlet is created/tested against the stated build.
+	// TERMS OF USE:	N/A
+	// CREDITS:			Ozzland (author)
+-->
+<!-- 	Ozz A20 are teh same or better values -->
+<!-- 
+	<set xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/property[@name='LootDropProb']/@value">0.15</set>
+	<set xpath="/entity_classes/entity_class[contains(@name, 'Feral')]/property[@name='LootDropProb']/@value">0.3</set>
+	<set xpath="/entity_classes/entity_class[contains(@name, 'Radiated')]/property[@name='LootDropProb']/@value">0.4</set>
+ -->
+
+
+	<append xpath="/entity_classes/entity_class[@name='animalChicken']">
+		<drop event="Harvest" name="foodEgg" tag="butcherHarvest" prob="0.5" count="1,4"/>
+		<drop event="Harvest" name="foodEgg" tag="allToolsHarvest" prob="0.5" count="1,2"/>
+	</append>
+</configs>
