@@ -10,7 +10,7 @@ Often extensions for wants/needs based on other mods and basic game tweaks that 
 
 - A21 Updates: 	\* = completed
 	<br />Oct 16-17
-	<br />\* Ozz - Review / adjsut stacksizes, double current, still minimal but better
+	<br />\* Ozz - Review / adjust stack sizes, double current, still minimal but better
 	<br />\* Ozz - Change storage containers sizes, group hoarders complaining...
 	<br />\* Ozz - Make new military containers lootable
 	<br />\* Gen - Rename all gup zombies via localization -not added to git
@@ -19,7 +19,7 @@ Often extensions for wants/needs based on other mods and basic game tweaks that 
 	<br />Look for / create traffic jam mod (like PZ) or make something like it
 	<br />Gen - add dk cars to morecars mod
 	<br />Gen - Update MoreContainer images and icons to show name of crates -not added to git
-	<br />Gen - add vehical madness cars to morecars mod
+	<br />Gen - add vehicle madness cars to morecars mod
 
 	<br />
 	<br />Oct 14-15
