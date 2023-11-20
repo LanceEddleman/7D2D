@@ -1,0 +1,5 @@
+Key,File,Type,UsedInMainMenu,english
+Ozzland_Mods---------------------------------------------------------------,,,New,Start
+modArmorGelInSoles,item_modifiers,mod,New,Gel Insoles Mod
+modArmorGelInSolesDesc,item_modifiers,mod,New,Keeps your feet fresh.
+modArmorGelInSolesSchematic,item_modifiers,mod,New,Gel Insoles Mod Schematic

@@ -1,0 +1,64 @@
+<configs>
+	<csv xpath="/items/item[@name='meleeToolRepairT3Nailgun']/property[@name='Tags']/@value" op="remove" delim=",">noMods</csv>
+	<csv xpath="/items/item[@name='meleeToolRepairT3Nailgun']/property[@name='Tags']/@value" op="add" delim=",">melee,light,tool,repairTool,longshaft,repairingTools</csv>
+
+<!--
+	// MODLET:			Ozz Mod Changes
+	// BUILD:			A18b155,A21.1
+	// VERSION:			1.0.17
+	// TERMS OF USE:	N/A
+	// CREDITS:			Ozzland (author)
+-->
+
+	<!-- Bandage -->
+	<append xpath="/items/item[@name='medicalBandage']/effect_group" >
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" buff="buffInjuryOpenWound"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" buff="buffAbrasionCatch"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" buff="buffInjuryBleedingTwo"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" buff="buffLaceration"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" buff="buffInjuryConcussion"/>
+	</append>
+
+	<!-- Weapons -->
+	<append xpath="/items/item[contains(@name, 'meleeToolAxe')]/property[@name='Tags']/@value">,perkDeepCuts</append>
+
+	<append xpath="/items/item[@name='gunHandgunT3SMG5']/property[@name='Tags']/@value">,stock</append>
+
+	<set xpath="//item[contains(@name, 'gun')]/effect_group/passive_effect[@name='ModSlots']/@value">1,2,3,4,5,6</set>
+	<set xpath="//item[contains(@name, 'melee')]/effect_group/passive_effect[@name='ModSlots']/@value">1,2,3,4,5,6</set>
+
+
+ 	<!-- <append xpath="/items/item[contains(@name, 'apparel')]">
+		<property name="ShowQuality" value="true"/>
+	</append> -->
+
+	<!-- Armor -->
+	<!-- <set xpath="//item[contains(@name, 'armor')]/effect_group/passive_effect[@name='ModSlots']/@value">1,2,3,4,5,6</set> -->
+	<!-- <set xpath="//item[contains(@name, 'armor')]/effect_group/passive_effect[@name='ModSlots']/@value">1,2,4,5,7,8</set> -->
+
+	<!-- Clothes -->
+	<!-- <set xpath="//item[contains(@name, 'apparel')]/effect_group/passive_effect[@name='ModSlots']/@value">1,1,2,3,4,4</set> -->
+
+	<!-- <setattribute xpath="/items/item[contains(@name, 'apparel')]/effect_group" name="tiered">true</setattribute> -->
+	<!-- <setattribute xpath="/items/item[contains(@name, 'apparel')]/effect_group/passive_effect[@name='ModSlots']" name="tier">1,6</setattribute> -->
+
+	<!-- <setattribute xpath="/items/item[contains(@name, 'armor')]/effect_group" name="tiered">true</setattribute>
+	<setattribute xpath="/items/item[contains(@name, 'armor')]/effect_group/passive_effect[@name='PhysicalDamageResist']" name="tiered">1,6</setattribute>
+	<set xpath="/items/item[contains(@name, 'armor')]/effect_group/passive_effect[@name='PhysicalDamageResist']/@operation">base_set</set> -->
+
+	<!-- New Mods -->
+	<insertAfter xpath="/items/item[@name='modArmorImpactBracingSchematic']" >
+		<item name="modArmorGelInSolesSchematic">
+			<property name="Extends" value="schematicNoQualityMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="modArmorImpactBracing"/><property name="CustomIconTint" value="b0ffb0"/>
+			<property name="Unlocks" value="modArmorGelInSoles"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArmorGelInSoles" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+	</insertAfter>
+
+
+</configs>

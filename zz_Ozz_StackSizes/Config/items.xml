@@ -2,7 +2,7 @@
 <!--
 	// MODLET:			OZZ - Better stack sizes.
 	// INFO:			Stacks changed to fit my play style, some clothes and armor were not added.
-	// BUILD:			A20e b218
+	// BUILD:			A20e b218, A21.1
 	// CREDITS:			Ozzland (author)
 -->
 	<set xpath="//item[@name='meleeToolTorch']/property[@name='Stacknumber']/@value">25</set>
@@ -35,7 +35,6 @@
 	<set xpath="//item[@name='medicalFirstAidKit']/property[@name='Stacknumber']/@value">15</set>
 	<set xpath="//item[@name='medicalSplint']/property[@name='Stacknumber']/@value">15</set>
 	<set xpath="//item[@name='medicalBloodBag']/property[@name='Stacknumber']/@value">25</set>
-
 	<set xpath="//item[@name='drugVitamins']/property[@name='Stacknumber']/@value">150</set>
 	<set xpath="//item[@name='drugPainkillers']/property[@name='Stacknumber']/@value">150</set>
 	<set xpath="//item[@name='drugHerbalAntibiotics']/property[@name='Stacknumber']/@value">150</set>
@@ -82,9 +81,12 @@
 	<set xpath="//item[@name='drinkJarGrandpasLearningElixir']/property[@name='Stacknumber']/@value">75</set>
 	<set xpath="//item[@name='bucketEmpty']/property[@name='Stacknumber']/@value">15</set>
 	<set xpath="//item[@name='bucketRiverWater']/property[@name='Stacknumber']/@value">15</set>
+	<set xpath="//item[@name='resourceSewingKit']/property[@name='Stacknumber']/@value">250</set>
+	
 	<!-- 	// Schematics, can they stack do they stack in levels -->
 	<set xpath="//item[@name='schematicMaster']/property[@name='Stacknumber']/@value">15</set> <!-- // stackable? -->
 	<set xpath="//item[@name='questMaster']/property[@name='Stacknumber']/@value">15</set> <!-- // stackable? -->
+	<!-- 	// Resources -->
 	<set xpath="//item[@name='resourceRockSmall']/property[@name='Stacknumber']/@value">7500</set>
 	<set xpath="//item[@name='resourceSnowBall']/property[@name='Stacknumber']/@value">500</set>
 	<set xpath="//item[@name='resourceAcid']/property[@name='Stacknumber']/@value">150</set>
@@ -113,7 +115,7 @@
 	<set xpath="//item[@name='resourceCobblestones']/property[@name='Stacknumber']/@value">2500</set>
 	<set xpath="//item[@name='resourceCement']/property[@name='Stacknumber']/@value">7500</set>
 	<set xpath="//item[@name='resourceConcreteMix']/property[@name='Stacknumber']/@value">2500</set>
-	<set xpath="//item[@name='resourceCloth']/property[@name='Stacknumber']/@value">2000</set>
+	<set xpath="//item[@name='resourceCloth']/property[@name='Stacknumber']/@value">3000</set>
 	<set xpath="//item[@name='resourcePaper']/property[@name='Stacknumber']/@value">2000</set>
 	<set xpath="//item[@name='resourceMilitaryFiber']/property[@name='Stacknumber']/@value">1500</set>
 	<set xpath="//item[@name='resourceElectricParts']/property[@name='Stacknumber']/@value">1500</set>

@@ -1,10 +1,7 @@
 <Ozzland>
-
 <!--
 	// MODLET:			OZZ - General recipies.
-	// EAC:				Friendly
-	// BUILD:			A17b199
-	// DISCLAIMER:		Be advised, this modlet is created/tested against the stated build.
+	// BUILD:			A17b199,A21.1
 	// TERMS OF USE:	N/A
 	// CREDITS:			Ozzland (author)
 -->
@@ -30,16 +27,15 @@
 			<ingredient name="foodShamSandwich" count="1"/>
 			<ingredient name="resourcePotassiumNitratePowder" count="3"/>
 		</recipe>
-
 	</append>
 
 	<append xpath="/recipes">
 		<recipe name="resourceWaterFilter" count="1" craft_time="20" craft_area="workbench" tags="workbenchCrafting">
-			<ingredient name="resourceScrapPolymers" count="15"/>
-			<ingredient name="resourcePaper" count="2"/>
-			<ingredient name="resourceCloth" count="5"/>
-			<ingredient name="resourceCrushedSand" count="25"/>
-			<ingredient name="resourceCropCottonPlant" count="20"/>
+			<ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceCoal" count="15"/>
+			<ingredient name="resourceCloth" count="15"/>
+			<ingredient name="resourceCrushedSand" count="30"/>
+			<ingredient name="resourceScrapIron" count="20"/>
 		</recipe>
 	</append>
 
@@ -57,7 +53,7 @@
 			<ingredient name="resourceCloth" count="20"/>
 		</recipe>
 		<recipe name="resourceCoal" craft_time = "5" count="10">
-			<ingredient name="terrDestroyedWoodDebris" count="1"/>
+			<ingredient name="terrDestroyedWoodDebris" count="2"/>
 			<ingredient name="resourcePaper" count="50"/>
 		</recipe>
 
@@ -65,7 +61,7 @@
 			<ingredient name="foodCropCorn" count="10"/>
 			<ingredient name="drinkJarBoiledWater" count="1"/>
 			<ingredient name="resourceAcid" count="1"/>
-			<ingredient name="resourcePotassiumNitratePowder" count="4"/>
+			<ingredient name="resourcePotassiumNitratePowder" count="14"/>
 		</recipe>
 	</append>
 
@@ -163,6 +159,7 @@
 
 
 	<!-- Ammo conversions Arrows and Bolts -->
+		<!-- Arrows -->
 		<recipe name="ammoArrowStone" count="1">
 			<ingredient name="ammoCrossbowBoltStone" count="1"/>
 		</recipe>
@@ -172,12 +169,14 @@
 		<recipe name="ammoArrowSteelAP" count="1">
 			<ingredient name="ammoCrossbowBoltSteelAP" count="1"/>
 		</recipe>
-		<recipe name="ammoCrossbowBoltFlaming" count="1">
-			<ingredient name="ammoArrowFlaming" count="1"/>
+		<recipe name="ammoArrowFlaming" count="1">
+			<ingredient name="ammoCrossbowBoltFlaming" count="1"/>
 		</recipe>
-		<recipe name="ammoCrossbowBoltExploding" count="1">
-			<ingredient name="ammoArrowExploding" count="1"/>
+		<recipe name="ammoArrowExploding" count="1">
+			<ingredient name="ammoCrossbowBoltExploding" count="1"/>
 		</recipe>
+
+		<!-- Bolts -->
 		<recipe name="ammoCrossbowBoltStone" count="1">
 			<ingredient name="ammoArrowStone" count="1"/>
 		</recipe>
@@ -187,14 +186,12 @@
 		<recipe name="ammoCrossbowBoltSteelAP" count="1">
 			<ingredient name="ammoArrowSteelAP" count="1"/>
 		</recipe>
-		<recipe name="ammoArrowFlaming" count="1">
-			<ingredient name="ammoCrossbowBoltFlaming" count="1"/>
+		<recipe name="ammoCrossbowBoltFlaming" count="1">
+			<ingredient name="ammoArrowFlaming" count="1"/>
 		</recipe>
-		<recipe name="ammoArrowExploding" count="1">
-			<ingredient name="ammoCrossbowBoltExploding" count="1"/>
+		<recipe name="ammoCrossbowBoltExploding" count="1">
+			<ingredient name="ammoArrowExploding" count="1"/>
 		</recipe>
-
-
 
 		<!-- // 2nd cloth item -->
 		<recipe name="resourceCloth" count="1">
@@ -217,23 +214,24 @@
 
 
 		<!-- // Machete change -->
-<!-- 		<recipe name="meleeToolKnifeMachete" count="1" craft_area="workbench" craft_time="60" tags="learnable">
+		<!--
+			<recipe name="meleeToolKnifeMachete" count="1" craft_area="workbench" craft_time="60" tags="learnable">
 			<ingredient name="resourceForgedIron" count="20"/>
 		</recipe>
- -->
+ 		-->
 		<!-- // Tire to wheel -->
 		<!-- 
 		<recipe name="vehicleWheels" count="1" tags="learnable">
 			<ingredient name="tire" count="1"/>
 		</recipe>
 		-->
-		<!-- // Oil for spike upgrades -->
-		<!-- 
+	<!-- // Oil for spike upgrades -->
+<!-- 		
 		<recipe name="FlammableCornOil" count="1" craft_area="chemistryStation">
 			<ingredient name="foodCropGraceCorn" count="10"/>
-			<ingredient name="drinkCanEmpty" count="1"/>
+			<ingredient name="resourceScrapPolymers" count="1"/>
 		</recipe>
-		-->
+		 -->
 
 	<!-- // Gas recipe -->
 		<recipe name="ammoGasCan" count="25" craft_area="chemistryStation">
@@ -252,7 +250,7 @@
 			</recipe>
 		</append>
 
-	<!-- // Ammo -->
+	<!-- // Ammo Creation Options -->
 		<recipe name="ammo44MagnumBulletAP" count="5" craft_area="workbench">
 			<ingredient name="resourceBulletTip" count="5"/>
 			<ingredient name="resourceGunPowder" count="10"/>
@@ -287,6 +285,7 @@
 			<ingredient name="resourceAnimalFat" count="1"/>
 		</recipe>
 
+	<!-- Ammo Conversions Options -->
 		<recipe name="resourceBulletCasing" count="1"><ingredient name="ammo44MagnumBulletBall" count="1"/></recipe>
 		<recipe name="resourceBulletCasing" count="1"><ingredient name="ammo44MagnumBulletHP" count="1"/></recipe>
 		<recipe name="resourceBulletCasing" count="1"><ingredient name="ammo44MagnumBulletAP" count="1"/></recipe>
@@ -332,18 +331,9 @@
 		<recipe name="resourceGunPowder" count="12"><ingredient name="ammoRocketFrag" count="1"/></recipe>
 		<recipe name="resourceGunPowder" count="12"><ingredient name="ammoRocketHE" count="1"/></recipe>
 
-
-
-
 	<!-- General Items -->
 		<recipe name="terrDestroyedWoodDebris" count="1" craft_area="workbench"><ingredient name="resourceWood" count="10"/></recipe>
 
-		<!-- Requires Jaxteller charcoal -->
-<!-- 
-		<recipe name="resourceCharcoalJT" count="3" craft_time="100" craft_area="campfire">
-			<ingredient name="terrDestroyedWoodDebris" count="10"/>
-		</recipe>
- --> 		
 		<recipe name="resourceRepairKit" count="10" craft_area="workbench">
 			<ingredient name="resourceLeather" count="3"/>
 			<ingredient name="resourceCloth" count="3"/>
@@ -428,6 +418,8 @@
 	<set xpath="/recipes/recipe[@name='thrownAmmoMolotovCocktail']/@craft_time">6</set>
 	<set xpath="/recipes/recipe[@name='thrownAmmoMolotovCocktail']/ingredient[@name='ammoGasCan']/@count">20</set>
 
+
+	<!-- OZZ FoodRecipes -->
 	<append xpath="//recipes">
 		<recipe name="foodCanStock" count="5" craft_area="campfire">
 			<ingredient name="resourceBone" count="5" />
@@ -464,12 +456,7 @@
 			<ingredient name="foodCropCorn" count="1" />
 			<ingredient name="drinkJarBoiledWater" count="1" />
 		</recipe>
-<!-- 
-		<recipe name="drinkCanEmpty" count="10" craft_area="forge" craft_tool="toolAnvil" material_based="true">
-			<ingredient name="unit_iron" count="5"/>
-			<ingredient name="unit_clay" count="2"/>
-		</recipe>
- -->
+
 		<recipe name="terrSand" count="10" craft_area="workbench">
 			<ingredient name="resourceCrushedSand" count="20"/>
 		</recipe>
@@ -484,15 +471,7 @@
 		</recipe>
 	</append>
 
-	<!-- <set xpath="//recipe[@name='drinkJarBoiledWater']/@craft_time">20</set> -->
-
-	<!-- // Machete change -->
-	<!-- <remove xpath="//recipe[@name='meleeToolKnifeMachete']/ingredient[@name='resourceForgedSteel']" /> -->
-
-<!--
-	// MODLET:			OZZ - Better Crafting Ratios
--->
-
+<!-- // MODLET:			OZZ - Better Crafting Ratios -->
 	<!-- // IronBars -->
 	<set xpath="//recipe[contains(@name, 'ironBars')]/@count">10</set>
 
@@ -514,11 +493,15 @@
 	<!-- // Oil -->
 	<set xpath="//recipe[@name='resourceOil']/ingredient[@name='resourceOilShale']/@count">2</set>
 	<!-- // Cloth -->
-	<set xpath="//recipe[@name='resourceCloth']/ingredient[@name='resourceCropCottonPlant']/@count">2</set>
+	<set xpath="//recipe[@name='resourceCloth']/ingredient[@name='resourceCropCottonPlant']/@count">12</set>
 
+	<!-- Steel Vault Door Adjustment -->
+	<set xpath="//recipe[@name='vaultDoor01']/ingredient[@name='resourceForgedSteel']/@count">25</set>
+
+	<!-- Sewing Kit -->
 	<append xpath="/recipes">
 		<recipe name="resourceSewingKit" count="1">
-			<ingredient name="resourceCloth" count="10"/>
+			<ingredient name="resourceCloth" count="15"/>
 			<ingredient name="resourceScrapPolymers" count="3"/>
 			<ingredient name="resourceScrapIron" count="5"/>
 		</recipe>
@@ -527,26 +510,46 @@
 	<!-- Ozz, numbers adjustments -->
 	<append xpath="/recipes">
 		<recipe name="foodRottingFlesh" count="5" craft_area="campfire" craft_tool="toolCookingGrill" craft_time="10">
-			<ingredient name="foodRawMeat" count="5"/>
+			<ingredient name="foodRawMeat" count="6"/>
 			<ingredient name="resourcePotassiumNitratePowder" count="5"/>
 		</recipe>
 	</append>
 
-<!-- OZZ FoodRecipes -->
-	<!-- Reduced basic costs -->
-	<!-- Meat ratio fix -->
-	<!-- Remarked these out for now as it appears progression items look better in a20 -->
-	<!-- 
-		<set xpath="//recipe[@name='foodBaconAndEggs']/ingredient[@name='foodRawMeat']/@count">2</set>
-		<set xpath="//recipe[@name='foodCharredMeat']/ingredient[@name='foodRawMeat']/@count">1</set>
-		<set xpath="//recipe[@name='foodBoiledMeat']/ingredient[@name='foodRawMeat']/@count">2</set>
-		<set xpath="//recipe[@name='foodGrilledMeat']/ingredient[@name='foodRawMeat']/@count">2</set>
-		<set xpath="//recipe[@name='foodMeatStew']/ingredient[@name='foodRawMeat']/@count">5</set>
-		<set xpath="//recipe[@name='foodSteakAndPotato']/ingredient[@name='foodRawMeat']/@count">4</set>
-		<set xpath="//recipe[@name='foodChiliDog']/ingredient[@name='foodRawMeat']/@count">3</set>
-	 -->
-	<!-- Glue cost -->
-	<!-- <set xpath="//recipe[@name='resourceGlue']/ingredient[@name='resourceBone']/@count">3</set> -->
+	<!-- Disabled -->
+		<!-- Requires Jaxteller charcoal -->
+		<!-- 
+		<recipe name="resourceCharcoalJT" count="3" craft_time="100" craft_area="campfire">
+			<ingredient name="terrDestroyedWoodDebris" count="10"/>
+		</recipe>
+
+		<recipe name="drinkCanEmpty" count="10" craft_area="forge" craft_tool="toolAnvil" material_based="true">
+			<ingredient name="unit_iron" count="5"/>
+			<ingredient name="unit_clay" count="2"/>
+		</recipe>
+ 		-->
+
+		<!-- <set xpath="//recipe[@name='drinkJarBoiledWater']/@craft_time">20</set> -->
+
+		<!-- // Machete change -->
+		<!-- <remove xpath="//recipe[@name='meleeToolKnifeMachete']/ingredient[@name='resourceForgedSteel']" /> -->
+
+		<!-- Reduced basic costs -->
+		<!-- Meat ratio fix -->
+		<!-- Remarked these out for now as it appears progression items look better in a20 -->
+		<!-- 
+			<set xpath="//recipe[@name='foodBaconAndEggs']/ingredient[@name='foodRawMeat']/@count">2</set>
+			<set xpath="//recipe[@name='foodCharredMeat']/ingredient[@name='foodRawMeat']/@count">1</set>
+			<set xpath="//recipe[@name='foodBoiledMeat']/ingredient[@name='foodRawMeat']/@count">2</set>
+			<set xpath="//recipe[@name='foodGrilledMeat']/ingredient[@name='foodRawMeat']/@count">2</set>
+			<set xpath="//recipe[@name='foodMeatStew']/ingredient[@name='foodRawMeat']/@count">5</set>
+			<set xpath="//recipe[@name='foodSteakAndPotato']/ingredient[@name='foodRawMeat']/@count">4</set>
+			<set xpath="//recipe[@name='foodChiliDog']/ingredient[@name='foodRawMeat']/@count">3</set>
+		-->
+
+		<!-- Glue cost -->
+		<!-- <set xpath="//recipe[@name='resourceGlue']/ingredient[@name='resourceBone']/@count">3</set> -->
+
+
 	<!-- Glue options -->
 	<append xpath="/recipes">
 		<recipe name="resourceGlue" count="5" craft_area="workbench" craft_time="5">

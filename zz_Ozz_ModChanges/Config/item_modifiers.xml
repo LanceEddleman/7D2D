@@ -1,0 +1,91 @@
+<Ozzland>
+
+<!--
+	// MODLET:			Ozz Mod Modifers
+	// BUILD:			A18b155
+	// VERSION:			1.0.0
+	// DISCLAIMER:		Be advised, this modlet is created/tested against the stated build.
+	// TERMS OF USE:	N/A
+	// CREDITS:			Ozzland (author)
+-->
+	<!-- Weapons Ranged -->
+	<append xpath="/item_modifiers/item_modifier[@name='modGunBarrelExtender']/@installable_tags">,ranged</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modGunMuzzleBrake']/@installable_tags">,ranged</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modGunSoundSuppressorSilencer']/@installable_tags">,ranged</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modGunBipod']/@installable_tags">,ranged</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modGunForegrip']/@installable_tags">,ranged</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modGunDrumMagazineExtender']/@installable_tags">,ranged</append>
+
+	<!-- Weapons Melee -->
+	<append xpath="/item_modifiers/item_modifier[@name='modMeleeTemperedBlade']/@installable_tags">,melee,perkElectrocutioner</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modMeleeSerratedBlade']/@installable_tags">,melee,perkElectrocutioner</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modMeleeWeightedHead']/@installable_tags">,melee,axe,knife,machete,shovel,club,hammer,sledge,perkBrawler,perkJavelinMaster,perkElectrocutioner</append>
+
+	<append xpath="/item_modifiers/item_modifier[@name='modMeleeStructuralBrace']/@installable_tags">,perkElectrocutioner</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modMeleeErgonomicGrip']/@installable_tags">,perkElectrocutioner</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modMeleeFortifyingGrip']/@installable_tags">,perkElectrocutioner</append>
+
+	<append xpath="/item_modifiers/item_modifier[@name='modMeleeClubBarbedWire']/@installable_tags">,knife,machete,axe,shovel,hammer,sledge,melee,perkBrawler,perkJavelinMaster,light,medium,heavy,perkElectrocutioner</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modMeleeClubMetalSpikes']/@installable_tags">,knife,machete,axe,shovel,hammer,sledge,melee,perkBrawler,perkJavelinMaster,light,medium,heavy,perkElectrocutioner</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modMeleeClubMetalChain']/@installable_tags">,melee,perkElectrocutioner</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modMeleeClubBurningShaft']/@installable_tags">,knife,machete,axe,shovel,club,hammer,sledge,melee,perkBrawler,perkJavelinMaster,light,medium,heavy,perkElectrocutioner</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modMeleeFiremansAxeMod']/@installable_tags">,knife,machete,axe,shovel,club,hammer,sledge,melee,perkBrawler,perkJavelinMaster,light,medium,heavy,perkElectrocutioner</append>
+
+	<append xpath="/item_modifiers/item_modifier[@name='modMeleeGraveDigger']/@installable_tags">,melee,perkElectrocutioner</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modMeleeBunkerBuster']/@installable_tags">,melee,perkElectrocutioner</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modMeleeIronBreaker']/@installable_tags">,melee,perkElectrocutioner</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modMeleeWoodSplitter']/@installable_tags">,melee,perkElectrocutioner</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modMeleeDiamondTip']/@installable_tags">,melee,perkElectrocutioner</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modMeleeStunBatonRepulsor']/@installable_tags">,melee</append>
+<!-- 
+	<append xpath="/item_modifiers/item_modifier[@name='modGunMeleeBlessedMetal']/@installable_tags">,knife,machete,axe,shovel,club,hammer,sledge,melee,perkBrawler,perkJavelinMaster,light,medium,heavy,perkElectrocutioner</append>
+ -->
+
+	<set xpath="/item_modifiers/item_modifier[@name='modMeleeTemperedBlade']/@blocked_tags">noScopes</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modMeleeWeightedHead']/@blocked_tags">noScopes</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modMeleeFiremansAxeMod']/effect_group/passive_effect[@name='EntityDamage']/@value">0.25</set>
+
+<!-- 
+	<set xpath="/item_modifiers/item_modifier[@name='modMeleeSerratedBlade']/@blocked_tags">noScopes</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modMeleeWeightedHead']/@blocked_tags">noScopes</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modMeleeClubMetalSpikes']/@blocked_tags">noScopes</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modMeleeClubBurningShaft']/@blocked_tags">noScopes</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modMeleeFiremansAxeMod']/@blocked_tags">noScopes</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modMeleeClubBarbedWire']/@blocked_tags">noScopes</set>
+
+	<set xpath="/item_modifiers/item_modifier[@name='modMeleeTemperedBlade']/@modifier_tags">damage,shaft</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modMeleeSerratedBlade']/@modifier_tags">damage,shaft</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modMeleeWeightedHead']/@modifier_tags">damage,shaft</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modMeleeClubMetalSpikes']/@modifier_tags">damage,shaft</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modMeleeClubBurningShaft']/@modifier_tags">damage,shaft</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modMeleeFiremansAxeMod']/@modifier_tags">damage,shaft</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modMeleeClubBarbedWire']/@modifier_tags">damage,shaft</set>
+ -->
+	
+
+	<!-- Mining Tool Mods																													Default		 New -->
+	<set xpath='/item_modifiers/item_modifier[@name="modMeleeBunkerBuster"]/effect_group/passive_effect[@name="DamageModifier" and 	@value=".25"]/@value'>0.5</set><!-- Bunker Buster, Stone -->
+	<set xpath='/item_modifiers/item_modifier[@name="modMeleeGraveDigger"]/effect_group/passive_effect[@name="DamageModifier" and 	@value=".25"]/@value'>0.5</set><!-- Grave Digger, Dirt -->
+	<set xpath='/item_modifiers/item_modifier[@name="modMeleeWoodSplitter"]/effect_group/passive_effect[@name="DamageModifier" and 	@value=".15"]/@value'>0.5</set><!-- Wood Splitter, Wood -->
+	<set xpath='/item_modifiers/item_modifier[@name="modMeleeIronBreaker"]/effect_group/passive_effect[@name="DamageModifier" and 	@value=".15"]/@value'>0.5</set><!-- Iron Breaker, Iron -->
+
+	<insertAfter xpath="/item_modifiers/item_modifier[@name='modArmorImpactBracing']" >
+		<item_modifier name="modArmorGelInSoles" installable_tags="feet,armorFeet" modifier_tags="movement" blocked_tags="padded" type="attachment">
+			<property name="Extends" value="modGeneralMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="UnlockedBy" value="modArmorGelInSolesSchematic"/>
+			<property name="Material" value="Msteel"/>
+			<property name="Stacknumber" value="50"/> <property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="@:Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="CustomIcon" value="modArmorImpactBracing"/><property name="CustomIconTint" value="b0ffb0"/>
+			<effect_group tiered="false">
+				<passive_effect name="StaminaChangeOT" operation="perc_add" value=".2" tags="running"/><display_value name="dStaminaRegen" value=".3"/>
+				<passive_effect name="RunSpeed" operation="perc_add" value="0.25"/>
+				<passive_effect name="WalkSpeed" operation="perc_add" value="0.25"/>
+			</effect_group>
+		</item_modifier>
+	</insertAfter>
+	
+	<set xpath="/item_modifiers/item_modifier[@name='modArmorImpactBracing']/@blocked_tags">padded</set>
+
+</Ozzland>

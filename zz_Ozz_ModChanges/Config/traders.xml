@@ -1,0 +1,12 @@
+<Ozzland>
+
+	<insertAfter xpath="//trader_item_groups/trader_item_group[@name='schematicsModsCommon']/item[@name='modArmorImprovedFittingsSchematic']" >
+		<item name="modArmorImpactBracingSchematic"/>
+		<item name="modArmorGelInSolesSchematic"/>
+	</insertAfter>
+
+	<insertAfter xpath="//trader_item_groups/trader_item_group[@name='groupArmorMods']/item[@name='modArmorImpactBracing']" >
+		<item name="modArmorGelInSoles"/>
+	</insertAfter>
+
+</Ozzland>

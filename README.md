@@ -9,6 +9,21 @@ All gen mods should be tagged by original creator. Alterations to these mods was
 Often extensions for wants/needs based on other mods and basic game tweaks that better fit my groups play style.
 
 - A21 Updates: 	\* = completed
+	<br />
+	<br />Oct 19
+	<br />\* Ozz - Change steel01door forged steel from 10-25
+	<br />\* Ozz - Sewing kit missed in stack size updates, change from 20-250
+	<br />\* Gen - VehicleMadness change ElectricalWire stack size 50-250 -not added to git
+	<br />\* Ozz - Adjust MoreCars resolve % down 20%
+	<br />\* Ozz - MoreCars separate asphalt and gravel road -50% on gravel road
+	<br />\* Gen - MoreContainers, Create personal storage box +icons for group -not added to git
+	<br />\* Ozz - Add mods options to nailgun, used new csv format add/remove options
+
+	<br />Look for / create traffic jam mod (like PZ) or make something like it
+	<br />Gen - Add LHG info panel to server, add notes and sections based on mods that need more info -not added to git
+	<br />Gen - Update MoreContainer images and icons to show name on all crates for easier selection -not added to git
+
+	<br />
 	<br />Oct 16-17
 	<br />\* Ozz - Review / adjust stack sizes, double current, still minimal but better
 	<br />\* Ozz - Change storage containers sizes, group hoarders complaining...
@@ -16,10 +31,6 @@ Often extensions for wants/needs based on other mods and basic game tweaks that 
 	<br />\* Gen - Rename all gup zombies via localization -not added to git
 	<br />\* Gen - Change gup zombies to 100 hp on death for easy cleanup -not added to git
 	<br />\* Ozz - Ozz_MoreCars mod, Add more cards to world
-	<br />Look for / create traffic jam mod (like PZ) or make something like it
-	<br />Gen - add dk cars to morecars mod
-	<br />Gen - Update MoreContainer images and icons to show name of crates -not added to git
-	<br />Gen - add vehicle madness cars to morecars mod
 
 	<br />
 	<br />Oct 14-15

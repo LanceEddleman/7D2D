@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<Name value="OzzModChanges" />
+	<DisplayName value="Ozzland Mod Changes" />
+	<Description value="Game MODifications, boot:gel insole, apparel:display quality + has slots + has levels,armor: 1-6 slots, medicalBandage:remove injuries, flamingaArrow: remove partical + add color, mods: allow mods in various armor and weapons" />
+	<Author value="Ozzland" />
+	<Version value="1.2" compat="A18.155,21.1" />
+	<Website value="https://7daystodie.com" />
+</xml>

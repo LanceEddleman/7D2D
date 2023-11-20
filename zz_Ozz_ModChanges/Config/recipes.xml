@@ -1,0 +1,22 @@
+<configs>
+
+<!--
+	// MODLET:			OZZ - Mods
+	// EAC:				Friendly
+	// BUILD:			A18b155
+	// DISCLAIMER:		Be advised, this modlet is created/tested against the stated build.
+	// TERMS OF USE:	N/A
+	// CREDITS:			Ozzland (author)
+-->
+
+	<insertAfter xpath="/recipes/recipe[@name='modArmorImpactBracing']" >
+		<recipe name="modArmorGelInSoles" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="resourceLeather" count="2"/>
+			<ingredient name="resourceGlue" count="2"/>
+			<ingredient name="resourceCloth" count="5"/>
+			<ingredient name="resourceAnimalFat" count="2"/>
+			<ingredient name="resourceSewingKit" count="1"/>
+		</recipe>
+	</insertAfter>
+
+</configs>

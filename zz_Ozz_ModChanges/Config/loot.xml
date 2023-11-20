@@ -1,0 +1,11 @@
+<config>
+
+	<!-- Mods -->
+	<insertAfter xpath="/lootcontainers/lootgroup[@name='schematicsModsAndGeneralT2']/item[@name='modArmorImpactBracingSchematic']" >
+		<item name="modArmorGelInSolesSchematic"/>
+	</insertAfter>
+	<insertAfter xpath="/lootcontainers/lootgroup[@name='modArmorT2']/item[@name='modArmorImpactBracing']" >
+		<item name="modArmorGelInSoles"/>
+	</insertAfter>
+
+</config>
