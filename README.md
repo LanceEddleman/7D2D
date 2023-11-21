@@ -9,19 +9,30 @@ All gen mods should be tagged by original creator. Alterations to these mods was
 Often extensions for wants/needs based on other mods and basic game tweaks that better fit my groups play style.
 
 - A21 Updates: 	\* = completed
+	Working on
+	<br />Look for / create traffic jam mod (like PZ) or make something like it
+	<br />Gen - Add LHG info panel to server, add notes and sections based on mods that need more info -not added to git
+	<br />Gen - Update MoreContainer images and icons to show name on all crates for easier selection -not added to git
+	<br />Ozz - Need to add color or less transparency to main menus so you can read traders better
+
+
+	<br />
+	<br />Oct 20
+	<br />\* Ozz - Ozzland_QoL, Adjust damage for create crawler
+	<br />\* Ozz - Ozzland_QoL, Turn down sound for all basic vehicle
+	<br />\* Ozz - Ozzland_QoL, Turn down sound for all VehicleMadness vehicle + Ozz
+	<br />\* Gen - BigCityRWG by Zorora, Trader count, change some spawn settings, remove no/mnt option -not added to git
+	<br />\* Ozz - Ozz_MoreCars, Continue to tweek %'s for next world
+
 	<br />
 	<br />Oct 19
 	<br />\* Ozz - Change steel01door forged steel from 10-25
 	<br />\* Ozz - Sewing kit missed in stack size updates, change from 20-250
 	<br />\* Gen - VehicleMadness change ElectricalWire stack size 50-250 -not added to git
 	<br />\* Ozz - Adjust MoreCars resolve % down 20%
-	<br />\* Ozz - MoreCars separate asphalt and gravel road -50% on gravel road
-	<br />\* Gen - MoreContainers, Create personal storage box +icons for group -not added to git
+	<br />\* Ozz - Ozz_MoreCars separate asphalt and gravel road -50% on gravel road
+	<br />\* Gen - Ozz_MoreContainers, Create personal storage box +icons for group -not added to git
 	<br />\* Ozz - Add mods options to nailgun, used new csv format add/remove options
-
-	<br />Look for / create traffic jam mod (like PZ) or make something like it
-	<br />Gen - Add LHG info panel to server, add notes and sections based on mods that need more info -not added to git
-	<br />Gen - Update MoreContainer images and icons to show name on all crates for easier selection -not added to git
 
 	<br />
 	<br />Oct 16-17
@@ -51,10 +62,10 @@ Often extensions for wants/needs based on other mods and basic game tweaks that 
 	<br />\* Ozz - Add clothing pocket mod to bandana, had missed a tag for pocketMod option
 	<br />\* Ozz - Add hit points to wine barrel for drink storage
 	<br />\* Ozz - Add recipe for cat and dog taco food
-	<br />\* GT500 car quieter top end, dks Gt500 -not adding to git
-	<br />\* Add more Dye colors, converted HH_43_Dyes_ArtisanLab -not adding to git
-	<br />\* Add end of quest tier extra skillpoints, EpicSpire's Trader Tier Rewards -not adding to git
-	<br />\* Find Behemoth and add to loot table -not adding to git
+	<br />\* Gen - GT500 car quieter top end, dks Gt500 -not adding to git
+	<br />\* Gen - Add more Dye colors, converted HH_43_Dyes_ArtisanLab -not adding to git
+	<br />\* Gen - Add end of quest tier extra skillpoints, EpicSpire's Trader Tier Rewards -not adding to git
+	<br />\* Gen - Find Behemoth and add to loot table -not adding to git
 
 	<br />
 	<br />Oct 3-Oct 10

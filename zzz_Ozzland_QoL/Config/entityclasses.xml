@@ -4,27 +4,19 @@
 	<set xpath="//entity_class/property[@name='KnockdownProneStunDuration']/@value">1.0,20.0</set>
 	<set xpath="//entity_class/property[@name='KnockdownKneelStunDuration']/@value">1.0,20.0</set>
 
-	<!-- // Khaine's 60-slot Bigger Backpack Mod -->
-	<!-- a21 note: Doughs-Backpack AddEncumbreance -->
-	<!-- Edit player entity to decrease carry capacity -->
+	<!-- Ozz, Crawler create by leg damage -->
+	<set xpath="//entity_class[@name='zombieTemplateMale']/property[@name='LegCrawlerThreshold']/@value">0.1</set>
+
+	<!-- // Khaine's 60-slot Bigger Backpack Mod + A21 Doughs-Backpack AddEncumbreance, Edit player entity to decrease carry capacity -->
 	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='CarryCapacity']/@value">10</set>
 
 	<!-- // Gazz - Loot bag timer -->
-	<append xpath="/entity_classes/entity_class[@name='EntityLootContainerRegular']">
-		<property name="TimeStayAfterDeath" value="1500"/>
-	</append>
+	<append xpath="/entity_classes/entity_class[@name='EntityLootContainerRegular']"><property name="TimeStayAfterDeath" value="1500"/></append>
+	<append xpath="/entity_classes/entity_class[@name='EntityLootContainerStrong']"><property name="TimeStayAfterDeath" value="1500"/></append>
+	<append xpath="/entity_classes/entity_class[@name='EntityLootContainerBoss']"><property name="TimeStayAfterDeath" value="1500"/></append>
 
-	<append xpath="/entity_classes/entity_class[@name='EntityLootContainerStrong']">
-		<property name="TimeStayAfterDeath" value="1500"/>
-	</append>
-
-	<append xpath="/entity_classes/entity_class[@name='EntityLootContainerBoss']">
-		<property name="TimeStayAfterDeath" value="1500"/>
-	</append>
+    <!-- Loot containers stick around for 60 minutes, entire night if using 24-hour cycle of 120 minutes and daylight of 12 hours. -->
     <!-- 
-        Loot containers should stick around for 60 minutes.
-        That's an entire night if the user has a 24-hour cycle of 120 minutes and a daylight length of 12 hours.
-   
     <set xpath="//entity_class[starts-with(@name, 'EntityLootContainer')]/property[@name='TimeStayAfterDeath']/@value">3600</set>
      -->
 </Ozzland>

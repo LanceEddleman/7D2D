@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
 <configs>
-<!-- NAILGUN -->
+	<!-- NAILGUN -->
 	<!-- Sound You Hear When Crouched-->
 	<set xpath="/Sounds/SoundDataNode[starts-with(@name,'nailgun_')]/LocalCrouchVolumeScale/@value">0.1</set>
 	
@@ -13,5 +11,86 @@
 	
 	<!-- Sound passed to Sneak Sound Meter (bottom left) -->
 	<set xpath="/Sounds/SoundDataNode[starts-with(@name,'nailgun_')]/Noise/@noise">0.1</set>
-		
+
+	<!-- Vehicle Base Sounds -->
+	<set xpath="/Sounds/SoundDataNode[starts-with(@name,'motorbike')]/Noise/@noise">15</set>
+	<set xpath="/Sounds/SoundDataNode[starts-with(@name,'motorbike')]/Noise/@muffled_when_crouched">0.25</set>
+
+	<set xpath="/Sounds/SoundDataNode[starts-with(@name,'suv')]/Noise/@noise">5</set>
+	<set xpath="/Sounds/SoundDataNode[starts-with(@name,'suv')]/Noise/@muffled_when_crouched">0.25</set>
+
+	<set xpath="/Sounds/SoundDataNode[starts-with(@name,'gyrocopter')]/Noise/@noise">15</set>
+	<set xpath="/Sounds/SoundDataNode[starts-with(@name,'gyrocopter')]/Noise/@muffled_when_crouched">0.25</set>
+
+	<set xpath="/Sounds/SoundDataNode[starts-with(@name,'minibike')]/Noise/@noise">15</set>
+	<set xpath="/Sounds/SoundDataNode[starts-with(@name,'minibike')]/Noise/@muffled_when_crouched">0.25</set>
+
+	<!-- Section for VehicleMadness_Beta3_v4_A21 sounds updates -->
+	<!-- Disable this section if not using VehicleMadness_Beta3_v4_A21 -->
+	<set xpath="/Sounds/SoundDataNode[@name='BellBike']/Noise/@volume">15</set>
+	<set xpath="/Sounds/SoundDataNode[@name='BellBike']/NoiseScale/@value">0.25</set>
+
+	<set xpath="/Sounds/SoundDataNode[@name='HornBattle']/Noise/@volume">15</set>
+	<set xpath="/Sounds/SoundDataNode[@name='HornBattle']/NoiseScale/@value">0.25</set>
+
+	<set xpath="/Sounds/SoundDataNode[@name='HornCarLong']/Noise/@volume">15</set>
+	<set xpath="/Sounds/SoundDataNode[@name='HornCarLong']/NoiseScale/@value">0.25</set>
+
+	<set xpath="/Sounds/SoundDataNode[@name='HornDixie']/Noise/@volume">15</set>
+	<set xpath="/Sounds/SoundDataNode[@name='HornDixie']/NoiseScale/@value">0.25</set>
+
+	<set xpath="/Sounds/SoundDataNode[@name='HornHonk']/Noise/@volume">15</set>
+	<set xpath="/Sounds/SoundDataNode[@name='HornHonk']/NoiseScale/@value">0.25</set>
+
+	<set xpath="/Sounds/SoundDataNode[@name='HornHuge']/Noise/@volume">15</set>
+	<set xpath="/Sounds/SoundDataNode[@name='HornHuge']/NoiseScale/@value">0.25</set>
+
+	<set xpath="/Sounds/SoundDataNode[@name='HornShort']/Noise/@volume">15</set>
+	<set xpath="/Sounds/SoundDataNode[@name='HornShort']/NoiseScale/@value">0.25</set>
+
+	<set xpath="/Sounds/SoundDataNode[@name='SirenFire']/Noise/@volume">15</set>
+	<set xpath="/Sounds/SoundDataNode[@name='SirenFire']/NoiseScale/@value">0.25</set>
+
+	<set xpath="/Sounds/SoundDataNode[@name='SirenPolice']/Noise/@volume">15</set>
+	<set xpath="/Sounds/SoundDataNode[@name='SirenPolice']/NoiseScale/@value">0.25</set>
+
+	<set xpath="/Sounds/SoundDataNode[@name='StupidSound']/Noise/@volume">15</set>
+	<set xpath="/Sounds/SoundDataNode[@name='StupidSound']/NoiseScale/@value">0.25</set>
+
+	<set xpath="/Sounds/SoundDataNode[@name='AirHorn']/Noise/@volume">15</set>
+	<set xpath="/Sounds/SoundDataNode[@name='AirHorn']/NoiseScale/@value">0.25</set>
+
+	<set xpath="/Sounds/SoundDataNode[@name='TornadoSiren']/Noise/@volume">15</set>
+	<set xpath="/Sounds/SoundDataNode[@name='TornadoSiren']/NoiseScale/@value">0.25</set>
+
+	<set xpath="/Sounds/SoundDataNode[@name='FogHorn']/Noise/@volume">15</set>
+	<set xpath="/Sounds/SoundDataNode[@name='FogHorn']/NoiseScale/@value">0.25</set>
+
+	<set xpath="/Sounds/SoundDataNode[starts-with(@name,'Muscle')]/Noise/@volume">15</set>
+	<set xpath="/Sounds/SoundDataNode[starts-with(@name,'Muscle')]/NoiseScale/@value">0.25</set>
+
+	<set xpath="/Sounds/SoundDataNode[starts-with(@name,'muscle_')]/Noise/@noise">3</set>
+	<set xpath="/Sounds/SoundDataNode[starts-with(@name,'muscle_')]/NoiseScale/@value">0.25</set>
+
+	<set xpath="/Sounds/SoundDataNode[starts-with(@name,'sedan_')]/Noise/@noise">3</set>
+	<set xpath="/Sounds/SoundDataNode[starts-with(@name,'sedan_')]/NoiseScale/@value">0.25</set>
+
+	<set xpath="/Sounds/SoundDataNode[starts-with(@name,'4x4_')]/Noise/@noise">3</set>
+	<set xpath="/Sounds/SoundDataNode[starts-with(@name,'4x4_')]/NoiseScale/@value">0.25</set>
+
+	<set xpath="/Sounds/SoundDataNode[starts-with(@name,'super_')]/Noise/@noise">3</set>
+	<set xpath="/Sounds/SoundDataNode[starts-with(@name,'super_')]/NoiseScale/@value">0.25</set>
+
+	<set xpath="/Sounds/SoundDataNode[starts-with(@name,'truck_')]/Noise/@noise">3</set>
+	<set xpath="/Sounds/SoundDataNode[starts-with(@name,'truck_')]/NoiseScale/@value">0.25</set>
+
+	<set xpath="/Sounds/SoundDataNode[starts-with(@name,'buggy_')]/Noise/@noise">3</set>
+	<set xpath="/Sounds/SoundDataNode[starts-with(@name,'buggy_')]/NoiseScale/@value">0.25</set>
+
+	<set xpath="/Sounds/SoundDataNode[starts-with(@name,'monster_')]/Noise/@noise">3</set>
+	<set xpath="/Sounds/SoundDataNode[starts-with(@name,'monster_')]/NoiseScale/@value">0.25</set>
+
+	<set xpath="/Sounds/SoundDataNode[starts-with(@name,'BRDM2truck4')]/Noise/@noise">3</set>
+	<set xpath="/Sounds/SoundDataNode[starts-with(@name,'BRDM2truck4')]/NoiseScale/@value">0.25</set>
+
 </configs>
