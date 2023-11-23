@@ -1,0 +1,140 @@
+﻿<Ozzland>
+	<append xpath="/blocks">
+
+		<!-- Concrete blocks -->
+		<block name="ConcretePillar50_2H">
+			<property name="Extends" value="concreteMaster"/>
+			<property name="Model" value="Pole0.5m" />
+			<property name="CustomIcon" value="shapePole0.5m" />
+			<property name="CustomIconTint" value="00ff00" /><property name="TintColor" value="0, 195, 0" />
+			<property name="ShapeCategories" value="Basic,Round" />
+			<property name="DescriptionKey" value="ConcretePillar50_2H_Desc"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="PlantGrowing"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.Next" value="concreteShapes:pillar50"/>
+			<property name="PlantGrowing.GrowthRate" value="0.005"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+			<property name="PlantGrowing.LightLevelStay" value="0"/>
+			<property name="PlantGrowing.GrowOnTop" value="concreteShapes:pillar50"/>
+			<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
+			<property name="FilterTags" value="MC_building"/>
+		</block>
+
+		<block name="ConcretePillar50_3H">
+			<property name="Extends" value="concreteMaster"/>
+			<property name="Model" value="Pole0.5m" />
+			<property name="CustomIcon" value="shapePole0.5m" />
+			<property name="CustomIconTint" value="00ff00" /><property name="TintColor" value="0, 205, 0" />
+			<property name="ShapeCategories" value="Basic,Round" />
+			<property name="DescriptionKey" value="ConcretePillar50_3H_Desc"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="PlantGrowing"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.Next" value="concreteShapes:pillar50"/>
+			<property name="PlantGrowing.GrowthRate" value="0.005"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+			<property name="PlantGrowing.LightLevelStay" value="0"/>
+			<property name="PlantGrowing.GrowOnTop" value="ConcretePillar50_2H"/>
+			<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
+			<property name="FilterTags" value="MC_building"/>
+		</block>
+
+		<block name="ConcretePillar50_4H">
+			<property name="Extends" value="concreteMaster"/>
+			<property name="Model" value="Pole0.5m" />
+			<property name="CustomIcon" value="shapePole0.5m" />
+			<property name="CustomIconTint" value="00ff00" /><property name="TintColor" value="0, 215, 0" />
+			<property name="ShapeCategories" value="Basic,Round" />
+			<property name="DescriptionKey" value="ConcretePillar50_4H_Desc"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="PlantGrowing"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.Next" value="concreteShapes:pillar50"/>
+			<property name="PlantGrowing.GrowthRate" value="0.005"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+			<property name="PlantGrowing.LightLevelStay" value="0"/>
+			<property name="PlantGrowing.GrowOnTop" value="ConcretePillar50_3H"/>
+			<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
+			<property name="FilterTags" value="MC_building"/>
+		</block>
+
+		<block name="ConcretePillar50_5H">
+			<property name="Extends" value="concreteMaster"/>
+			<property name="Model" value="Pole0.5m" />
+			<property name="CustomIcon" value="shapePole0.5m" />
+			<property name="CustomIconTint" value="00ff00" /><property name="TintColor" value="0, 225, 0" />
+			<property name="ShapeCategories" value="Basic,Round" />
+			<property name="DescriptionKey" value="ConcretePillar50_5H_Desc"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="PlantGrowing"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.Next" value="concreteShapes:pillar50"/>
+			<property name="PlantGrowing.GrowthRate" value="0.005"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+			<property name="PlantGrowing.LightLevelStay" value="0"/>
+			<property name="PlantGrowing.GrowOnTop" value="ConcretePillar50_4H"/>
+			<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
+			<property name="FilterTags" value="MC_building"/>
+		</block>
+
+		<block name="ConcretePillar50_6H">
+			<property name="Extends" value="concreteMaster"/>
+			<property name="Model" value="Pole0.5m" />
+			<property name="CustomIcon" value="shapePole0.5m" />
+			<property name="CustomIconTint" value="00ff00" /><property name="TintColor" value="0, 235, 0" />
+			<property name="ShapeCategories" value="Basic,Round" />
+			<property name="DescriptionKey" value="ConcretePillar50_6H_Desc"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="PlantGrowing"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.Next" value="concreteShapes:pillar50"/>
+			<property name="PlantGrowing.GrowthRate" value="0.005"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+			<property name="PlantGrowing.LightLevelStay" value="0"/>
+			<property name="PlantGrowing.GrowOnTop" value="ConcretePillar50_5H"/>
+			<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
+			<property name="FilterTags" value="MC_building"/>
+		</block>
+
+		<block name="ConcretePillar50_7H">
+			<property name="Extends" value="concreteMaster"/>
+			<property name="Model" value="Pole0.5m" />
+			<property name="CustomIcon" value="shapePole0.5m" />
+			<property name="CustomIconTint" value="00ff00" /><property name="TintColor" value="0, 245, 0" />
+			<property name="ShapeCategories" value="Basic,Round" />
+			<property name="DescriptionKey" value="ConcretePillar50_7H_Desc"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="PlantGrowing"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.Next" value="concreteShapes:pillar50"/>
+			<property name="PlantGrowing.GrowthRate" value="0.005"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+			<property name="PlantGrowing.LightLevelStay" value="0"/>
+			<property name="PlantGrowing.GrowOnTop" value="ConcretePillar50_6H"/>
+			<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
+			<property name="FilterTags" value="MC_building"/>
+		</block>
+
+		<block name="ConcretePillar50_8H">
+			<property name="Extends" value="concreteMaster"/>
+			<property name="Model" value="Pole0.5m" />
+			<property name="CustomIcon" value="shapePole0.5m" />
+			<property name="CustomIconTint" value="00ff00" /><property name="TintColor" value="0, 255, 0" />
+			<property name="ShapeCategories" value="Basic,Round" />
+			<property name="DescriptionKey" value="ConcretePillar50_8H_Desc"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="PlantGrowing"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.Next" value="concreteShapes:pillar50"/>
+			<property name="PlantGrowing.GrowthRate" value="0.005"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+			<property name="PlantGrowing.LightLevelStay" value="0"/>
+			<property name="PlantGrowing.GrowOnTop" value="ConcretePillar50_7H"/>
+			<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
+			<property name="FilterTags" value="MC_building"/>
+		</block>
+
+
+	</append>
+</Ozzland>

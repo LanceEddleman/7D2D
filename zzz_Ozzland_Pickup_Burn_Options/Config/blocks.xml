@@ -1,0 +1,721 @@
+<Ozzland>
+
+<!--
+	// MODLET:			OZZ - Pickup and burn world blocks.
+	// EAC:				Friendly
+	// BUILD:			A18b143
+	// DISCLAIMER:		Be advised, this modlet is created/tested against the stated build.
+	// TERMS OF USE:	N/A
+	// CREDITS:			Ozzland (author)
+-->
+
+	<!-- From Gouki: GK PickupGrassandMore, allows collecting grass,small dry bushes and wild crops with letter E. -->
+	<!-- 
+	<append xpath="/blocks/block[contains(@name,'treeTallGrassDiagonal') and not(contains(@name,'Player'))]">
+		<property name="Class" value="CropsGrown"/>
+	</append>
+
+	<append xpath="/blocks/block[contains(@name,'treeShortGrass') and not(contains(@name,'Player'))]">
+		<property name="Class" value="CropsGrown"/>
+	</append>
+	<append xpath="/blocks/block[contains(@name,'treeBrownGrassDiagonal') and not(contains(@name,'Player'))]">
+		<property name="Class" value="CropsGrown"/>
+	</append>
+	 -->
+	<append xpath="/blocks/block[contains(@name,'treeDeadPineLeaf') and not(contains(@name,'Player'))]">
+		<property name="Class" value="CropsGrown"/>
+	</append>
+	
+	<append xpath="/blocks/block[contains(@name,'treeDesertShrub') and not(contains(@name,'Player'))]">
+		<property name="Class" value="CropsGrown"/>
+	</append>
+	<!-- 
+	<append xpath="/blocks/block[contains(@name,'treeForestGrassDiagonal') and not(contains(@name,'Player'))]">
+		<property name="Class" value="CropsGrown"/>
+	</append>
+	<append xpath="/blocks/block[contains(@name,'treeGreenBrownGrassDiagonal') and not(contains(@name,'Player'))]">
+		<property name="Class" value="CropsGrown"/>
+	</append>
+	 -->
+	<append xpath="/blocks/block[contains(@name,'treePlainsTree') and not(contains(@name,'Player'))]">
+		<property name="Class" value="CropsGrown"/>
+	</append>
+	
+	<append xpath="/blocks/block[contains(@name,'treeSnowyDeadBush') and not(contains(@name,'Player'))]">
+		<property name="Class" value="CropsGrown"/>
+	</append>
+	<!-- 
+	<append xpath="/blocks/block[contains(@name,'treeSnowyGrassDiagonal') and not(contains(@name,'Player'))]">
+		<property name="Class" value="CropsGrown"/>
+	</append>
+	 -->
+	<append xpath="/blocks/block[contains(@name,'forestFlower') and not(contains(@name,'Player'))]">
+		<property name="Class" value="CropsGrown"/>
+	</append>
+	
+	<append xpath="/blocks/block[contains(@name,'treeAzalea') and not(contains(@name,'Player'))]">
+		<property name="Class" value="CropsGrown"/>
+	</append>
+	<!-- 
+	<append xpath="/blocks/block[contains(@name,'plantHedge') and not(contains(@name,'Player'))]">
+		<property name="Class" value="CropsGrown"/>
+	</append>
+	 -->
+	<append xpath="/blocks/block[contains(@name,'plantShrub') and not(contains(@name,'Player'))]">
+		<property name="Class" value="CropsGrown"/>
+	</append>
+
+
+	<append xpath="/blocks/block[contains(@name,'plantedCornDead') and not(contains(@name,'Player'))]">
+		<property name="Class" value="CropsGrown"/>
+		<drop event="Harvest" name="resourceYuccaFibers" count="1,6"/>
+		<drop event="Harvest" name="foodCropGraceCorn" prob="0.015" count="1" tag="bonusCropHarvest"/>
+	</append>
+
+
+	<!-- Wild Plants -->
+	<append xpath="/blocks/block[@name='plantedMushroom3Harvest']">
+		<property name="Class" value="CropsGrown"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='plantedYucca3Harvest']">
+		<property name="Class" value="CropsGrown"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='plantedCotton3Harvest']">
+		<property name="Class" value="CropsGrown"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='plantedCoffee3Harvest']">
+		<property name="Class" value="CropsGrown"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='plantedGoldenrod3Harvest']">
+		<property name="Class" value="CropsGrown"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='plantedAloe3Harvest']">
+		<property name="Class" value="CropsGrown"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='plantedBlueberry3Harvest']">
+		<property name="Class" value="CropsGrown"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='plantedPotato3Harvest']">
+		<property name="Class" value="CropsGrown"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='plantedChrysanthemum3Harvest']">
+		<property name="Class" value="CropsGrown"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='plantedCorn3Harvest']">
+		<property name="Class" value="CropsGrown"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='plantedGraceCorn3Harvest']">
+		<property name="Class" value="CropsGrown"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='plantedHop3Harvest']">
+		<property name="Class" value="CropsGrown"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='plantedPumpkin3Harvest']">
+		<property name="Class" value="CropsGrown"/>
+	</append>
+	
+	<!-- Tires -->
+	<append xpath="/blocks/block[@name='decoCarTireSmallFlat']" >
+		<property name="CanPickup" value="true"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='decoCarTireFlat']" >
+		<property name="CanPickup" value="true"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='decoCarTirePile']" >
+		<property name="CanPickup" value="true"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='decoCarTireStack']" >
+		<property name="CanPickup" value="true"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='decoCarWheelFlat']" >
+		<property name="CanPickup" value="true" param1="vehicleWheels"/>
+	</append>
+	
+	<!-- Cinder Blocks --><!-- 
+	<append xpath="/blocks/block[contains(@name,'cinderBlocks')]">
+		<property name="CanPickup" value="true"/>
+		<property name="Weight" value="20"/>
+	</append> -->
+	
+	<!-- Scrap Metal Pile --><!-- 
+	<append xpath="/blocks/block[@name='scrapMetalPile']">
+		<property name="CanPickup" value="true"/>
+		<property name="Weight" value="20"/>
+	</append> -->
+	
+	<!-- Drift Wood --><!-- 
+	<append xpath="/blocks/block[@name='driftwood']">
+		<property name="CanPickup" value="true"/>
+		<property name="Weight" value="10"/>
+	</append> -->
+	
+	<!-- Ember Piles -->
+	<append xpath="/blocks/block[contains(@name,'emberPile')]">
+		<property name="CanPickup" value="true"/>
+		<property name="Weight" value="10"/>
+	</append>
+	
+	<!-- Firewood -->
+	<append xpath="/blocks/block[@name='modularFireWoodStackA']">
+		<property name="CanPickup" value="true"/>
+		<property name="Weight" value="45"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='modularFireWoodStackB']">
+		<property name="CanPickup" value="true"/>
+		<property name="Weight" value="45"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='modularFireWoodStackC']">
+		<property name="CanPickup" value="true"/>
+		<property name="Weight" value="35"/>
+	</append>
+	
+	<!-- Barbed Fence -->
+	<append xpath="/blocks/block[@name='barbedFence']">
+		<property name="CanPickup" value="true"/>
+	</append>
+	
+	<!-- Barbed Wire Sheet -->
+	<append xpath="/blocks/block[@name='barbedWireSheet']">
+		<property name="CanPickup" value="true"/>
+	</append>
+	
+	<!-- Cow Skull -->
+	<append xpath="/blocks/block[@name='decoCowSkull']">
+		<property name="CanPickup" value="true"/>
+		<property name="Weight" value="24" />
+	</append>
+	
+	<!-- Mines -->
+	<append xpath="/blocks/block[@name='mineAirFilter']">
+		<property name="CanPickup" value="true"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='mineCandyTin']">
+		<property name="CanPickup" value="true"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='mineHubcap']">
+		<property name="CanPickup" value="true"/>
+	</append>
+	
+	<!-- BarStool -->
+	<append xpath="/blocks/block[@name='barStool']">
+		<property name="CanPickup" value="true"/>
+	</append>
+	
+	<!-- SchoolDesk -->	
+	<append xpath="/blocks/block[@name='schoolDesk01White']">
+		<property name="CanPickup" value="true"/>
+		<property name="Weight" value="12" />
+		<property name="FuelValue" value="50"/>
+		<property name="FilterTags" value="fwood"/>
+	</append>
+	
+	 <append xpath="/blocks/block[@name='schoolDesk02White']">
+		<property name="CanPickup" value="true"/>
+		<property name="Weight" value="12" />
+		<property name="FuelValue" value="50"/>
+		<property name="FilterTags" value="fwood"/>
+	</append>
+	
+	 <append xpath="/blocks/block[@name='schoolDesk03White']">
+		<property name="CanPickup" value="true"/>
+		<property name="Weight" value="12" />
+		<property name="FuelValue" value="50"/>
+		<property name="FilterTags" value="fwood"/>
+	</append>
+	
+	<!-- cntShoppingCartEmpty -->	
+	<append xpath="/blocks/block[@name='cntShoppingCartEmptyWhite']">
+		<property name="CanPickup" value="true"/>
+	</append>
+
+	<!-- cntShoppingBasketEmpty -->	
+	<append xpath="/blocks/block[@name='cntShoppingBasketEmptyWhite']">
+		<property name="CanPickup" value="true"/>
+	</append>		
+	
+	<!-- Traps -->
+	<append xpath="/blocks/block[@name='trapSpikesWoodDmg0']" >
+		<property name="CanPickup" value="true"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='trapSpikesIronDmg0']" >
+		<property name="CanPickup" value="true"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='woodSpikesTrap1POI']" >
+		<property name="CreativeMode" value="Player"/>
+		<property name="CanPickup" value="true"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='woodSpikesTrap2POI']" >
+		<property name="CreativeMode" value="Player"/>
+		<property name="CanPickup" value="true"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='woodSpikesTrapBloodPOI']" >
+		<property name="CreativeMode" value="Player"/>
+		<property name="CanPickup" value="true"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='ironSpikesTrap1POI']" >
+		<property name="CreativeMode" value="Player"/>
+		<property name="CanPickup" value="true"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='ironSpikesTrap2POI']" >
+		<property name="CreativeMode" value="Player"/>
+		<property name="CanPickup" value="true"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='ironSpikesTrapBloodPOI']" >
+		<property name="CreativeMode" value="Player"/>
+		<property name="CanPickup" value="true"/>
+	</append>
+	
+	<!-- West Wagon and Wheels -->
+	<append xpath="/blocks/block[@name='decoWildWestWagon']" >
+		<property name="CanPickup" value="true"/>
+		<property name="Weight" value="14"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='decoWildWestWagonWheelBack']" >
+		<property name="CanPickup" value="true"/>
+		<property name="Weight" value="6"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='decoWildWestWagonWheelFront']" >
+		<property name="CanPickup" value="true"/>
+		<property name="Weight" value="6"/>
+	</append>
+	
+	<!-- Lantern Light Player -->
+	<append xpath="/blocks/block[@name='lanternDecorLightWhite']" >
+		<property name="CanPickup" value="true" param1="lanternDecorLightWhite_player"/>
+		<property name="Stacknumber" value="20"/>
+		<property name="TakeDelay" value="6"/>
+		<property name="Class" value=""/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='workLightPOI']" >
+		<property name="CanPickup" value="true" param1="workLightPOI"/>
+		<property name="Stacknumber" value="20"/>
+		<property name="TakeDelay" value="6"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='spotlightDownLeft_POI']" >
+		<property name="CanPickup" value="true" param1="spotlightPlayer"/>
+		<property name="Stacknumber" value="20"/>
+		<property name="TakeDelay" value="6"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='spotlightDownRight_POI']" >
+		<property name="CanPickup" value="true" param1="spotlightPlayer"/>
+		<property name="Stacknumber" value="20"/>
+		<property name="TakeDelay" value="6"/>
+	</append>
+	
+	<!-- Burning Barrel -->
+	<append xpath="/blocks/block[@name='burningBarrel']" >
+		<property name="CanPickup" value="true" param1="burningBarrelPlayer"/>
+		<property name="Stacknumber" value="25"/>
+		<property name="TakeDelay" value="2"/>		
+		<property name="Class" value=""/>
+	</append>
+	
+	<!-- HayBale Blocks --><!-- 
+	<append xpath="/blocks/block[@name='hayBaleRound']" >
+		<property name="CanPickup" value="true"/>
+		<property name="TakeDelay" value="6"/>
+		<property name="Stacknumber" value="15"/>
+		<property name="Weight" value="120"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='hayBaleSquare']" >
+		<property name="CanPickup" value="true"/>
+		<property name="TakeDelay" value="6"/>
+		<property name="Stacknumber" value="15"/>
+		<property name="Weight" value="80"/>
+	</append> -->
+	
+	<!-- Hospital Beds --><!-- 
+	<append xpath="/blocks/block[@name='hospitalBed']" >
+		<property name="CanPickup" value="true"/>
+		<property name="TakeDelay" value="6"/>
+		<property name="Stacknumber" value="10"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='gurneyBed']" >
+		<property name="CanPickup" value="true"/>
+		<property name="TakeDelay" value="6"/>
+		<property name="Stacknumber" value="10"/>		
+	</append> -->
+
+	<!-- Reptile Terrarium -->
+	<append xpath="/blocks/block[@name='decoReptileTerrarium']" >
+		<property name="CanPickup" value="true"/>
+		<property name="TakeDelay" value="6"/>
+		<property name="Stacknumber" value="10"/>
+	</append>
+	
+	<!-- Pool Table -->	
+	<append xpath="/blocks/block[@name='decoPoolTable']" >
+		<property name="CanPickup" value="true"/>
+		<property name="TakeDelay" value="6"/>
+		<property name="Stacknumber" value="5"/>
+		<property name="Material" value="Mwood_regular"/>
+		<property name="Weight" value="250" />
+		<property name="FuelValue" value="100"/>
+	</append>
+	
+	<!--Dog Houses -->
+	<append xpath="/blocks/block[@name='decoClassicDogHouse']" >
+		<property name="CanPickup" value="true"/>
+		<property name="TakeDelay" value="6"/>
+		<property name="Stacknumber" value="10"/>
+		<property name="Weight" value="50" />
+	</append>
+	
+	<append xpath="/blocks/block[@name='decoLargePetCage']" >
+		<property name="CanPickup" value="true"/>
+		<property name="TakeDelay" value="6"/>
+		<property name="Stacknumber" value="10"/>
+	</append>
+	
+	<!-- Tv´s -->
+	<append xpath="/blocks/block[@name='tvExtraSmallWall1x1']" >
+		<property name="CanPickup" value="true"/>
+		<property name="TakeDelay" value="6"/>
+		<property name="Stacknumber" value="10"/>
+	</append>	
+	
+	<append xpath="/blocks/block[@name='tvSmallStand1x1Fallen']" >
+		<property name="CanPickup" value="true"/>
+		<property name="TakeDelay" value="6"/>
+		<property name="Stacknumber" value="10"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='tvLargeWall2x2']" >
+		<property name="CanPickup" value="true"/>
+		<property name="TakeDelay" value="6"/>
+		<property name="Stacknumber" value="10"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='tvLargeWall3x2']" >
+		<property name="CanPickup" value="true"/>
+		<property name="TakeDelay" value="6"/>
+		<property name="Stacknumber" value="10"/>
+	</append>
+	
+	<!-- Desktop Pc -->
+	<append xpath="/blocks/block[@name='decoComputerDeskTopPC']" >
+		<property name="CanPickup" value="true"/>
+		<property name="TakeDelay" value="6"/>
+		<property name="Stacknumber" value="10"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='decoComputerMonitorKeyboardMousePC']" >
+		<property name="CanPickup" value="true"/>
+		<property name="TakeDelay" value="6"/>
+		<property name="Stacknumber" value="10"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='decoComputerMonitorKeyboardMouse']" >
+		<property name="CanPickup" value="true"/>
+		<property name="TakeDelay" value="6"/>
+		<property name="Stacknumber" value="10"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='decoComputerMonitor']" >
+		<property name="CanPickup" value="true"/>
+		<property name="TakeDelay" value="6"/>
+		<property name="Stacknumber" value="10"/>
+	</append>
+
+	<!-- Laptop -->
+	<append xpath="/blocks/block[@name='decoLaptop']" >
+		<property name="CanPickup" value="true"/>
+		<property name="TakeDelay" value="6"/>
+		<property name="Stacknumber" value="30"/>
+	</append>
+	
+	<!-- Play --><!-- 
+	<append xpath="/blocks/block[@name='decoMetalSlide']" >
+		<property name="CanPickup" value="true"/>
+		<property name="TakeDelay" value="6"/>
+		<property name="Stacknumber" value="100"/>
+	</append>
+
+	<append xpath="/blocks/block[@name='decoSwingSet']" >
+		<property name="CanPickup" value="true"/>
+		<property name="TakeDelay" value="6"/>
+		<property name="Stacknumber" value="100"/>
+	</append>
+	 -->
+	<!-- Exercice --><!-- 	
+	<append xpath="/blocks/block[@name='decoBasketBallHoop']" >
+		<property name="CanPickup" value="true"/>
+		<property name="TakeDelay" value="6"/>
+		<property name="Stacknumber" value="100"/>
+	</append> -->
+	
+	<append xpath="/blocks/block[@name='decoStationaryBike']" >
+		<property name="CanPickup" value="true"/>
+		<property name="TakeDelay" value="6"/>
+		<property name="Stacknumber" value="5"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='decoTreadmill']" >
+		<property name="CanPickup" value="true"/>
+		<property name="TakeDelay" value="6"/>
+		<property name="Stacknumber" value="5"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='decoWeightBar']" >
+		<property name="CanPickup" value="true"/>
+		<property name="TakeDelay" value="6"/>
+		<property name="Stacknumber" value="5"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='decoBenchPress']" >
+		<property name="CanPickup" value="true"/>
+		<property name="TakeDelay" value="6"/>
+		<property name="Stacknumber" value="5"/>
+	</append>
+	
+	<!-- Wall Clock -->
+	<append xpath="/blocks/block[@name='wallClock']" >
+		<property name="CanPickup" value="true"/>
+		<property name="TakeDelay" value="6"/>
+		<property name="Stacknumber" value="60"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='wallClockBroken']" >
+		<property name="CanPickup" value="true"/>
+		<property name="TakeDelay" value="6"/>
+		<property name="Stacknumber" value="60"/>
+	</append>
+	
+	<!-- Wine Bottles --><!-- 
+	<append xpath="/blocks/block[@name='decoWineBottle']">
+		<property name="CanPickup" value="true"/>
+		<property name="Stacknumber" value="60"/>
+		<property name="Weight" value="2"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='decoWineBottleCorner']">
+		<property name="CanPickup" value="true"/>
+		<property name="Stacknumber" value="60"/>
+		<property name="Weight" value="2"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='decoWineBottleShelfRow']">
+		<property name="CanPickup" value="true"/>
+		<property name="Stacknumber" value="60"/>
+		<property name="Weight" value="8"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='decoWineBottlePile01']">
+		<property name="CanPickup" value="true"/>
+		<property name="Stacknumber" value="60"/>
+		<property name="Weight" value="4"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='decoWineBottlePile02']">
+		<property name="CanPickup" value="true"/>
+		<property name="Stacknumber" value="60"/>
+		<property name="Weight" value="8"/>
+	</append> -->
+	
+	<!-- BirdBath Planter --><!-- 
+	<append xpath="/blocks/block[@name='birdBathPlanter']" >
+		<property name="CanPickup" value="true"/>
+		<property name="TakeDelay" value="6"/>
+		<property name="Stacknumber" value="60"/>
+		<property name="Weight" value="40"/>
+	</append> -->
+	
+	<!-- Sand Bags -->
+	<append xpath="/blocks/block[contains(@name,'sandbag')]">
+		<property name="CanPickup" value="true"/>
+		<property name="Stacknumber" value="60"/>
+		<property name="Weight" value="20"/>
+	</append>
+	
+	<!-- SignPosterMovies -->
+	<append xpath="/blocks/block[@name='signPosterMovie2159']">
+		<property name="CanPickup" value="true"/>
+		<property name="Stacknumber" value="60"/>
+		<property name="EconomicValue" value="15"/>
+	</append>
+	
+	<!-- SignPosterMoviesTheater -->
+	<append xpath="/blocks/block[@name='signPosterMovieTheater2159']">
+		<property name="CanPickup" value="true"/>
+		<property name="Stacknumber" value="60"/>
+		<property name="EconomicValue" value="15"/>
+	</append>
+	
+	<!-- Ozz, start here -->
+	<append xpath="//block[@name='terrDestroyedWoodDebris']">
+		<property name="CanPickup" value="true"/>
+		<property name="FuelValue" value="130"/>
+		<property name="Weight" value="50"/>
+		<property name="FilterTags" value="fwood"/>
+	</append>
+
+ 	<append xpath="//block[@name='sectionalPlaidCouchSofaMiddle']">
+		<property name="CustomIcon" value="sectionalPlaidCouchSofaMiddle"/>
+		<property name="CanPickup" value="true"/>
+		<property name="Weight" value="20" />
+		<property name="FuelValue" value="50"/>
+		<property name="FilterTags" value="fwood"/>
+	</append>
+	<append xpath="//block[@name='sectionalLeatherCouchSofaArm']">
+		<property name="CustomIcon" value="sectionalLeatherCouchSofaArm"/>
+		<property name="CanPickup" value="true"/>
+		<property name="Weight" value="20" />
+		<property name="FuelValue" value="50"/>
+		<property name="FilterTags" value="fwood"/>
+	</append>
+	<append xpath="//block[@name='sectionalLeatherCouchSofaCorner']">
+		<property name="CustomIcon" value="sectionalPlaidCouchSofaMiddle"/>
+		<property name="CanPickup" value="true"/>
+		<property name="Weight" value="20" />
+		<property name="FuelValue" value="50"/>
+		<property name="FilterTags" value="fwood"/>
+	</append>
+
+	<append xpath="//block[(contains(@name, 'driftwood'))]">
+		<property name="CanPickup" value="true"/>
+		<property name="FuelValue" value="100"/>
+		<property name="Weight" value="100"/>
+		<property name="FilterTags" value="fwood"/>
+	</append>
+
+	<append xpath="//block[(contains(@name, 'bodyBag'))]">
+		<property name="CanPickup" value="true"/>
+		<property name="Weight" value="36" />
+		<property name="FuelValue" value="100"/>
+		<property name="FilterTags" value="fwood,fdesign,fdecor,fother,ffurniture"/>
+	</append>
+
+	<append xpath="//block[@name='scrapMetalPile']">
+		<property name="CanPickup" value="true"/>
+		<property name="Weight" value="36" />
+	</append>
+	<append xpath="//block[@name='cinderBlocks01']">
+		<property name="CanPickup" value="true"/>
+		<property name="Weight" value="76" />
+	</append>
+	<append xpath="//block[@name='cinderBlocks02']">
+		<property name="CanPickup" value="true"/>
+		<property name="Weight" value="120" />
+	</append>
+	<append xpath="//block[@name='cinderBlocks03']">
+		<property name="CanPickup" value="true"/>
+		<property name="Weight" value="36" />
+	</append>
+
+	<append xpath="//block[contains(@name, 'metalTrussing')]">
+		<property name="CanPickup" value="true"/>
+		<property name="Weight" value="50" />
+	</append>
+
+	<append xpath="//block[contains(@name, 'painting')]">
+		<property name="CanPickup" value="true"/>
+		<property name="TakeDelay" value="2"/>
+		<drop event="Destroy" name="resourceBrokenGlass" count="1,3" />
+	</append>
+	<append xpath="//block[contains(@name, 'pictureFrame')]">
+		<property name="CanPickup" value="true"/>
+		<property name="TakeDelay" value="2"/>
+		<drop event="Destroy" name="resourceBrokenGlass" count="1,3" />
+	</append>
+
+	<append xpath="/blocks/block[@name='trapSpikesWoodMaster']">
+		<property name="CanPickup" value="true" param1="trapSpikesWoodDmg0" />
+	</append>
+
+	<append xpath="/blocks/block[@name='trapSpikesScrapIronMaster']">
+		<property name="CanPickup" value="true" param1="trapSpikesIronDmg0" />
+	</append>
+
+
+    <!-- Added from Pottervogel: Modular Mods: Deco - Pickup Walldeco -->
+	<!-- flag master, should work for all flags -->
+	<append xpath="/blocks/block[@name='flagWallHungUSA']">
+		<property name="CanPickup" value="true"/>
+		<property name="TakeDelay" value="2"/>
+	</append>
+
+	<!-- new paintings masters -->
+	<append xpath="/blocks/block[@name='calendar2034']">
+		<property name="CanPickup" value="true"/>
+		<property name="TakeDelay" value="2"/>
+	</append>
+<!-- 
+	<append xpath="/blocks/block[@name='pictureFrame_01a']">
+		<property name="CanPickup" value="true"/>
+		<property name="TakeDelay" value="2"/>
+	</append>
+
+	<append xpath="/blocks/block[@name='pictureCanvas_01a']">
+		<property name="CanPickup" value="true"/>
+		<property name="TakeDelay" value="2"/>
+	</append>
+
+	<append xpath="/blocks/block[@name='pictureFramedMedalsLrg']">
+		<property name="CanPickup" value="true"/>
+		<property name="TakeDelay" value="2"/>
+	</append>
+
+	<append xpath="/blocks/block[@name='signPosterWantedMissing01']">
+		<property name="CanPickup" value="true"/>
+		<property name="TakeDelay" value="2"/>
+	</append> -->
+
+	<!-- old poster master -->
+	<append xpath="/blocks/block[@name='signPosterMovie2159']">
+		<property name="CanPickup" value="true"/>
+		<property name="TakeDelay" value="2"/>
+	</append>
+
+	<!-- shooting target master -->
+	<append xpath="/blocks/block[@name='shootingRangeTarget']">
+		<property name="CanPickup" value="true"/>
+		<property name="TakeDelay" value="2"/>
+	</append>
+
+	<!-- not exactly wall deco but one block does not justify an extra mod -->
+	<append xpath="/blocks/block[@name='rugBear']">
+		<property name="CanPickup" value="true"/>
+		<property name="TakeDelay" value="2"/>
+	</append>
+
+	<append xpath="/blocks/block[starts-with(@name,'flagPole')]">
+		<property name="CanPickup" value="true"/>
+		<property name="TakeDelay" value="2"/>
+	</append>
+
+
+</Ozzland>

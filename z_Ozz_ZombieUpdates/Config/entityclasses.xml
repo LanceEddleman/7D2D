@@ -1,0 +1,14 @@
+<Ozzland>
+
+	<!-- // Guppycur's Random ZombieGetterUpper -->
+	<set xpath="//entity_class/property[@name='KnockdownProneStunDuration']/@value">1.0,20.0</set>
+	<set xpath="//entity_class/property[@name='KnockdownKneelStunDuration']/@value">1.0,20.0</set>
+	
+	<!-- Using Guppy Zombies -->
+	<set xpath="//entity_class[(contains(@name, 'zombieGuppy'))]/property[@name='DeadBodyHitPoints']/@value">50</set>
+
+	<!-- Ozz, Crawler create by leg damage -->
+	<set xpath="//entity_class[@name='zombieTemplateMale']/property[@name='LegCrawlerThreshold']/@value">0.1</set>
+
+
+</Ozzland>

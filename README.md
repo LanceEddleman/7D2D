@@ -10,18 +10,31 @@ Often extensions for wants/needs based on other mods and basic game tweaks that 
 
 - A21 Updates: 	\* = completed
 	Working on
-	<br />Look for / create traffic jam mod (like PZ) or make something like it
 	<br />Gen - Add LHG info panel to server, add notes and sections based on mods that need more info -not added to git
 	<br />Gen - Update MoreContainer images and icons to show name on all crates for easier selection -not added to git
 	<br />Ozz - Need to add color or less transparency to main menus so you can read traders better
+	remove matt from gupp mod he is too annoying on death spins
+	lawn mover we never got to a point of using it
+	look at 8h blocks see if i can make 8w blocks
+	make 8h small round
 
+	<br />
+	<br />Oct 21-22
+	<br />\* Ozz - Ozz_StackSizes - change cloth stack to 5k - seems like we are getting a ton
+	<br />\* Ozz - Ozz_StackSizes - change brass stack to 10k - seems like we are getting a ton
+	<br />\* Ozz - Ozzland_Pickup_Burn_Options - Find dead corn gives corn change 0.5 chance to 0.015
+	<br />\* Ozz - Ozzland_QoL, remove oil shale option from forest biome
+	<br />\* Ozz - Ozzland_QoL, drop gup zombies to 50hp on death for easier cleanup
+	<br />\* Ozz - Ozzland_QoL, Tune down all deposits in the world, 0.7830 =0.1 ,0.6500 = 0.01	
+	<br />\* Gen - z_Ozz_VehicleUpdates, cut upa nd replace default vehicle sounds with VehicleMadness sounds -not added to git
+	
 
 	<br />
 	<br />Oct 20
 	<br />\* Ozz - Ozzland_QoL, Adjust damage for create crawler
 	<br />\* Ozz - Ozzland_QoL, Turn down sound for all basic vehicle
 	<br />\* Ozz - Ozzland_QoL, Turn down sound for all VehicleMadness vehicle + Ozz
-	<br />\* Gen - BigCityRWG by Zorora, Trader count, change some spawn settings, remove no/mnt option -not added to git
+	<br />\* Gen - BigCityRWG by Zorora, Tweeks- Trader count, spawn settings, remove no/mnt option -not added to git
 	<br />\* Ozz - Ozz_MoreCars, Continue to tweek %'s for next world
 
 	<br />
@@ -77,4 +90,6 @@ Often extensions for wants/needs based on other mods and basic game tweaks that 
 	<br />\* Ozz - Create a healing block based off of healing bed to be used for base floor tiles
 	<br />\* Gen+Ozz - Add patch for snowberry return mod to work with living off the land perk
 	<br />\* Ozz - Determine and work around dew collector placement limitations
+
 	<br />Cancelled- Create recipe for casserole from old sham sandwich, beer
+	<br />Calcelled- Created my own Ozz_MoreCars (Look for / create traffic jam mod (like PZ) or make something like it)

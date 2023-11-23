@@ -1,0 +1,16 @@
+﻿Key,File,Type,english
+ConcretePillar50_6H,blocks,Block,Concrete 2H
+ConcretePillar50_6H_Desc,blocks,Block,This pillar will grow one concrete cube on top of itself making it two high.
+ConcretePillar50_6H,blocks,Block,Concrete 3H
+ConcretePillar50_6H_Desc,blocks,Block,This pillar will grow one concrete cube on top of itself making it three high.
+ConcretePillar50_6H,blocks,Block,Concrete 4H
+ConcretePillar50_6H_Desc,blocks,Block,This pillar will grow one concrete cube on top of itself making it four high.
+ConcretePillar50_6H,blocks,Block,Concrete 5H
+ConcretePillar50_6H_Desc,blocks,Block,This pillar will grow one concrete cube on top of itself making it five high.
+
+ConcretePillar50_6H,blocks,Block,Concrete 6H
+ConcretePillar50_6H_Desc,blocks,Block,This pillar will grow one concrete cube on top of itself making it six high.
+ConcretePillar50_7H,blocks,Block,Concrete 7H
+ConcretePillar50_7H_Desc,blocks,Block,This pillar will grow one concrete cube on top of itself making it seven high.
+ConcretePillar50_8H,blocks,Block,Concrete 7H
+ConcretePillar50_8H_Desc,blocks,Block,This pillar will grow one concrete cube on top of itself making it eight high.

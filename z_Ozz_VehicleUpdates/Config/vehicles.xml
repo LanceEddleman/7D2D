@@ -1,0 +1,370 @@
+<configs>
+	<!-- Requires Vehicle_Madness_Overhaul_A21_v4_Beta_3.0 -->
+	<!--  Vehicle Sound update/replacers based on fantastic work in Vehicle_Madness_Overhaul_A21_v4_Beta_3.0 -->
+
+<!-- 4x4 sound replacers -->
+	<remove xpath="vehicles/vehicle[@name='vehicle4x4Truck']/property[@class='engine']/property[starts-with(@name,'gear')]" />
+	<append xpath="vehicles/vehicle[@name='vehicle4x4Truck']/property[@class='engine']">
+		<property name="gear1" value="
+		500,2500, -1400,800,0, 700,2200,900,
+		Vehicles/4x4_accel1,
+		Vehicles/muscle_decel1,
+		0, .7, 1, .1, -9, .12, .1, Vehicles/4x4_idle_lp,
+		-.4, -.02, .7, .7, -.2, 9, .2, Vehicles/4x4_max_speed_lp
+		"/>
+		<property name="gear2" value="
+		500,2500, -2000,1000,2000, 600,2200,800,
+		Vehicles/4x4_accel2,
+		Vehicles/muscle_decel1,
+		-.25, -.05, .2, .4, -1, 1, .1, Vehicles/4x4_max_speed_lp
+		"/>
+		<property name="gear3" value="
+		500,2500, -2000,1000,2000, 500,2200,1000,
+		Vehicles/4x4_accel3,
+		Vehicles/muscle_decel2,
+		-.28, -.07, .3, .6, -1, 1, .1, Vehicles/4x4_max_speed_lp
+		"/>
+		<property name="gear4" value="
+		500,2500, -2000,1000,2000, 500,9999,9999,
+		,
+		Vehicles/muscle_decel2,
+		-.31, -.08, .6, .9, -1, 1, .1, Vehicles/4x4_max_speed_lp
+		"/>
+	</append>
+
+
+<!-- 	<vehicle name="vehicleVMMilitaryTruck">
+	<property class="engine">
+		<property name="gear1" value="
+					500,2500, -1400,800,0, 700,2200,900,
+					Vehicles/truck_accel1,
+					Vehicles/muscle_decel1,
+					0, .7, 1, .1, -9, .12, .1, Vehicles/truck_idle_lp,
+					-.4, -.02, .7, .7, -.2, 9, .2, Vehicles/truck_max_speed_lp
+					"/>
+					<property name="gear2" value="
+					500,2500, -2000,1000,2000, 600,2200,800,
+					Vehicles/truck_accel2,
+					Vehicles/muscle_decel1,
+					-.25, -.05, .2, .4, -1, 1, .1, Vehicles/truck_max_speed_lp
+					"/>
+					<property name="gear3" value="
+					500,2500, -2000,1000,2000, 500,2200,1000,
+					Vehicles/truck_accel3,
+					Vehicles/muscle_decel2,
+					-.28, -.07, .3, .6, -1, 1, .1, Vehicles/truck_max_speed_lp
+					"/>
+					<property name="gear4" value="
+					500,2500, -2000,1000,2000, 500,9999,9999,
+					,
+					Vehicles/muscle_decel2,
+					-.31, -.08, .6, .9, -1, 1, .1, Vehicles/truck_max_speed_lp
+					"/>
+	</property>
+</vehicle> -->
+
+<!-- <vehicle name="vehicleVMBoxTruck"> 
+	<property class="engine">
+		<property name="gear1" value="
+						500,2500, -1400,800,0, 700,2200,900,
+						Vehicles/truck_accel1,
+						Vehicles/muscle_decel1,
+						0, .7, 1, .1, -9, .12, .1, Vehicles/truck_idle_lp,
+						-.4, -.02, .7, .7, -.2, 9, .2, Vehicles/truck_max_speed_lp
+						"/>
+						<property name="gear2" value="
+						500,2500, -2000,1000,2000, 600,2200,800,
+						Vehicles/truck_accel2,
+						Vehicles/muscle_decel1,
+						-.25, -.05, .2, .4, -1, 1, .1, Vehicles/truck_max_speed_lp
+						"/>
+						<property name="gear3" value="
+						500,2500, -2000,1000,2000, 500,2200,1000,
+						Vehicles/truck_accel3,
+						Vehicles/muscle_decel2,
+						-.28, -.07, .3, .6, -1, 1, .1, Vehicles/truck_max_speed_lp
+						"/>
+						<property name="gear4" value="
+						500,2500, -2000,1000,2000, 500,9999,9999,
+						,
+						Vehicles/muscle_decel2,
+						-.31, -.08, .6, .9, -1, 1, .1, Vehicles/truck_max_speed_lp
+						"/>
+	</property>
+</vehicle> -->
+
+<!-- <vehicle name="vehicleVMBigRig">
+	<property class="engine">
+		<property name="gear1" value="
+		500,2500, -1400,800,0, 700,2200,900,
+		Vehicles/truck_accel1,
+		Vehicles/muscle_decel1,
+		0, .7, 1, .1, -9, .12, .1, Vehicles/truck_idle_lp,
+		-.4, -.02, .7, .7, -.2, 9, .2, Vehicles/truck_max_speed_lp
+		"/>
+		<property name="gear2" value="
+		500,2500, -2000,1000,2000, 600,2200,800,
+		Vehicles/truck_accel2,
+		Vehicles/muscle_decel1,
+		-.25, -.05, .2, .4, -1, 1, .1, Vehicles/truck_max_speed_lp
+		"/>
+		<property name="gear3" value="
+		500,2500, -2000,1000,2000, 500,2200,1000,
+		Vehicles/truck_accel3,
+		Vehicles/muscle_decel2,
+		-.28, -.07, .3, .6, -1, 1, .1, Vehicles/truck_max_speed_lp
+		"/>
+		<property name="gear4" value="
+		500,2500, -2000,1000,2000, 500,9999,9999,
+		,
+		Vehicles/muscle_decel2,
+		-.31, -.08, .6, .9, -1, 1, .1, Vehicles/truck_max_speed_lp
+		"/>
+	</property>
+</vehicle> -->
+
+<!-- <vehicle name="vehicleVMPickup">
+	<property class="engine">
+		<property name="gear1" value="
+		500,2500, -1400,800,0, 700,2200,900,
+		Vehicles/4x4_accel1,
+		Vehicles/muscle_decel1,
+		0, .7, 1, .1, -9, .12, .1, Vehicles/4x4_idle_lp,
+		-.4, -.02, .7, .7, -.2, 9, .2, Vehicles/4x4_max_speed_lp
+		"/>
+		<property name="gear2" value="
+		500,2500, -2000,1000,2000, 600,2200,800,
+		Vehicles/4x4_accel2,
+		Vehicles/muscle_decel1,
+		-.25, -.05, .2, .4, -1, 1, .1, Vehicles/4x4_max_speed_lp
+		"/>
+		<property name="gear3" value="
+		500,2500, -2000,1000,2000, 500,2200,1000,
+		Vehicles/4x4_accel3,
+		Vehicles/muscle_decel2,
+		-.28, -.07, .3, .6, -1, 1, .1, Vehicles/4x4_max_speed_lp
+		"/>
+		<property name="gear4" value="
+		500,2500, -2000,1000,2000, 500,9999,9999,
+		,
+		Vehicles/muscle_decel2,
+		-.31, -.08, .6, .9, -1, 1, .1, Vehicles/4x4_max_speed_lp
+		"/>
+	</property>
+</vehicle> -->
+
+<!-- <vehicle name="vehicleVMQuad">
+	<property class="engine">
+						<property name="gear1" value="
+						500,2500, -1400,800,0, 700,2000,900,
+						Vehicles/Motorbike/motorbike_accel_1,
+						,
+						0, .7, 1, .1, -9, .15, .1, Vehicles/Motorbike/motorbike_idle_lp,
+						-.3, .1, .1, .4, -.05, 9, .2, Vehicles/Motorbike/motorbike_run_lp
+						"/>
+						<property name="gear2" value="
+						500,2500, -2000,1000,2000, 620,2200,800,
+						Vehicles/Motorbike/motorbike_accel_2,
+						Vehicles/Motorbike/motorbike_decel,
+						-.2, -.02, .1, .2, -1, 1, .1, Vehicles/Motorbike/motorbike_run_lp
+						"/>
+						<property name="gear3" value="
+						500,2500, -2000,1000,2000, 570,2200,1000,
+						Vehicles/Motorbike/motorbike_accel_3,
+						Vehicles/Motorbike/motorbike_decel,
+						-.21, -.05, .1, .2, -1, 1, .1, Vehicles/Motorbike/motorbike_run_lp
+						"/>
+						<property name="gear4" value="
+						500,2500, -2000,1000,2000, 500,9999,9999,
+						,
+						Vehicles/Motorbike/motorbike_decel,
+						-.25, -.08, .55, .45, -1, 1, .1, Vehicles/Motorbike/motorbike_run_lp
+						"/>
+	</property>
+</vehicle> -->
+
+<!-- <vehicle name="vehicleVMSedan">
+	<property class="engine">
+		<property name="gear1" value="
+		500,2500, -1400,800,0, 700,2200,900,
+		Vehicles/sedan_accel1,
+		Vehicles/muscle_decel1,
+		0, .7, 1, .1, -9, .12, .1, Vehicles/sedan_idle_lp,
+		-.4, -.02, .7, .7, -.2, 9, .2, Vehicles/sedan_max_speed_lp
+		"/>
+		<property name="gear2" value="
+		500,2500, -2000,1000,2000, 600,2200,800,
+		Vehicles/sedan_accel2,
+		Vehicles/muscle_decel1,
+		-.25, -.05, .2, .4, -1, 1, .1, Vehicles/sedan_max_speed_lp
+		"/>
+		<property name="gear3" value="
+		500,2500, -2000,1000,2000, 500,2200,1000,
+		Vehicles/sedan_accel3,
+		Vehicles/muscle_decel2,
+		-.28, -.07, .3, .6, -1, 1, .1, Vehicles/sedan_max_speed_lp
+		"/>
+		<property name="gear4" value="
+		500,2500, -2000,1000,2000, 500,9999,9999,
+		,
+		Vehicles/muscle_decel2,
+		-.31, -.08, .6, .9, -1, 1, .1, Vehicles/sedan_max_speed_lp
+		"/>
+	</property>
+</vehicle> -->
+
+<!-- <vehicle name="vehicleVMPoliceCar">
+	<property class="engine">
+		<property name="gear1" value="
+		500,2500, -1400,800,0, 700,2200,900,
+		Vehicles/sedan_accel1,
+		Vehicles/muscle_decel1,
+		0, .7, 1, .1, -9, .12, .1, Vehicles/sedan_idle_lp,
+		-.4, -.02, .7, .7, -.2, 9, .2, Vehicles/sedan_max_speed_lp
+		"/>
+		<property name="gear2" value="
+		500,2500, -2000,1000,2000, 600,2200,800,
+		Vehicles/sedan_accel2,
+		Vehicles/muscle_decel1,
+		-.25, -.05, .2, .4, -1, 1, .1, Vehicles/sedan_max_speed_lp
+		"/>
+		<property name="gear3" value="
+		500,2500, -2000,1000,2000, 500,2200,1000,
+		Vehicles/sedan_accel3,
+		Vehicles/muscle_decel2,
+		-.28, -.07, .3, .6, -1, 1, .1, Vehicles/sedan_max_speed_lp
+		"/>
+		<property name="gear4" value="
+		500,2500, -2000,1000,2000, 500,9999,9999,
+		,
+		Vehicles/muscle_decel2,
+		-.31, -.08, .6, .9, -1, 1, .1, Vehicles/sedan_max_speed_lp
+		"/>
+	</property>
+</vehicle> -->
+
+<!-- <vehicle name="vehicleVMQuad2">
+	<property class="engine">
+		<property name="gear1" value="
+		500,2500, -1400,800,0, 700,2000,900,
+		Vehicles/Motorbike/motorbike_accel_1,
+		,
+		0, .7, 1, .1, -9, .15, .1, Vehicles/Motorbike/motorbike_idle_lp,
+		-.3, .1, .1, .4, -.05, 9, .2, Vehicles/Motorbike/motorbike_run_lp
+		"/>
+		<property name="gear2" value="
+		500,2500, -2000,1000,2000, 620,2200,800,
+		Vehicles/Motorbike/motorbike_accel_2,
+		Vehicles/Motorbike/motorbike_decel,
+		-.2, -.02, .1, .2, -1, 1, .1, Vehicles/Motorbike/motorbike_run_lp
+		"/>
+		<property name="gear3" value="
+		500,2500, -2000,1000,2000, 570,2200,1000,
+		Vehicles/Motorbike/motorbike_accel_3,
+		Vehicles/Motorbike/motorbike_decel,
+		-.21, -.05, .1, .2, -1, 1, .1, Vehicles/Motorbike/motorbike_run_lp
+		"/>
+		<property name="gear4" value="
+		500,2500, -2000,1000,2000, 500,9999,9999,
+		,
+		Vehicles/Motorbike/motorbike_decel,
+		-.25, -.08, .55, .45, -1, 1, .1, Vehicles/Motorbike/motorbike_run_lp
+		"/>
+	</property>
+</vehicle> -->
+
+<!-- <vehicle name="vehicleVMCamaro">
+	<property class="engine">
+		<property name="gear1" value="
+		500,2500, -1400,800,0, 700,2200,900,
+		Vehicles/muscle_accel1,
+		Vehicles/muscle_decel1,
+		0, .7, 1, .1, -9, .12, .1, Vehicles/muscle_idle_lp,
+		-.4, -.02, .7, .7, -.2, 9, .2, Vehicles/muscle_max_speed_lp
+		"/>
+		<property name="gear2" value="
+		500,2500, -2000,1000,2000, 600,2200,800,
+		Vehicles/muscle_accel2,
+		Vehicles/muscle_decel1,
+		-.25, -.05, .2, .4, -1, 1, .1, Vehicles/muscle_max_speed_lp
+		"/>
+		<property name="gear3" value="
+		500,2500, -2000,1000,2000, 500,2200,1000,
+		Vehicles/muscle_accel3,
+		Vehicles/muscle_decel2,
+		-.28, -.07, .3, .6, -1, 1, .1, Vehicles/muscle_max_speed_lp
+		"/>
+		<property name="gear4" value="
+		500,2500, -2000,1000,2000, 500,9999,9999,
+		,
+		Vehicles/muscle_decel2,
+		-.31, -.08, .6, .9, -1, 1, .1, Vehicles/muscle_max_speed_lp
+		"/>
+	</property>
+</vehicle> -->
+
+<!-- <append xpath="//vehicle[starts-with(@name,'vehicleVMTruck')]">
+	<property name="hornSound" value="HornHonk"/>
+	<property class="engine">
+		<property name="gear1" value="
+		500,2500, -1400,800,0, 700,2200,900,
+		Vehicles/4x4_accel1,
+		Vehicles/muscle_decel1,
+		0, .7, 1, .1, -9, .12, .1, Vehicles/4x4_idle_lp,
+		-.4, -.02, .7, .7, -.2, 9, .2, Vehicles/4x4_max_speed_lp
+		"/>
+		<property name="gear2" value="
+		500,2500, -2000,1000,2000, 600,2200,800,
+		Vehicles/4x4_accel2,
+		Vehicles/muscle_decel1,
+		-.25, -.05, .2, .4, -1, 1, .1, Vehicles/4x4_max_speed_lp
+		"/>
+		<property name="gear3" value="
+		500,2500, -2000,1000,2000, 500,2200,1000,
+		Vehicles/4x4_accel3,
+		Vehicles/muscle_decel2,
+		-.28, -.07, .3, .6, -1, 1, .1, Vehicles/4x4_max_speed_lp
+		"/>
+		<property name="gear4" value="
+		500,2500, -2000,1000,2000, 500,9999,9999,
+		,
+		Vehicles/muscle_decel2,
+		-.31, -.08, .6, .9, -1, 1, .1, Vehicles/4x4_max_speed_lp
+		"/>
+		<property name="sound_start" value="Vehicles/4x4_startup"/>
+		<property name="sound_shut_off" value="Vehicles/muscle_shutoff"/>
+		<property name="sound_no_fuel_shut_off" value="Vehicles/Motorbike/motorbike_empty"/>
+	</property>
+</append> -->
+
+<!-- <vehicle name="vehicleVMExplorer">
+	<property class="engine">
+		<property name="gear1" value="
+		500,2500, -1400,800,0, 700,2200,900,
+		Vehicles/4x4_accel1,
+		Vehicles/muscle_decel1,
+		0, .7, 1, .1, -9, .12, .1, Vehicles/4x4_idle_lp,
+		-.4, -.02, .7, .7, -.2, 9, .2, Vehicles/4x4_max_speed_lp
+		"/>
+		<property name="gear2" value="
+		500,2500, -2000,1000,2000, 600,2200,800,
+		Vehicles/4x4_accel2,
+		Vehicles/muscle_decel1,
+		-.25, -.05, .2, .4, -1, 1, .1, Vehicles/4x4_max_speed_lp
+		"/>
+		<property name="gear3" value="
+		500,2500, -2000,1000,2000, 500,2200,1000,
+		Vehicles/4x4_accel3,
+		Vehicles/muscle_decel2,
+		-.28, -.07, .3, .6, -1, 1, .1, Vehicles/4x4_max_speed_lp
+		"/>
+		<property name="gear4" value="
+		500,2500, -2000,1000,2000, 500,9999,9999,
+		,
+		Vehicles/muscle_decel2,
+		-.31, -.08, .6, .9, -1, 1, .1, Vehicles/4x4_max_speed_lp
+		"/>
+	</property>
+</vehicle> -->
+
+</configs>

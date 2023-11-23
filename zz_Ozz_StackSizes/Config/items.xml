@@ -109,13 +109,13 @@
 	<set xpath="//item[@name='resourceCropChrysanthemumPlant']/property[@name='Stacknumber']/@value">1000</set>
 	<set xpath="//item[@name='resourceCropCottonPlant']/property[@name='Stacknumber']/@value">1000</set>
 	<set xpath="//item[@name='resourceCropGoldenrodPlant']/property[@name='Stacknumber']/@value">1000</set>
-	<set xpath="//item[@name='resourceScrapBrass']/property[@name='Stacknumber']/@value">7500</set>
+	<set xpath="//item[@name='resourceScrapBrass']/property[@name='Stacknumber']/@value">10000</set>
 	<set xpath="//item[@name='resourceScrapLead']/property[@name='Stacknumber']/@value">7500</set>
 	<set xpath="//item[@name='resourceClayLump']/property[@name='Stacknumber']/@value">7500</set>
 	<set xpath="//item[@name='resourceCobblestones']/property[@name='Stacknumber']/@value">2500</set>
 	<set xpath="//item[@name='resourceCement']/property[@name='Stacknumber']/@value">7500</set>
 	<set xpath="//item[@name='resourceConcreteMix']/property[@name='Stacknumber']/@value">2500</set>
-	<set xpath="//item[@name='resourceCloth']/property[@name='Stacknumber']/@value">3000</set>
+	<set xpath="//item[@name='resourceCloth']/property[@name='Stacknumber']/@value">5000</set>
 	<set xpath="//item[@name='resourcePaper']/property[@name='Stacknumber']/@value">2000</set>
 	<set xpath="//item[@name='resourceMilitaryFiber']/property[@name='Stacknumber']/@value">1500</set>
 	<set xpath="//item[@name='resourceElectricParts']/property[@name='Stacknumber']/@value">1500</set>

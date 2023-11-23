@@ -1,12 +1,5 @@
 <Ozzland>
 
-	<!-- // Guppycur's Random ZombieGetterUpper -->
-	<set xpath="//entity_class/property[@name='KnockdownProneStunDuration']/@value">1.0,20.0</set>
-	<set xpath="//entity_class/property[@name='KnockdownKneelStunDuration']/@value">1.0,20.0</set>
-
-	<!-- Ozz, Crawler create by leg damage -->
-	<set xpath="//entity_class[@name='zombieTemplateMale']/property[@name='LegCrawlerThreshold']/@value">0.1</set>
-
 	<!-- // Khaine's 60-slot Bigger Backpack Mod + A21 Doughs-Backpack AddEncumbreance, Edit player entity to decrease carry capacity -->
 	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='CarryCapacity']/@value">10</set>
 

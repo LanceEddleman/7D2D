@@ -1,8 +1,7 @@
 <Ozzland>
-	<!-- Moved to Zombie_QoL -->
 	<!-- Ozz, Added updates form JaxTeller718 also -->
-	<!-- <append xpath='/gamestages/spawner[@name="BloodMoonHorde"]/gamestage[ @stage &gt;23]' >
+	<append xpath='/gamestages/spawner[@name="BloodMoonHorde"]/gamestage[ @stage &gt;23]' >
 		<spawn group="ZombiesNight" num="500" maxAlive="64"/>
 		<spawn group="ZombiesAll" num="999999" maxAlive="64"/>
-	</append> -->
+	</append>
 </Ozzland>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<Name value="Ozz_VehicleUpdates" />
+	<DisplayName value="Ozz Vehicle Updates" />
+	<Description value="Game MODifications for 7 Days To Die" />
+	<Author value="Ragsy 2145, Ozzland" />
+	<Version value="1.0.0" compat="A21.1" />
+	<Website value="https://7daystodie.com" />
+</xml>

@@ -1,0 +1,6 @@
+<configs>
+
+ <!-- Clean out no arm zombie if using GuppyZombies mod it has a death animation bug -->
+    <csv xpath="/entitygroups/entitygroup[(contains(@name, 'Zombies'))]/text()" delim="\n" op="remove" >zombieGuppyNoArms</csv>
+
+</configs>
