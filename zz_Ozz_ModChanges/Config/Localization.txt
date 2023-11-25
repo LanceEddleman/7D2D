@@ -3,3 +3,6 @@ Ozzland_Mods---------------------------------------------------------------,,,Ne
 modArmorGelInSoles,item_modifiers,mod,New,Gel Insoles Mod
 modArmorGelInSolesDesc,item_modifiers,mod,New,Keeps your feet fresh.
 modArmorGelInSolesSchematic,item_modifiers,mod,New,Gel Insoles Mod Schematic
+
+modClothingCargoStorageSatchel,item_modifiers,mod,New,Clothing Triple Pocket -Satchel Mod
+modClothingCargoStorageSatchelDesc,item_modifiers,mod,New,Decreases encumbrance penalty by 3 by installing this modification into pants, shirts, and overcoats.

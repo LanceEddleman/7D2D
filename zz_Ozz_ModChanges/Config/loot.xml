@@ -6,6 +6,7 @@
 	</insertAfter>
 	<insertAfter xpath="/lootcontainers/lootgroup[@name='modArmorT2']/item[@name='modArmorImpactBracing']" >
 		<item name="modArmorGelInSoles"/>
+		<item name="modClothingCargoStorageSatchel"/>
 	</insertAfter>
 
 </config>

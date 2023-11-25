@@ -2,7 +2,7 @@
 	<!-- Requires Vehicle_Madness_Overhaul_A21_v4_Beta_3.0 -->
 	<!--  Vehicle Sound update/replacers based on fantastic work in Vehicle_Madness_Overhaul_A21_v4_Beta_3.0 -->
 
-<!-- 4x4 sound replacers -->
+<!-- Default 4x4 sound replacers -->
 	<remove xpath="vehicles/vehicle[@name='vehicle4x4Truck']/property[@class='engine']/property[starts-with(@name,'gear')]" />
 	<append xpath="vehicles/vehicle[@name='vehicle4x4Truck']/property[@class='engine']">
 		<property name="gear1" value="
@@ -32,6 +32,35 @@
 		"/>
 	</append>
 
+<!-- Dk's GT500 sound replacers -->
+	<remove xpath="vehicles/vehicle[@name='Gt 500']/property[@class='engine']/property[starts-with(@name,'gear')]" />
+	<append xpath="vehicles/vehicle[@name='Gt 500']/property[@class='engine']">
+		<property name="gear1" value="
+		500,2500, -1400,800,0, 700,2200,900,
+		Vehicles/4x4_accel1,
+		Vehicles/muscle_decel1,
+		0, .7, 1, .1, -9, .12, .1, Vehicles/4x4_idle_lp,
+		-.4, -.02, .7, .7, -.2, 9, .2, Vehicles/4x4_max_speed_lp
+		"/>
+		<property name="gear2" value="
+		500,2500, -2000,1000,2000, 600,2200,800,
+		Vehicles/4x4_accel2,
+		Vehicles/muscle_decel1,
+		-.25, -.05, .2, .4, -1, 1, .1, Vehicles/4x4_max_speed_lp
+		"/>
+		<property name="gear3" value="
+		500,2500, -2000,1000,2000, 500,2200,1000,
+		Vehicles/4x4_accel3,
+		Vehicles/muscle_decel2,
+		-.28, -.07, .3, .6, -1, 1, .1, Vehicles/4x4_max_speed_lp
+		"/>
+		<property name="gear4" value="
+		500,2500, -2000,1000,2000, 500,9999,9999,
+		,
+		Vehicles/muscle_decel2,
+		-.31, -.08, .6, .9, -1, 1, .1, Vehicles/4x4_max_speed_lp
+		"/>
+	</append>
 
 <!-- 	<vehicle name="vehicleVMMilitaryTruck">
 	<property class="engine">

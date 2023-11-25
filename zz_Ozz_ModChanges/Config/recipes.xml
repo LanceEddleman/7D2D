@@ -19,4 +19,13 @@
 		</recipe>
 	</insertAfter>
 
+	<insertAfter xpath="/recipes/recipe[@name='modClothingCargoStoragePocket']" >
+		<recipe name="modClothingCargoStorageSatchel" count="1" craft_area="workbench" tags="learnable">
+			<ingredient name="resourceLeather" count="8"/>
+			<ingredient name="resourceDuctTape" count="2"/>
+			<ingredient name="resourceCloth" count="100"/>
+			<ingredient name="resourceSewingKit" count="3"/>
+		</recipe>
+	</insertAfter>
+
 </configs>

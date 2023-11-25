@@ -7,6 +7,7 @@
 
 	<insertAfter xpath="//trader_item_groups/trader_item_group[@name='groupArmorMods']/item[@name='modArmorImpactBracing']" >
 		<item name="modArmorGelInSoles"/>
+		<item name="modClothingCargoStorageSatchel"/>
 	</insertAfter>
 
 </Ozzland>

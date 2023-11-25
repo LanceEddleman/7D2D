@@ -1,0 +1,8 @@
+<configs>
+<!-- Default Vehicles -->
+<set xpath="/items/item[@name='vehicle4x4TruckPlaceable']/effect_group/passive_effect[@name='DegradationMax']/@value">40000</set>
+<set xpath="/items/item[@name='vehicleMotorcyclePlaceable']/effect_group/passive_effect[@name='DegradationMax']/@value">8000</set>
+
+<!-- DK's'' Vehicles -->
+<set xpath="/items/item[@name='Gt 500Placeable']/effect_group/passive_effect[@name='DegradationMax']/@value">12000</set>
+</configs>

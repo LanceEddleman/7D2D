@@ -134,7 +134,82 @@
 			<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
 			<property name="FilterTags" value="MC_building"/>
 		</block>
-
-
 	</append>
+
+	<!-- Workbench -->
+	<set xpath="/blocks/block[@name='workbench']/property[@name='OnlySimpleRotations']/@value">false</set>
+
+	<append xpath="/blocks/block[@name='cntStorageGeneric']"><property name="TintColor" value="255, 255, 255"/></append>
+	<remove xpath="/blocks/block[@name='woodenBear']"/>
+
+	<insertAfter xpath="/blocks/block[@name='decoMannequinMilitaryCommando']">
+		<block name="woodenBear">
+			<property name="Extends" value="cntStorageGeneric"/>
+			<property name="DowngradeBlock" value="woodenBearInsecure"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIconTint" value="255, 255, 255"/><property name="TintColor" value="255, 255, 255"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Commercial/WoodenBearPrefab"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="OnlySimpleRotations" value="false"/>
+
+			<property name="Path" value="solid"/>
+			<property name="IsDecoration" value="true"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="OpenSound" value="collector_open"/>
+			<property name="CloseSound" value="collector_close"/>
+			<property name="SellableToTrader" value="true"/>
+			<property name="MaxDamage" value="500"/>
+			<property name="FuelValue" value="100"/>
+			<property class="RepairItems">
+				<property name="resourceWood" value="5"/>
+			</property>
+
+			<property name="SortOrder1" value="B458"/>
+			<property name="SortOrder2" value="0005"/>
+			<property name="Group" value="Basics,Building,advBuilding"/>
+			<property name="Tags" value="wood,workstationSkill,vehicle,canHaveCosmetic"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_decor,MC_building"/>
+		</block>
+
+		<block name="woodenBearInsecure">
+			<property name="Extends" value="cntStorageGenericInsecure"/>
+			<property name="CustomIcon" value="woodenBear" />
+			<property name="CustomIconTint" value="166, 166, 166"/><property name="TintColor" value="166, 166, 166"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Commercial/WoodenBearPrefab"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="OnlySimpleRotations" value="false"/>
+
+			<property name="Path" value="solid"/>
+			<property name="IsDecoration" value="true"/>
+			<property name="SellableToTrader" value="true"/>
+			<property name="MaxDamage" value="500"/>
+			<property name="FuelValue" value="100"/>
+			<property class="RepairItems">
+				<property name="resourceWood" value="5"/>
+			</property>
+
+			<drop event="Destroy" name="resourceWood" count="1,3"/>
+			<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.3" stick_chance="1"/>
+			<property name="SortOrder1" value="B458"/>
+			<property name="SortOrder2" value="0005"/>
+			<property name="Group" value="Basics,Building,advBuilding"/>
+			<property name="Tags" value="wood"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_decor,MC_building"/>
+		</block>
+	</insertAfter>
+
+
+
+
 </Ozzland>

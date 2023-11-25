@@ -1,4 +1,4 @@
-﻿<DHTA_Blocks>
+﻿<Ozzland>
 	<append xpath="/recipes">
 		<!-- Concrete blocks -->
 
@@ -23,5 +23,13 @@
 		<recipe name="ConcretePillar50_8H" count="1" craft_area="workbench" tags="workbenchCrafting">
 			<ingredient name="resourceConcreteMix" count="40"/>
 		</recipe>
+
+		<recipe name="woodenBear" count="1" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceWood" count="25"/>
+			<ingredient name="resourceSpring" count="5"/>
+			<ingredient name="resourceMechanicalParts" count="2"/>
+			<ingredient name="resourceForgedIron" count="3"/>
+		</recipe>
+
 	</append>
-</DHTA_Blocks>
+</Ozzland>

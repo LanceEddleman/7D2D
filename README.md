@@ -11,12 +11,38 @@ Often extensions for wants/needs based on other mods and basic game tweaks that 
 - A21 Updates: 	\* = completed
 	Working on
 	<br />Gen - Add LHG info panel to server, add notes and sections based on mods that need more info -not added to git
+				use LHG_InfoPanel mod to list info on mods used in game
 	<br />Gen - Update MoreContainer images and icons to show name on all crates for easier selection -not added to git
 	<br />Ozz - Need to add color or less transparency to main menus so you can read traders better
-	remove matt from gupp mod he is too annoying on death spins
+				updates to ui	
+	
+	finish current mod reviews, Review all current mods
+	review nexus mods for 7d
+
+	start making bundles for resources, food, drink, ect...
+	create next tier weapon mods that do more damage
+
 	lawn mover we never got to a point of using it
-	look at 8h blocks see if i can make 8w blocks
-	make 8h small round
+
+	convert CK vehicles to be spawned in the world gen very low chance
+
+	how to add perk and bonus perks
+	how to add new menu
+
+	break up my mods in to better components
+
+
+
+	<br />
+	<br />Oct 24
+	<br />\* Ozz - Ozz_ModChanges - Create a new pocket mod upgrade x3 for clothes
+	<br />\* Ozz - Ozz_BlockUpdates - Change bear decoration into a container (storage)
+	<br />\* Ozz - Ozz_BlockUpdates - Add full rotation options to Workbench
+	<br />\* Ozz - Ozz_VehicleUpdates - Add more hp to default vehicles and start adding to DK's vehicles
+	<br />\* Ozz - Ozz_VehicleUpdates - Convert DK's GT500 car sounds to lower noise VehicleMadness sounds -not adding to git
+	<br />\* Gen - HH_43_Dyes_ArtisanLab+Ozz, root color change test -not added to git
+	<br />\* Gen - Khelldon-CustomMenu, my startup screen and background -not added to git
+
 
 	<br />
 	<br />Oct 21-22
@@ -26,16 +52,18 @@ Often extensions for wants/needs based on other mods and basic game tweaks that 
 	<br />\* Ozz - Ozzland_QoL, remove oil shale option from forest biome
 	<br />\* Ozz - Ozzland_QoL, drop gup zombies to 50hp on death for easier cleanup
 	<br />\* Ozz - Ozzland_QoL, Tune down all deposits in the world, 0.7830 =0.1 ,0.6500 = 0.01	
-	<br />\* Gen - z_Ozz_VehicleUpdates, cut upa nd replace default vehicle sounds with VehicleMadness sounds -not added to git
-	
+	<br />\* Gen - Ozz_VehicleUpdates, cut up and replace default vehicle sound 4x4 with VehicleMadness sounds -not added to git
+	<br />\* Ozz - Ozz_ZombieUpdates, Move zombie specific changes into zombie updates mod
+	<br />\* Ozz - Ozz_ZombieUpdates, Remove zombieGuppyNoArms from gupZombies mod, is too annoying on death spins bug
+	<br />\* Ozz - Ozz_BlockUpdates, Create growing blocks for cement pillar50
 
 	<br />
 	<br />Oct 20
 	<br />\* Ozz - Ozzland_QoL, Adjust damage for create crawler
 	<br />\* Ozz - Ozzland_QoL, Turn down sound for all basic vehicle
 	<br />\* Ozz - Ozzland_QoL, Turn down sound for all VehicleMadness vehicle + Ozz
-	<br />\* Gen - BigCityRWG by Zorora, Tweeks- Trader count, spawn settings, remove no/mnt option -not added to git
-	<br />\* Ozz - Ozz_MoreCars, Continue to tweek %'s for next world
+	<br />\* Gen - BigCityRWG by Zorora, Tweaks- Trader count, spawn settings, remove no/mnt option -not added to git
+	<br />\* Ozz - Ozz_MoreCars, Continue to tweak %'s for next world
 
 	<br />
 	<br />Oct 19
@@ -92,4 +120,4 @@ Often extensions for wants/needs based on other mods and basic game tweaks that 
 	<br />\* Ozz - Determine and work around dew collector placement limitations
 
 	<br />Cancelled- Create recipe for casserole from old sham sandwich, beer
-	<br />Calcelled- Created my own Ozz_MoreCars (Look for / create traffic jam mod (like PZ) or make something like it)
+	<br />Cancelled- Created my own Ozz_MoreCars (Look for / create traffic jam mod (like PZ) or make something like it)
