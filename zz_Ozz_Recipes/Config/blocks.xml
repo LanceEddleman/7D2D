@@ -1,9 +1,7 @@
 <Ozzland>
 
 <!--	// MODLET:			OZZ - New Storage Blocks.
-		// EAC:				Friendly
-		// BUILD:			A18b155
-		// DISCLAIMER:		Be advised, this modlet is created/tested against the stated build.
+		// BUILD:			A18b155,A21.1
 		// TERMS OF USE:	N/A
 		// CREDITS:			Ozzland (author)
 -->
@@ -11,12 +9,12 @@
 	<!-- Gas Storage Container -->
 	<insertAfter xpath="/blocks/block[@name='cntBarrelGasOld']">
 		<block name="Gas Storage Container">
+			<property name="Extends" value="cntStorageGeneric"/>
 			<property name="CreativeMode" value="Player" />
 			<property name="IsTerrainDecoration" value="true"/>
 			<property name="CustomIcon" value="cntBarrelGasSingle00" />
 			<property name="Shape" value="ModelEntity" />
-			<property name="Model" value="Entities/Industrial/barrelGasPrefab" />
-			<property name="LootList" value="120" />
+			<property name="Model" value="Entities/Industrial/barrelGasPrefab"/>
 			<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket" />
 			<property name="Material" value="Mmetal_hard" /> <property name="MaxDamage" value="1500"/>
 			<property name="UseGlobalUV" value="L,L,L,L,L,L"/>
@@ -37,10 +35,10 @@
 		</block>
 
 		<block name="Gas Storage Container Unlocked">
+			<property name="Extends" value="cntStorageGenericInsecure"/>
 			<property name="CreativeMode" value="None"/>
 			<property name="CustomIcon" value="cntBarrelGasSingle00"/>
 			<property name="Class" value="Loot"/>
-			<property name="LootList" value="120"/>
 			<property name="Material" value="Mmetal_hard" /> <property name="MaxDamage" value="1500"/>
 			<property name="Shape" value="ModelEntity" />
 			<property name="Model" value="Entities/Industrial/barrelGasPrefab"/>
@@ -53,6 +51,7 @@
 
 	<insertAfter xpath="/blocks/block[@name='cntMedicineCabinetClosedRandomLootHelper']">
 		<block name="Medical Storage">
+			<property name="Extends" value="cntStorageGeneric"/>
 			<property name="ImposterExclude" value="true"/>
 			<property name="IsTerrainDecoration" value="true"/>
 			<property name="Material" value="Mmetal_medium" /> <property name="MaxDamage" value="1000"/>
@@ -64,7 +63,6 @@
 			<property name="Model" value="@:Entities/LootContainers/pill_case_closedPrefab.prefab"/>
 			<property name="Place" value="TowardsPlacerInverted"/>
 			<property name="DescriptionKey" value="furnitureGroupDesc"/>
-			<property name="LootList" value="15"/>
 			<property name="Class" value="SecureLoot"/>
 			<drop event="Destroy" name="resourceBrokenGlass" count="1,2"/>
 			<property class="RepairItems"> <property name="resourceScrapIron" value="10"/> </property>
@@ -75,10 +73,10 @@
 		</block>
 
 		<block name="Medical Storage Unlocked">
+			<property name="Extends" value="cntStorageGenericInsecure"/>
 			<property name="CreativeMode" value="None"/>
 			<property name="CustomIcon" value="cntPillCaseClosed"/>
 			<property name="Class" value="Loot"/>
-			<property name="LootList" value="7"/>
 			<property name="Shape" value="ModelEntity" />
 			<property name="Model" value="@:Entities/LootContainers/pill_case_closedPrefab.prefab"/>
 			<property name="Material" value="Mmetal_medium" /> <property name="MaxDamage" value="1000"/>

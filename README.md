@@ -12,29 +12,51 @@ Often extensions for wants/needs based on other mods and basic game tweaks that 
 	Working on
 	<br />Gen - Add LHG info panel to server, add notes and sections based on mods that need more info -not added to git
 				use LHG_InfoPanel mod to list info on mods used in game
-	<br />Gen - Update MoreContainer images and icons to show name on all crates for easier selection -not added to git
+	
+	
 	<br />Ozz - Need to add color or less transparency to main menus so you can read traders better
 				updates to ui	
 	
+	*look at vertical blocks see why round is starting square
+
+	1. Update MoreContainer images and icons to show name on all crates for easier selection -not added to git
+		TODO: sales,
+
+	2. start making bundles for resources, food, drink, cloth, ect...
+
+	3. convert CK vehicles to be spawned in the world gen very low chance
+		combine into a pack
+
+
 	finish current mod reviews, Review all current mods
 	review nexus mods for 7d
 
-	start making bundles for resources, food, drink, ect...
 	create next tier weapon mods that do more damage
 
 	lawn mover we never got to a point of using it
-
-	convert CK vehicles to be spawned in the world gen very low chance
 
 	how to add perk and bonus perks
 	how to add new menu
 
 	break up my mods in to better components
 
-
+	<br />
+	<br />Nov 25
+	<br />\* Ozz - Ozz_Recipes - Create recipes, Make paper out of plant fiber and cotton plants
+	<br />\* Update MoreContainer images and icons to show name on crates for easier selection -not added to git
+	\* Container changes:
+	----- Arrows storage to Paint and Dyes
+	\* Container updates:
+	----- Medical, Food, Mods, Autos, Ammo, Armor, Seeds, Weapons, Basic Resources
+	\* Icon changes
+	----- Medical, Food, Mods, Autos, Ammo, Armor, Seeds, Weapons, Basic Resources,Paint and Dyes
+	<br />\* Ozz - Ozz_Recipes - Error in gas storage container fixed, also fixed medical container
+	<br />\* Gen - Robeloto_LoudSoundsLowered, fixed pointers working for A21 -not added to git
+	<br />\* Gen - Khelldon-CustomMenu, fix old version warning in mod info file -not added to git
+	<br />\* Gen - A21-Reapers Legendary Armor and Clothing + Ozz fixed several error in new file pointer schema -not added to git
 
 	<br />
-	<br />Oct 24
+	<br />Nov 24
 	<br />\* Ozz - Ozz_ModChanges - Create a new pocket mod upgrade x3 for clothes
 	<br />\* Ozz - Ozz_BlockUpdates - Change bear decoration into a container (storage)
 	<br />\* Ozz - Ozz_BlockUpdates - Add full rotation options to Workbench
@@ -43,9 +65,8 @@ Often extensions for wants/needs based on other mods and basic game tweaks that 
 	<br />\* Gen - HH_43_Dyes_ArtisanLab+Ozz, root color change test -not added to git
 	<br />\* Gen - Khelldon-CustomMenu, my startup screen and background -not added to git
 
-
 	<br />
-	<br />Oct 21-22
+	<br />Nov 21-22
 	<br />\* Ozz - Ozz_StackSizes - change cloth stack to 5k - seems like we are getting a ton
 	<br />\* Ozz - Ozz_StackSizes - change brass stack to 10k - seems like we are getting a ton
 	<br />\* Ozz - Ozzland_Pickup_Burn_Options - Find dead corn gives corn change 0.5 chance to 0.015
@@ -58,7 +79,7 @@ Often extensions for wants/needs based on other mods and basic game tweaks that 
 	<br />\* Ozz - Ozz_BlockUpdates, Create growing blocks for cement pillar50
 
 	<br />
-	<br />Oct 20
+	<br />Nov 20
 	<br />\* Ozz - Ozzland_QoL, Adjust damage for create crawler
 	<br />\* Ozz - Ozzland_QoL, Turn down sound for all basic vehicle
 	<br />\* Ozz - Ozzland_QoL, Turn down sound for all VehicleMadness vehicle + Ozz
@@ -66,7 +87,7 @@ Often extensions for wants/needs based on other mods and basic game tweaks that 
 	<br />\* Ozz - Ozz_MoreCars, Continue to tweak %'s for next world
 
 	<br />
-	<br />Oct 19
+	<br />Nov 19
 	<br />\* Ozz - Change steel01door forged steel from 10-25
 	<br />\* Ozz - Sewing kit missed in stack size updates, change from 20-250
 	<br />\* Gen - VehicleMadness change ElectricalWire stack size 50-250 -not added to git
@@ -76,7 +97,7 @@ Often extensions for wants/needs based on other mods and basic game tweaks that 
 	<br />\* Ozz - Add mods options to nailgun, used new csv format add/remove options
 
 	<br />
-	<br />Oct 16-17
+	<br />Nov 16-17
 	<br />\* Ozz - Review / adjust stack sizes, double current, still minimal but better
 	<br />\* Ozz - Change storage containers sizes, group hoarders complaining...
 	<br />\* Ozz - Make new military containers lootable
@@ -85,20 +106,20 @@ Often extensions for wants/needs based on other mods and basic game tweaks that 
 	<br />\* Ozz - Ozz_MoreCars mod, Add more cards to world
 
 	<br />
-	<br />Oct 14-15
+	<br />Nov 14-15
 	<br />\* Gen - Gup Zombies, fix loot group names, make specific zombie type -not added to git
 	<br />\* Gen - KhaineGB TPF Behemoth fix loot group, make specific loot -not added to git
 	<br />\* Ozz - Change fridge container sizes
 	<br />\* Ozz - Create new player locker, large storage size 8,9
 
 	<br />
-	<br />Oct 13
+	<br />Nov 13
 	<br />\* Gen - Update KhaineGB TPF Behemoth loot list and drop chance -not added to git
 	<br />\* Gen - Inject zombie lootable and loot list for GupA21 zombies -not added to git
 	<br />\* Gen - lower noise as much as i can determine for dks GT500 car -not adding to git
 
 	<br />
-	<br />Oct 11-12
+	<br />Nov 11-12
 	<br />\* Gen - Update Rabsy brighter headlight to A21, changed b7 to b2 -not adding to git
 	<br />\* Ozz - Add clothing pocket mod to bandana, had missed a tag for pocketMod option
 	<br />\* Ozz - Add hit points to wine barrel for drink storage
@@ -109,7 +130,7 @@ Often extensions for wants/needs based on other mods and basic game tweaks that 
 	<br />\* Gen - Find Behemoth and add to loot table -not adding to git
 
 	<br />
-	<br />Oct 3-Oct 10
+	<br />Nov 3-Nov 10
 	<br />\* Gen+Ozz - Update Railgun: Ammo types, Field conversions based on TFP changes
 	<br />\* Ozz - Create recipe for painkiller and vitamin from old sham sandwich
 	<br />\* Ozz - Create 2nd winter log recipe that uses cloth in place of paper
