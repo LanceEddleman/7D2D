@@ -1,0 +1,6 @@
+<Ozzland>  
+  <set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/@difficulty">3</set>
+  <set xpath="/worldgeneration/biomes/biome[@name='desert']/@difficulty">4</set>
+  <set xpath="/worldgeneration/biomes/biome[@name='snow']/@difficulty">4</set>
+  <set xpath="/worldgeneration/biomes/biome[@name='burnt_forest']/@difficulty">5</set>
+</Ozzland>

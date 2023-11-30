@@ -1,0 +1,75 @@
+﻿<Ozzland>
+	<insertAfter xpath="/blocks/block[@name='chemistryStation']">
+		<block name="miniChemStation">
+		<property name="Class" value="Campfire" />
+		<property class="Workstation">
+		<property name="Modules" value="output,fuel,input" />
+		<property name="CraftingAreaRecipes" value="chemistryStation"/>
+		</property>
+		<property name="UnlockedBy" value="craftingWorkstations" />
+
+
+		<property name="DescriptionKey" value="miniChemStationDesc"/>
+		<property name="CustomIcon" value="cntChemPileLarge"/>
+		<property name="CustomIconTint" value="0032ff"/>
+		<property name="TintColor" value="0032ff"/>
+		<property name="Model" value="Entities/Crafting/ChemSetDPrefab"/>
+		<property name="MultiBlockDim" value="1,1,1"/>
+		<property name="ModelOffset" value="0,0,0"/>
+		<property name="GndAlign" value="1"/>
+		<property name="ParticleName" value="candle_flame"/>
+		<property name="ParticleOffset" value="0.5,0,0.5"/>
+		<property name="Stacknumber" value="5"/>
+
+		<property name="CreativeMode" value="Player" />
+		<property name="DisplayType" value="blockMulti" />
+		<property name="WorkstationIcon" value="ui_game_symbol_chemistry" />
+		<property name="WorkstationJournalTip" value="chemistryStationTip" />
+		<property name="CraftIcon" value="ui_game_symbol_chemistry" />
+		<property name="CraftActionName" value="lblContextActionMix" />
+		<property name="Stacknumber" value="1" />
+		<property name="Material" value="Miron_scrap" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="ImposterDontBlock" value="true" />
+		<property name="WaterFlow" value="permitted" />
+		<property name="Place" value="TowardsPlacerInverted" />
+		<property name="OnlySimpleRotations" value="true" />
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+		<property name="Path" value="solid" />
+		<property name="IsTerrainDecoration" value="true" />
+		<property name="Weight" value="0" />
+		<property name="EconomicValue" value="5000" />
+		<property name="EconomicBundleSize" value="1" />
+		<property name="SellableToTrader" value="false" />
+		<property name="TraderStageTemplate" value="midTier2" />
+		<property name="MaxDamage" value="800" />
+		<property name="HeatMapStrength" value="5" />
+		<property name="HeatMapTime" value="5000" />
+		<property name="HeatMapFrequency" value="1000" />
+		<property name="ActiveRadiusEffects" value="buffCampfireAOE(3)" />
+		<property name="OpenSound" value="chem_station_open" />
+		<property name="CloseSound" value="chem_station_close" />
+		<property name="CraftSound" value="chem_station_mix_click" />
+		<property name="CraftCompleteSound" value="chem_station_complete_item" />
+		<property name="TakeDelay" value="15" />
+		<property class="RepairItems">
+		<property name="resourceForgedIron" value="10" />
+		<property name="resourceMetalPipe" value="10" />
+		<property name="resourceWood" value="40" />
+		</property>
+		<drop event="Harvest" name="resourceScrapIron" count="8" tag="allHarvest" />
+		<drop event="Harvest" name="resourceWood" count="6" tag="allHarvest" />
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble" />
+		<drop event="Harvest" name="resourceForgedIron" count="2" tag="salvageHarvest" />
+		<drop event="Harvest" name="resourceMetalPipe" count="2" tag="salvageHarvest" />
+		<drop event="Harvest" name="resourceWood" count="5" tag="salvageHarvest" />
+		<drop event="Destroy" count="0" />
+		<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1" />
+		<property name="SortOrder1" value="B281" />
+		<property name="SortOrder2" value="0500" />
+		<property name="Group" value="Building,Science,TCScience,advBuilding" />
+		<property name="Tags" value="workstationSkill,twitch_workstation" />
+		<property name="FilterTags" value="MC_playerBlocks,SC_decor" />
+		</block>
+	</insertAfter>
+</Ozzland>

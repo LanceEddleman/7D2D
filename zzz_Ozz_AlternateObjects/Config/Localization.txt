@@ -1,0 +1,4 @@
+﻿Key,File,Type,english
+
+miniChemStation,items,Item,[0032ff]Mini Chem Station[-]
+miniChemStationDesc,items,Item,[0032ff]One square mini crack lab[-]

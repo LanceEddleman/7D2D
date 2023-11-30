@@ -1,0 +1,13 @@
+﻿<Ozzland>
+
+	<append xpath="/recipes">
+		<recipe name="miniChemStation" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+			<ingredient name="toolBeaker" count="1" />
+			<ingredient name="resourceForgedIron" count="50" />
+			<ingredient name="toolCookingPot" count="1" />
+			<ingredient name="resourceMetalPipe" count="15" />
+			<ingredient name="resourceAcid" count="5" />
+		</recipe>
+	</append>
+
+</Ozzland>

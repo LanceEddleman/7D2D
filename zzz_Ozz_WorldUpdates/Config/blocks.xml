@@ -1,0 +1,15 @@
+﻿<Ozzland>
+
+	<!-- Set Node colors for map -->
+		<!--terrOreCoal original color "0,0,0" Black-->
+		<set xpath="/blocks/block[@name='terrOreCoal']/property[@name='Map.Color']/@value">0,0,0</set>
+		<!--terrOreLead original color "70,110,120" Changed to Blue -->
+		<set xpath="/blocks/block[@name='terrOreLead']/property[@name='Map.Color']/@value">0,0,255</set>
+		<!--terrOreIron original color "120,70,0" Changed to Green -->
+		<set xpath="/blocks/block[@name='terrOreIron']/property[@name='Map.Color']/@value">0, 255, 0</set>
+		<!--terrOreOilDeposit original color "230,180,120" Changed to Red-->
+		<set xpath="/blocks/block[@name='terrOreOilDeposit']/property[@name='Map.Color']/@value">255,0,0</set>
+		<!--terrOrePotassiumNitrate original color "255,255,255" White-->
+		<set xpath="/blocks/block[@name='terrOrePotassiumNitrate']/property[@name='Map.Color']/@value">255,255,255</set>
+
+</Ozzland>

@@ -1,0 +1,5 @@
+﻿<Ozzland>
+      <append xpath="//trader_item_groups/trader_item_group[@name='workstations']">
+        <item name="miniChemStation" />
+      </append>
+</Ozzland>

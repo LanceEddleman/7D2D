@@ -3,9 +3,9 @@ Mods for 7 Days 2 Die
 
 - Gen Mods
 Personal updates to existing creators mods. 
-All gen mods should be tagged by original creator. Alterations to these mods was done for basic formatting, cleanup, and / or value alterations to better suit me and my groups play style.
+All gen mods should be tagged for original creator. Alterations to these mods was done for basic formatting, cleanup, and / or value alterations to better suit me and my groups play style. These mods/updates are not available from me
 
-- Ozz_Mods - Mods created by me
+- Ozz_Mods - Mods created by me or updates to others mod specific to what my server is running
 Often extensions for wants/needs based on other mods and basic game tweaks that better fit my groups play style.
 
 - A21 Updates: 	\* = completed
@@ -13,14 +13,20 @@ Often extensions for wants/needs based on other mods and basic game tweaks that 
 	<br />Gen - Add LHG info panel to server, add notes and sections based on mods that need more info -not added to git
 				use LHG_InfoPanel mod to list info on mods used in game
 	
-	
-	<br />Ozz - Need to add color or less transparency to main menus so you can read traders better
-				updates to ui	
-	
 	*look at vertical blocks see why round is starting square
 
 	1. Update MoreContainer images and icons to show name on all crates for easier selection -not added to git
-		TODO: sales,
+		TODO:
+		-- crafting storage to House Parts
+		-- gun crafting needs title added
+		-- forge storage needs title
+		-- chem storage needs title
+		-- mining storage needs title
+		-- barter needs title
+		-- need a basic overflow
+		-- need car overflow or car parts only
+		-- gun crafting to weapon crafting title
+		-- need armor overflow
 
 	2. start making bundles for resources, food, drink, cloth, ect...
 
@@ -31,14 +37,83 @@ Often extensions for wants/needs based on other mods and basic game tweaks that 
 	finish current mod reviews, Review all current mods
 	review nexus mods for 7d
 
-	create next tier weapon mods that do more damage
-
 	lawn mover we never got to a point of using it
 
-	how to add perk and bonus perks
-	how to add new menu
-
 	break up my mods in to better components
+
+Sections for Info Panel
+		Map colors
+		<!--terrOreCoal Black-->
+		<!--terrOreLead Blue -->
+		<!--terrOreIron Green -->
+		<!--terrOreOilDeposit Red-->
+		<!--terrOrePotassiumNitrate White-->
+
+		
+		advanced lockpicking error this is coming from 0-SCore
+
+		fix to much cloth on clothes break down or make clothes amount individual not all the same
+
+
+
+
+	<br />
+	<br />Nov 26-29, 2023
+	<!-- Updates -->
+	<br />\* Ozz - Ozz_BlockUpdates, cleanup
+	<br />\* Ozz - Ozz_BlockUpdates, Add full rotation to chemistry station and forge
+	<br />\* Ozz - Ozz_BlockUpdates, change woodBear to give container woodbear on destroy
+	<br />\* Ozz - Ozz_WorldUpdates, Set ore node color in map, then moved to world updates mod
+	<br />\* Ozz - Ozz_StackSizes, Review and update various stack sizes
+	<br />\* Ozz - Ozz_ZombieUpdates, Remove zombieGuppyNoArms from gupZombies mod, found and removed 2 more instances
+	<br />\* Ozz - Ozz_VehicleUpdates, updated vehicle hps, engine sound pointers
+	<br />\* Ozz - Ozz_WorldUpdates, biomes setting advanced 1 lv across all boimes
+	<br />\* Gen - Bagelshoes-ToolsPlus-main, added recipes for extra tools, high cost -not added to git
+	<br />\* Gen - 3 Series -not added to git
+	<br />\* Gen - 370 -not added to git
+	<br />\* Gen - 458 -not added to git
+	<br />\* Gen - A21-Reapers Legendary Armor and Clothing -not added to git
+	<br />\* Gen - British GranTurismo -not added to git
+	<br />\* Gen - EliteZombies -not added to git
+
+	<!-- Added to Server/Client -->
+	<br />\* Ozz - Ozz_AlternateObjects, Create mini chem station 1 square large
+	<br />\* Ozz - OzzlandShortTutorial, create short game start tutorial
+	<br />\* Gen - Scaling Steel Quest Rewards -not added to git
+	<br />\* Gen - UnmarkedInterceptor -not added to git
+	<br />\* Gen - StabilityNerdyGlasses -not added to git
+	<br />\* Gen - Improved Business Suits -not added to git
+	<br />\* Gen - FixRWGPreviewLegendColours -not added to git
+	<br />\* Gen - GMCAmbulance -not added to git
+	<br />\* Gen - Sneak Attack Standing Up -not added to git
+	<br />\* Gen - Slightly Better Glasses wBartering -not added to git
+	<br />\* Gen - Tanman's Extended Gun Attachments -not added to git
+	<br />\* Gen - Shrader's-Bonus Perks v2.1.2 -not added to git
+	<br />\* Gen - OcbStopFuelWaste -not added to git
+	<br />\* Gen - MPL-Downed Trees PF_2_0 -not added to git
+	<br />\* Gen - Cloud's Scuba Mask -not added to git
+	<br />\* Gen - durable clothing -not added to git
+	<br />\* Gen - No Stamina Drain on ADS -not added to git
+	<br />\* Gen - FPS Trader Number 9 -not added to git
+
+	<!-- Added, Slight modifications and english translations -->
+	<br />\* Gen - WhiteGandalfs_z2_MapColouredBlocks -not added to git
+	<br />\* Gen - WhiteGandalfs_BlockFixes -not added to git
+	<br />\* Gen - WhiteGandalfs_ClearBlock -not added to git
+	<br />\* Gen - WhiteGandalfs_FloraFixes -not added to git
+	<br />\* Gen - WhiteGandalfs_MissingDescriptions -not added to git
+	<br />\* Gen - WhiteGandalfs_QuestFixes -not added to git
+	<br />\* Gen - WhiteGandalfs_TakeYourOwnStuff -not added to git
+	<br />\* Gen - WhiteGandalfs_Tool-Weapon-Armor-Fixes -not added to git
+	<br />\* Gen - WhiteGandalfs_TreeDevelopment -not added to git
+	<br />\* Gen - WhiteGandalfs_WeatherFixes -not added to git
+	<br />\* Gen - WhiteGandalfs_z2_MapColouredBlocks -not added to git
+
+	<!-- Remove from Server/Client -->
+	<br />\* Ozz - Remove Ozz_Vehicle_Changes, combined into Ozz_VehicleUpdates
+	<br />\* Gen - Remove gupMakeAridGreatAgain mod, causes mass lagg across server
+	<br />\* Gen - UnmarkedPoliceHelena
+
 
 	<br />
 	<br />Nov 25

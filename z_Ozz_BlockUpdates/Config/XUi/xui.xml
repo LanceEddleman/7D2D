@@ -1,8 +1,3 @@
 <configs>
-    <!-- <append xpath="/xui/ruleset">
-		<window_group name="looting" left_panel_valign_top="false" controller="XUiC_LootWindowGroup" close_compass_on_open="true">
-			<window name="windowLooting"/>
-			<window name="windowNonPagingHeader" />
-		</window_group>
-    </append> -->
+
 </configs>

@@ -1,0 +1,14 @@
+<Ozzland>
+
+	<insertAfter xpath="/progression/crafting_skills/crafting_skill[@name='craftingWorkstations']/display_entry/unlock_entry[contains(@item, 'chemistryStation')]">
+		<unlock_entry item="miniChemStation" unlock_tier="2" />
+	</insertAfter>
+
+	<insertAfter xpath="/progression/crafting_skills/crafting_skill[@name='craftingWorkstations']/effect_group/passive_effect[contains(@tags, 'chemistryStation')]">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="50,100" value="1" tags="miniChemStation"/>
+	</insertAfter>
+
+    <!-- <csv xpath="//crafting_skill[@name='craftingWorkstations']/effect_group/passive_effect[@tags='chemistryStation']/text()" delim="," op="add" >miniChemStation</csv> -->
+	<set xpath="//crafting_skill[@name='craftingWorkstations']/effect_group/passive_effect[@tags='chemistryStation']/@tags">chemistryStation,miniChemStation</set>
+
+</Ozzland>
