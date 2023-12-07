@@ -1,0 +1,48 @@
+<configs>
+<!--
+	// MODLET:			OZZ - Trap parts recipie.
+	// EAC:				Friendly
+	// BUILD:			A19.2
+	// DISCLAIMER:		Be advised, this modlet is created/tested against the stated build.
+	// TERMS OF USE:	N/A
+	// CREDITS:			Ozzland (author)
+-->
+	<!-- Pokie Paste not used at this time, needs a corresponding custom item added -->
+<!-- 
+	<append xpath="//recipes">
+		<recipe name="Pokie Paste" count="1" craft_area="workbench">
+			<ingredient name="resourceRawDiamond" count="1"/>
+			<ingredient name="resourceOil" count="2"/>
+			<ingredient name="resourceCrushedSand" count="1"/>
+			<ingredient name="resourcePotassiumNitratePowder" count="5" />
+		</recipe>
+	</append>
+ -->
+
+	<!-- From Kiane Adding back the wood log spikes and scrap iron spikes -->
+ <append xpath="/recipes">
+	<recipe name="scrapIronLogSpike4" count="1"> <!-- trap -->
+		<ingredient name="resourceScrapIron" count="20"/>
+	</recipe>
+
+	<recipe name="woodLogSpike1" count="1"> <!-- trap -->
+		<ingredient name="resourceWood" count="15"/>
+	</recipe>
+
+	<recipe name="foodCropGraceCorn" count="2" craft_area="chemistryStation">
+		<ingredient name="foodCropCorn" count="1"/>
+		<ingredient name="foodCanLamb" count="1"/>
+		<ingredient name="foodCanSalmon" count="1" />
+		<ingredient name="resourceAnimalFat" count="1" />
+		<ingredient name="drinkJarBoiledWater" count="1"/>
+	</recipe>
+
+	<!-- // Oil for spike upgrades -->
+	<recipe name="FlammableCornOil" count="1" craft_area="chemistryStation">
+		<ingredient name="foodCropGraceCorn" count="10"/>
+		<ingredient name="resourceAnimalFat" count="1" />
+	</recipe>
+</append>
+
+
+</configs>

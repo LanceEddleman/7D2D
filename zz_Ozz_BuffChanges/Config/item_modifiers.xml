@@ -1,0 +1,5 @@
+<configs>
+
+	<set xpath="/item_modifiers/item_modifier[@name='modMeleeClubBurningShaft']/effect_group/triggered_effect[@trigger='onSelfAttackedOther']/@value">25</set>
+
+</configs>

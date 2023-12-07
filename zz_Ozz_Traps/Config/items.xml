@@ -1,0 +1,40 @@
+<configs>
+<!--	
+	// MODLET:			OZZ - Add upgrade items
+	// EAC:				Friendly
+	// BUILD:			A17b208
+	// DISCLAIMER:		Be advised, this modlet is created/tested against the stated build.
+	// TERMS OF USE:	N/A
+	// CREDITS:			Ozzland (author)
+-->
+	<insertAfter xpath="//item[@name='foodCropGraceCorn']" >
+		<item name="FlammableCornOil"> <!-- log spike 6 Steel -->
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+			<property name="Material" value="MresourceOil"/>
+			<property name="Stacknumber" value="500"/> <!-- STK resource -->
+			<property name="EconomicValue" value="150"/>
+			<property name="Group" value="Chemicals"/>
+			<property name="CraftingSkillGroup" value="craftSkillScience"/>
+			<property name="CustomIcon" value="resourceOil"/><property name="CustomIconTint" value="FF5B2B"/>
+		</item>
+
+		<item name="SteelBluedCoating"> <!-- bladetrap and steel updates -->
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+			<property name="Material" value="MresourceOil"/>
+			<property name="Stacknumber" value="500"/> <!-- STK resource -->
+			<property name="EconomicValue" value="150"/>
+			<property name="Group" value="Resources,Chemicals,CFChemicals"/>
+			<property name="CraftingSkillGroup" value="craftSkillScience"/>
+			<property name="CustomIcon" value="resourceOil"/><property name="CustomIconTint" value="0066CC"/>
+		</item>
+	</insertAfter>
+
+
+	<append xpath="//property[@name='Allowed_upgrade_items']/@value">,resourceSilverNugget,resourceGoldNugget,resourceRawDiamond,FlammableCornOil,SteelBluedCoating</append>
+
+
+</configs>

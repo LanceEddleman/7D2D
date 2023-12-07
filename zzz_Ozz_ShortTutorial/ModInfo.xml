@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+    <Name value="OzzlandShortTutorial" /> 
+    <DisplayName value="Ozzland Short Tutorial" /> 
+    <Description value="Makes intro tutorial 1 step: Create Axe."/> 
+    <Author value="Ozzland" />
+    <Version value="1.0.7" />
+    <Website value="" />
+</xml>

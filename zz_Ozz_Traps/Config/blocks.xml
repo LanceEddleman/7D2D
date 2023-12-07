@@ -1,0 +1,177 @@
+﻿<configs>
+<!-- Change basic blade trap to iron based -->
+<set xpath="//block[@name='bladeTrap']/property[@class='RepairItems']/property/@name">resourceForgedIron</set>
+<set xpath="//block[@name='bladeTrap']/property[@name='Stacknumber']/@value">25</set>
+
+<!-- Add Blade Trap upgrades -->
+<insertAfter xpath="/blocks/block[@name='bladeTrap']">
+<block name="hardenedBladeTrap">
+	<property name="Extends" value="bladeTrap" />
+	<property name="Material" value="Mtrap_v2" />
+	<property name="Damage" value="30" />
+	<property name="DamageReceived" value="3" />
+	<property name="MaxDamage" value="4500" />
+	<property name="RequiredPower" value="30" />
+	<property name="ActivationDistance" value="6" />
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="5" />
+	</property>
+	<property name="EconomicValue" value="555" />
+	<property name="CustomIcon" value="bladeTrap" />
+	<property name="CustomIconTint" value="9900cc" />
+	<property name="DowngradeBlock" value="bladeTrap" />
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="steelBladeTrap" />
+		<property name="Item" value="resourceForgedSteel" />
+		<property name="ItemCount" value="20" />
+		<property name="UpgradeHitCount" value="4" />
+	</property>
+</block>
+
+<block name="steelBladeTrap">
+	<property name="Extends" value="hardenedBladeTrap" />
+	<property name="Material" value="Mtrap_v3" />
+	<property name="Damage" value="50" />
+	<property name="DamageReceived" value="3" />
+	<property name="MaxDamage" value="7500" />
+	<property name="RequiredPower" value="40" />
+	<property class="RepairItems">
+		<property name="resourceForgedSteel" value="10" />
+		<property name="resourceForgedIron" value="10" />
+	</property>
+	<property name="EconomicValue" value="666" />
+	<property name="CustomIcon" value="bladeTrap" />
+	<property name="CustomIconTint" value="3333ff" />
+	<property name="DowngradeBlock" value="hardenedBladeTrap" />
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="stainlessSteelBladeTrap" />
+		<property name="Item" value="SteelBluedCoating" />
+		<property name="ItemCount" value="4" />
+		<property name="UpgradeHitCount" value="4" />
+	</property>
+</block>
+
+<block name="stainlessSteelBladeTrap">
+	<property name="Extends" value="steelBladeTrap" />
+	<property name="Material" value="Mtrap_v4" />
+	<property name="Damage" value="60" />
+	<property name="MaxDamage" value="10000" />
+	<property name="RequiredPower" value="50" />
+	<property class="RepairItems">
+		<property name="resourceForgedSteel" value="15" />
+		<property name="resourceForgedIron" value="10" />
+	</property>
+	<property name="EconomicValue" value="777" />
+	<property name="CustomIcon" value="bladeTrap" />
+	<property name="CustomIconTint" value="00ff00" />
+	<property name="DowngradeBlock" value="steelBladeTrap" />
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="diamondBladeTrap" />
+		<property name="Item" value="resourceRawDiamond" />
+		<property name="ItemCount" value="4" />
+		<property name="UpgradeHitCount" value="4" />
+	</property>
+</block>
+	
+<block name="diamondBladeTrap">
+	<property name="Extends" value="stainlessSteelBladeTrap" />
+	<property name="Material" value="Mtrap_v5" />
+	<property name="Damage" value="100" />
+	<property name="DamageReceived" value="2" />
+	<property name="MaxDamage" value="15000" />
+	<property name="RequiredPower" value="65" />
+	<property class="RepairItems">
+		<property name="resourceForgedSteel" value="15" />
+		<property name="resourceForgedIron" value="10" />
+		<property name="resourceSteelPolishR" value="1" />
+	</property>
+	<property name="EconomicValue" value="999" />
+	<property name="CustomIcon" value="bladeTrap" />
+	<property name="CustomIconTint" value="ffff00" />
+	<property name="DowngradeBlock" value="stainlessSteelBladeTrap" /> 
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="diamondEndBladeTrap" />
+		<property name="Item" value="terrStone" />
+		<property name="ItemCount" value="999" />
+		<property name="UpgradeHitCount" value="999" />
+	</property>
+</block>
+
+<block name="diamondEndBladeTrap">
+	<property name="Extends" value="diamondBladeTrap" />
+</block>
+
+</insertAfter>
+
+<append xpath="//block[@name='bladeTrap']">
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="hardenedBladeTrap" />
+		<property name="Item" value="resourceForgedIron" />
+			<property name="ItemCount" value="20" />
+		<property name="UpgradeHitCount" value="4" />
+	</property>
+</append>
+
+
+<set xpath="/blocks/block[@name='rWoodLogSpike2']/property[@name='Damage']/@value">5</set>
+<append xpath="/blocks/block[@name='rWoodLogSpike2']"><property name="Material" value="MwoodCatwalk" /></append>
+
+<set xpath="/blocks/block[@name='rWoodMetalLogSpike3']/property[@name='Damage']/@value">7</set>
+<set xpath="/blocks/block[@name='rWoodMetalLogSpike3']/property[@name='Material']/@value">MtreeWoodMedium</set>
+
+<!-- scrap iron -->
+<set xpath="/blocks/block[@name='scrapIronLogSpike4']/property[@name='Damage']/@value">10</set>
+<set xpath="/blocks/block[@name='scrapIronLogSpike4']/property[@name='Texture']/@value">352</set>
+<set xpath="/blocks/block[@name='scrapIronLogSpike4']/property[@name='Material']/@value">Mbridge_metal</set>
+
+<!-- iron corrigated -->
+<set xpath="/blocks/block[@name='rScrapIronLogSpike5']/property[@name='Damage']/@value">13</set>
+<set xpath="/blocks/block[@name='rScrapIronLogSpike5']/property[@name='Texture']/@value">194</set>
+<append xpath="/blocks/block[@name='rScrapIronLogSpike5']"><property name="Material" value="MmetalCatwalk" /></append>
+
+<!-- steel -->
+<set xpath="/blocks/block[@name='steelLogSpike6']/property[@name='Damage']/@value">20</set>
+<set xpath="/blocks/block[@name='steelLogSpike6']/property[@name='Texture']/@value">282</set>
+<set xpath="/blocks/block[@name='steelLogSpike6']/property[@name='Material']/@value">Mconcrete</set>
+
+	<append xpath="/blocks/block[@name='steelLogSpike6']">
+ 		<property class="UpgradeBlock">
+			<property name="ToBlock" value="steelFireSpike" />
+			<property name="Item" value="FlammableCornOil" />
+			<property name="ItemCount" value="6" />
+			<property name="UpgradeHitCount" value="1" />
+		</property>
+		<property name="DowngradeBlock" value="rScrapIronLogSpike5" />
+	</append>
+
+<set xpath="/blocks/block[@name='steelLogSpike6']/property[@name='Damage']/@value">20</set>
+<set xpath="/blocks/block[@name='steelLogSpike6']/property[@name='Texture']/@value">282</set>
+<set xpath="/blocks/block[@name='steelLogSpike6']/property[@name='Material']/@value">Mconcrete</set>
+
+<insertAfter xpath="/blocks/block[@name='steelLogSpike6']" >
+	<!-- log spike 6 Steel + fire -->
+	<block name="steelFireSpike">
+		<property name="Extends" value="steelLogSpike6"/>
+		<property name="Material" value="MglassBulletproof" />
+		<property name="Texture" value="598,598,598,598,598,598" />
+		<property name="Damage_received" value="20"/>
+		<property class="RepairItems"> <property name="resourceForgedSteel" value="10" /> </property>
+		<property name="CustomUpgradeSound" value="place_block_metal" />
+		<property name="DowngradeBlock" value="steelLogSpike6" />
+		<property name="BuffsWhenWalkedOn" value="buffBurningElement"/>
+		<property name="BuffsWhenWalkedOn" value="buffBurningFlamingArrow"/>
+		<property name="DowngradeBlock" value="steelLogSpike6"/>
+		<property class="UpgradeBlock">
+			<property name="ToBlock" value="InfernoSpike" />
+			<property name="Item" value="FlammableCornOil" />
+			<property name="ItemCount" value="999" />
+			<property name="UpgradeHitCount" value="999" />
+		</property>
+	</block>
+
+	<block name="InfernoSpike">
+		<property name="Extends" value="steelFireSpike" />
+	</block>
+</insertAfter>
+
+</configs>

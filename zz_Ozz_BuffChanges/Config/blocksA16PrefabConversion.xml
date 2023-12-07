@@ -1,0 +1,26 @@
+<configs>	
+<!--
+	// MODLET:			OZZ - Buff Changes
+	// EAC:				Friendly
+	// BUILD:			A18.1b8
+	// DISCLAIMER:		Be advised, this modlet is created/tested against the stated build.
+	// TERMS OF USE:	N/A
+	// CREDITS:			Ozzland (author)
+-->
+
+<!-- 
+	<set xpath="/blocks/block[@id='657']/property[@name='Buff']/@value">buffShocked2</set>
+	<set xpath="/blocks/block[@id='658']/property[@name='Buff']/@value">buffShocked2</set>
+ -->
+
+	<append xpath="/blocks/block[@name='cntVendingMachine']">
+		<property name="Buff" value="buffShocked2" />
+	</append>
+	<append xpath="/blocks/block[@name='cntVendingMachine2Broken']">
+		<property name="Buff" value="buffShocked2" />
+	</append>
+	<append xpath="/blocks/block[@name='cntATMSecure']">
+		<property name="Buff" value="buffShocked2" />
+	</append>
+
+</configs>

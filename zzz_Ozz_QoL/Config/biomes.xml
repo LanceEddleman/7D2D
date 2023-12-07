@@ -1,0 +1,23 @@
+<all_biomes_shale>
+<!-- 
+	<append xpath="/worldgeneration/biomes/biome[@name='pine_forest']/decorations">
+		<decoration type="prefab" name="deco_shale_vein" checkresource="-7" onslopes="true" prob=".00657" rotatemax="3" />
+	</append>
+ -->
+
+	<!-- <set xpath="//biome/subbiome/layers/layer/resource[@blockname='terrOreIron']/@prob">0.1</set> -->
+	<set xpath="//resource[@blockname='terrGravel']/@prob">0.001</set>
+	<set xpath="//resource[@blockname='terrOreCoal']/@prob">0.001</set>
+	<set xpath="//resource[@blockname='terrOrePotassiumNitrate']/@prob">0.001</set>
+	<set xpath="//resource[@blockname='terrOreLead']/@prob">0.001</set>
+	<set xpath="//resource[@blockname='terrOreOilDeposit']/@prob">0.001</set>
+	<set xpath="//resource[@blockname='terrGravel']/@prob">0.001</set>
+
+
+	<set xpath="//decoration[@name='deco_iron_vein']/@prob">0.001</set>
+	<set xpath="//decoration[@name='deco_nitrate_vein']/@prob">0.001</set>
+	<set xpath="//decoration[@name='deco_lead_vein']/@prob">0.001</set>
+	<set xpath="//decoration[@name='deco_coal_vein']/@prob">0.001</set>
+	<set xpath="//decoration[@name='deco_shale_vein']/@prob">0.001</set>
+
+</all_biomes_shale>

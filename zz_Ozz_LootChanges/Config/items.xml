@@ -1,18 +1,16 @@
 <configs>
 
+	<!-- Medical bandage updates -->
 	<remove xpath="//items/item[@name='medicalBandage']" />
-	<!-- insertafter  medicalAloeCream -->
 	<insertAfter xpath="/items/item[@name='medicalAloeCream']">
-	<!-- <append xpath="/items"> -->
 		<item name="medicalBandage">
-
 			<property name="Tags" value="medical,medicalSkill"/>
 			<property name="DisplayType" value="medical"/>
 			<property name="HoldType" value="64"/>
 			<property name="Meshfile" value="@:Other/Items/Health/bandage.FBX"/>
 			<property name="DropMeshfile" value="@:Other/Items/Health/bandage.FBX"/>
 			<property name="Material" value="Mcloth"/>
-			<property name="Stacknumber" value="10"/> <!-- STK medical -->
+			<property name="Stacknumber" value="10"/>
 			<property name="FuelValue" value="1"/>
 			<property name="Weight" value="5"/>
 			<property name="EconomicValue" value="5"/>
@@ -103,6 +101,7 @@
 		</item>
 	</insertAfter>
 
+	<!-- Hand/Hold Display Items -->
 	<set xpath="/items/item[@name='foodCanBeef']/property[@name='HoldType']/@value">14</set>
 	<set xpath="/items/item[@name='foodCanBeef']/property[@name='Meshfile']/@value">@:Other/Items/Food/can_emptyPrefab.prefab</set>
 	<set xpath="/items/item[@name='foodCanBeef']/property[@name='DropMeshfile']/@value">@:Other/Items/Food/can_emptyPrefab.prefab</set>

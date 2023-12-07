@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<Name value="OzzA21PlayerZSense" />
+	<DisplayName value="Ozz A20 Player ZSense" />
+	<Description value="Display zombie notification in compass" />
+	<Author value="Ozzland"/>
+	<Version value="1.1" />
+	<Website value="" />
+</xml>

@@ -1,0 +1,219 @@
+﻿<Ozzland>
+	<!-- Concrete blocks -->
+	<append xpath="/blocks">
+		<block name="ConcretePillar50_2H">
+			<property name="Extends" value="concreteMaster"/>
+			<property name="Model" value="Pole0.5m" />
+			<property name="CustomIcon" value="shapePole0.5m" />
+			<property name="CustomIconTint" value="0, 195, 0" /><property name="TintColor" value="0, 195, 0" />
+			<property name="ShapeCategories" value="Round" />
+			<property name="DescriptionKey" value="ConcretePillar50_2H_Desc"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="PlantGrowing"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.Next" value="concreteShapes:pillar50"/>
+			<property name="PlantGrowing.GrowthRate" value="0.005"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+			<property name="PlantGrowing.LightLevelStay" value="0"/>
+			<property name="PlantGrowing.GrowOnTop" value="concreteShapes:pillar50"/>
+			<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
+			<property name="FilterTags" value="MC_building"/>
+		</block>
+
+		<block name="ConcretePillar50_3H">
+			<property name="Extends" value="concreteMaster"/>
+			<property name="Model" value="Pole0.5m" />
+			<property name="CustomIcon" value="shapePole0.5m" />
+			<property name="CustomIconTint" value="0, 205, 0" /><property name="TintColor" value="0, 205, 0" />
+			<property name="ShapeCategories" value="Basic,Round" />
+			<property name="DescriptionKey" value="ConcretePillar50_3H_Desc"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="PlantGrowing"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.Next" value="concreteShapes:pillar50"/>
+			<property name="PlantGrowing.GrowthRate" value="0.005"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+			<property name="PlantGrowing.LightLevelStay" value="0"/>
+			<property name="PlantGrowing.GrowOnTop" value="ConcretePillar50_2H"/>
+			<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
+			<property name="FilterTags" value="MC_building"/>
+		</block>
+
+		<block name="ConcretePillar50_4H">
+			<property name="Extends" value="concreteMaster"/>
+			<property name="Model" value="Pole0.5m" />
+			<property name="CustomIcon" value="shapePole0.5m" />
+			<property name="CustomIconTint" value="0, 215, 0" /><property name="TintColor" value="0, 215, 0" />
+			<property name="ShapeCategories" value="Basic,Round" />
+			<property name="DescriptionKey" value="ConcretePillar50_4H_Desc"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="PlantGrowing"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.Next" value="concreteShapes:pillar50"/>
+			<property name="PlantGrowing.GrowthRate" value="0.005"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+			<property name="PlantGrowing.LightLevelStay" value="0"/>
+			<property name="PlantGrowing.GrowOnTop" value="ConcretePillar50_3H"/>
+			<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
+			<property name="FilterTags" value="MC_building"/>
+		</block>
+
+		<block name="ConcretePillar50_5H">
+			<property name="Extends" value="concreteMaster"/>
+			<property name="Model" value="Pole0.5m" />
+			<property name="CustomIcon" value="shapePole0.5m" />
+			<property name="CustomIconTint" value="0, 225, 0" /><property name="TintColor" value="0, 225, 0" />
+			<property name="ShapeCategories" value="Basic,Round" />
+			<property name="DescriptionKey" value="ConcretePillar50_5H_Desc"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="PlantGrowing"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.Next" value="concreteShapes:pillar50"/>
+			<property name="PlantGrowing.GrowthRate" value="0.005"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+			<property name="PlantGrowing.LightLevelStay" value="0"/>
+			<property name="PlantGrowing.GrowOnTop" value="ConcretePillar50_4H"/>
+			<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
+			<property name="FilterTags" value="MC_building"/>
+		</block>
+
+		<block name="ConcretePillar50_6H">
+			<property name="Extends" value="concreteMaster"/>
+			<property name="Model" value="Pole0.5m" />
+			<property name="CustomIcon" value="shapePole0.5m" />
+			<property name="CustomIconTint" value="0, 235, 0" /><property name="TintColor" value="0, 235, 0" />
+			<property name="ShapeCategories" value="Basic,Round" />
+			<property name="DescriptionKey" value="ConcretePillar50_6H_Desc"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="PlantGrowing"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.Next" value="concreteShapes:pillar50"/>
+			<property name="PlantGrowing.GrowthRate" value="0.005"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+			<property name="PlantGrowing.LightLevelStay" value="0"/>
+			<property name="PlantGrowing.GrowOnTop" value="ConcretePillar50_5H"/>
+			<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
+			<property name="FilterTags" value="MC_building"/>
+		</block>
+
+		<block name="ConcretePillar50_7H">
+			<property name="Extends" value="concreteMaster"/>
+			<property name="Model" value="Pole0.5m" />
+			<property name="CustomIcon" value="shapePole0.5m" />
+			<property name="CustomIconTint" value="0, 245, 0" /><property name="TintColor" value="0, 245, 0" />
+			<property name="ShapeCategories" value="Basic,Round" />
+			<property name="DescriptionKey" value="ConcretePillar50_7H_Desc"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="PlantGrowing"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.Next" value="concreteShapes:pillar50"/>
+			<property name="PlantGrowing.GrowthRate" value="0.005"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+			<property name="PlantGrowing.LightLevelStay" value="0"/>
+			<property name="PlantGrowing.GrowOnTop" value="ConcretePillar50_6H"/>
+			<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
+			<property name="FilterTags" value="MC_building"/>
+		</block>
+
+		<block name="ConcretePillar50_8H">
+			<property name="Extends" value="concreteMaster"/>
+			<property name="Model" value="Pole0.5m" />
+			<property name="CustomIcon" value="shapePole0.5m" />
+			<property name="CustomIconTint" value="0, 255, 0" /><property name="TintColor" value="0, 255, 0" />
+			<property name="ShapeCategories" value="Basic,Round" />
+			<property name="DescriptionKey" value="ConcretePillar50_8H_Desc"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="Class" value="PlantGrowing"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.Next" value="concreteShapes:pillar50"/>
+			<property name="PlantGrowing.GrowthRate" value="0.005"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+			<property name="PlantGrowing.LightLevelStay" value="0"/>
+			<property name="PlantGrowing.GrowOnTop" value="ConcretePillar50_7H"/>
+			<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
+			<property name="FilterTags" value="MC_building"/>
+		</block>
+	</append>
+
+	<!-- Wooden Bear converted to storage -->
+		<append xpath="/blocks/block[@name='cntStorageGeneric']"><property name="TintColor" value="255, 255, 255"/></append>
+		<remove xpath="/blocks/block[@name='woodenBear']"/>
+		<insertAfter xpath="/blocks/block[@name='decoMannequinMilitaryCommando']">
+			<block name="woodenBear">
+				<property name="Extends" value="cntStorageGeneric"/>
+				<property name="DowngradeBlock" value="woodenBearInsecure"/>
+				<property name="CreativeMode" value="Player"/>
+				<property name="CustomIconTint" value="255, 255, 255"/><property name="TintColor" value="255, 255, 255"/>
+				<property name="Shape" value="ModelEntity"/>
+				<property name="Model" value="Entities/Commercial/WoodenBearPrefab"/>
+				<property name="MultiBlockDim" value="1,2,1"/>
+				<property name="DisplayType" value="blockMulti"/>
+				<property name="ModelOffset" value="0,0,0"/>
+				<property name="WaterFlow" value="permitted"/>
+				<property name="Place" value="TowardsPlacerInverted"/>
+				<property name="OnlySimpleRotations" value="false"/>
+
+				<property name="Path" value="solid"/>
+				<property name="IsDecoration" value="true"/>
+				<property name="IsTerrainDecoration" value="true"/>
+				<property name="StabilitySupport" value="false"/>
+				<property name="OpenSound" value="collector_open"/>
+				<property name="CloseSound" value="collector_close"/>
+				<property name="SellableToTrader" value="true"/>
+				<property name="MaxDamage" value="500"/>
+				<property name="FuelValue" value="100"/>
+				<property class="RepairItems">
+					<property name="resourceWood" value="5"/>
+					<property name="resourceScrapIron" value="3"/>
+				</property>
+
+				<property name="SortOrder1" value="B458"/>
+				<property name="SortOrder2" value="0005"/>
+				<property name="Group" value="Basics,Building,advBuilding"/>
+				<property name="Tags" value="wood,workstationSkill,vehicle,canHaveCosmetic"/>
+				<property name="FilterTags" value="MC_playerBlocks,SC_decor,MC_building"/>
+			</block>
+
+			<block name="woodenBearInsecure">
+				<property name="Extends" value="cntStorageGenericSignedInsecure"/>
+				<property name="CustomIcon" value="woodenBear" />
+				<property name="CustomIconTint" value="166, 166, 166"/><property name="TintColor" value="166, 166, 166"/>
+				<property name="Shape" value="ModelEntity"/>
+				<property name="Model" value="Entities/Commercial/WoodenBearPrefab"/>
+				<property name="MultiBlockDim" value="1,2,1"/>
+				<property name="DisplayType" value="blockMulti"/>
+				<property name="ModelOffset" value="0,0,0"/>
+				<property name="WaterFlow" value="permitted"/>
+				<property name="Place" value="TowardsPlacerInverted"/>
+				<property name="OnlySimpleRotations" value="false"/>
+				<property name="Path" value="solid"/>
+				<property name="IsDecoration" value="true"/>
+				<property name="SellableToTrader" value="true"/>
+				<property name="MaxDamage" value="500"/>
+				<property name="FuelValue" value="100"/>
+
+				<property class="RepairItems">
+					<property name="resourceWood" value="5"/>
+					<property name="resourceScrapIron" value="3"/>
+				</property>
+
+
+				<drop event="Harvest" name="" count="0" tool_category="Harvest" />
+				<drop event="Destroy" name="woodenBear" count="1" />
+				<drop event="Destroy" count="0"/>
+
+				<!-- <drop event="Destroy" name="woodenBear" count="1" tag="allHarvest"/> -->
+				<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.3" stick_chance="1"/>
+				<property name="TakeDelay" value="15"/>
+				<property name="SortOrder1" value="B458"/>
+				<property name="SortOrder2" value="0005"/>
+				<property name="Group" value="Basics,Building,advBuilding"/>
+				<property name="Tags" value="wood"/>
+				<property name="FilterTags" value="MC_playerBlocks,SC_decor,MC_building"/>
+			</block>
+		</insertAfter>
+
+
+
+
+</Ozzland>

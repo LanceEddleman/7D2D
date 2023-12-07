@@ -1,0 +1,42 @@
+<configs>	
+<!--
+	// MODLET:			OZZ - Buff Changes
+	// EAC:				Friendly
+	// BUILD:			A18.1b8
+	// DISCLAIMER:		Be advised, this modlet is created/tested against the stated build.
+	// TERMS OF USE:	N/A
+	// CREDITS:			Ozzland (author)
+-->
+
+	<remove xpath="/blocks/block[@name='cntVendingMachine']/property[@name='Buff']"/>
+	<remove xpath="/blocks/block[@name='cntVendingMachine2Broken']/property[@name='Buff']"/>
+
+	<append xpath="/blocks/block[@name='cntVendingMachine']">
+		<property name="Buff" value="buffShocked2" />
+	</append>
+	<append xpath="/blocks/block[@name='cntVendingMachine2Broken']">
+		<property name="Class" value="VendingMachine" />
+		<property name="IsTerrainDecoration" value="false" />
+		<property name="TraderID" value="3" />
+		<!-- <property name="Model" value="Entities/Crafting/vending_machine_playerPrefab" /> -->
+		<property name="Buff" value="buffShocked2" />
+	</append>
+
+	<append xpath="/blocks/block[@name='cntVendingMachineTrader']">
+		<property name="Buff" value="buffShocked2" />
+	</append>
+	<append xpath="/blocks/block[@name='cntVendingMachine2']">
+		<property name="Buff" value="buffShocked2" />
+	</append>
+	<append xpath="/blocks/block[@name='cntVendingMachine2RandomLootHelper']">
+		<property name="Buff" value="buffShocked2" />
+	</append>
+
+	<append xpath="/blocks/block[@name='cntATMSecure']">
+		<property name="Buff" value="buffShocked2" />
+	</append>
+
+</configs>
+
+
+<!-- 	cntVendingMachine, cntVendingMachine2Broken, cntVendingMachineTrader, cntVendingMachine2, cntVendingMachine2RandomLootHelper -->

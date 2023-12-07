@@ -1,4 +1,11 @@
 <Ozzland>
+
+
+   <!-- PlayerStorage 8x6 - StorageCrate 8x9 - PlayerDrawer 8x9 by Gouki -->
+    <set xpath="/lootcontainers/lootcontainer[@name='playerStorage']/@size">10,9</set>
+	<set xpath="/lootcontainers/lootcontainer[@name='storageCrate']/@size">10,9</set>
+    <set xpath="/lootcontainers/lootcontainer[@name='playerDrawer']/@size">10,9</set>
+
 	<!-- vehicle storage max is 90 slots in vanilla -->
 	<!-- vehicleBicycle storage -->
 	<!-- <set xpath="/lootcontainers/lootcontainer[@id='76']/@size">9,2</set> -->
@@ -59,7 +66,8 @@
 <set xpath="//lootcontainer[@name='refrigerator']/@size">6,2</set>		     <!-- fridge -->
 <set xpath="//lootcontainer[@name='refrigeratorNOPOP']/@size">8,9</set>	     <!-- fridge -->
 <!-- <set xpath="//lootcontainer[@id='48']/@size">2,2</set> -->     <!-- purse -->
-<!-- <set xpath="//lootcontainer[@id='49']/@size">3,2</set> -->     <!-- bookcase -->
+<!-- <set xpath="//lootcontainer[@id='49']/@size">3,2</set> -->     
+<set xpath="/lootcontainers/lootcontainer[@name='bookcase']/@size">7,10</set>	<!-- bookcase -->
 <!-- <set xpath="//lootcontainer[@id='50']/@size">3,3</set> -->     <!-- shotgun Messiah -->
 <!-- <set xpath="//lootcontainer[@id='51']/@size">3,3</set> -->     <!-- pop n pills -->
 <!-- <set xpath="//lootcontainer[@id='52']/@size">3,3,</set> -->     <!-- beer cooler -->

@@ -4,9 +4,8 @@
 
 <!--
 	// MODLET:			Ozz Mod Changes
-	// BUILD:			A18b155,A21.1
+	// BUILD:			A18b155,A21.2
 	// VERSION:			1.0.17
-	// TERMS OF USE:	N/A
 	// CREDITS:			Ozzland (author)
 -->
 
@@ -26,6 +25,8 @@
 
 	<set xpath="//item[contains(@name, 'gun')]/effect_group/passive_effect[@name='ModSlots']/@value">1,2,3,4,5,6</set>
 	<set xpath="//item[contains(@name, 'melee')]/effect_group/passive_effect[@name='ModSlots']/@value">1,2,3,4,5,6</set>
+
+	<set xpath="//passive_effect[@name='ModSlots' and @tier='1,2,3,4,5,6']/@value">1,2,3,4,5,6</set>
 
 
  	<!-- <append xpath="/items/item[contains(@name, 'apparel')]">

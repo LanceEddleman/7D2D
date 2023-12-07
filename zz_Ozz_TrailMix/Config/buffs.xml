@@ -1,0 +1,30 @@
+<Ozzland>
+	<append xpath="/buffs">
+
+		<buff name="buffTrailMixE" name_key="buffTrailMixE" description_key="buffTrailMixEDesc" icon="ui_game_symbol_stomach" icon_color="0,50,128">
+			<stack_type value="replace"/><duration value="0"/>
+			<display_value value=".buffCoffeeDisplay"/><display_value_format value="time"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffCoffeeDuration" operation="subtract" value="@$MetabolismDuration"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".buffCoffeeDisplay" operation="set" value="@$buffCoffeeDuration"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".buffCoffeeDisplay" operation="divide" value="@$MetabolismDuration"/>
+			</effect_group>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffTrailMixE">
+					<requirement name="CVarCompare" cvar="$buffCoffeeDuration" operation="LTE" value="0"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".buffCoffeeDisplay" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$buffCoffeeDuration" operation="set" value="0"/>
+			</effect_group>
+
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$buffCoffeeDuration" operation="add" value="@$buffCoffeeBSDuration"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$buffCoffeeDuration" operation="set" value="120">
+				<requirement name="CVarCompare" cvar="$buffCoffeeDuration" operation="GT" value="120"/></triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffBlackStrapCoffee"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffCoffee"/>
+			</effect_group>
+		</buff>
+
+	</append>
+</Ozzland>

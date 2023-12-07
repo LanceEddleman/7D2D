@@ -1,0 +1,7 @@
+<configs>
+
+	<!-- // SphereII_PG13 -->
+	<!-- Nicer NPC's -->
+	<set xpath="//npc_info[@stance='Dislike']/@stance">Neutral</set>
+
+</configs>

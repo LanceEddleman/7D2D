@@ -1,0 +1,59 @@
+<Ozzland>
+
+<!--
+	// MODLET:			OZZ - Quality colors
+	// EAC:				Friendly
+	// BUILD:			A19.6
+	// DISCLAIMER:		Modlet created/tested against stated build only.
+	// TERMS OF USE:	N/A
+	// CREDITS:			Ozzland (author)
+
+	// reds: C11B17,993366,CC3333
+-->
+	<set xpath="//quality[@key='0']/@color">757575</set>
+	<set xpath="//quality[@key='1']/@color">795548</set>
+	<set xpath="//quality[@key='2']/@color">FDD835</set>
+	<set xpath="//quality[@key='3']/@color">FB8C00</set>
+	<set xpath="//quality[@key='4']/@color">D81B60</set>
+	<set xpath="//quality[@key='5']/@color">00897B</set>
+	<set xpath="//quality[@key='6']/@color">1976D2</set>
+
+<!-- 
+	<set xpath="//quality[@key='0']/@color">808080</set>
+	<set xpath="//quality[@key='1']/@color">9C8867</set>
+	<set xpath="//quality[@key='2']/@color">CC3333</set>
+	<set xpath="//quality[@key='3']/@color">CF7F29</set>
+	<set xpath="//quality[@key='4']/@color">CCCC00</set>
+	<set xpath="//quality[@key='5']/@color">42C234</set>
+	<set xpath="//quality[@key='6']/@color">315DCE</set> -->
+
+</Ozzland>
+
+<!-- 
+  <td bgcolor="#808080">Level 0</td>
+  <td bgcolor="757575">Level 0</td>
+  </tr>
+  <tr id="ROW2">
+  <td bgcolor="#9C8867">Level 1</td>
+  <td bgcolor="795548">Level 1</td>
+  </tr>
+  <tr id="ROW2">
+  <td bgcolor="#CF7F29">Level 2</td>
+  <td bgcolor="FDD835">Level 2</td>
+  </tr>
+  <tr id="ROW2">
+  <td bgcolor="A2A41B">Level 3</td>
+  <td bgcolor="FB8C00">Level 3</td>
+  </tr>
+  <tr id="ROW2">
+  <td bgcolor="42C234">Level 4</td>
+  <td bgcolor="D81B60">Level 4</td>
+  </tr>
+  <tr id="ROW2">
+  <td bgcolor="315DCE">Level 5</td>
+  <td bgcolor="00897B">Level 5</td>
+  </tr>
+  <tr id="ROW2">
+  <td bgcolor="A42ACC">Level 6</td>
+  <td bgcolor="1976D2">Level 6</td>
+   -->

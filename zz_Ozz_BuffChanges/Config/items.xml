@@ -1,0 +1,6 @@
+<configs>
+
+	<set xpath="/items/item[@name='ammoArrowFlaming']/effect_group/triggered_effect[@trigger='onProjectileImpact']/@value">25</set>	
+	<set xpath="/items/item[@name='ammoArrowFlaming']/effect_group/display_value[@name='dDuration']/@value">50</set>
+
+</configs>

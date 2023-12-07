@@ -1,0 +1,10 @@
+<Ozzland>
+
+	<remove xpath="//entity_class[@name='playerMale']/property[contains(@name, 'ItemsOnEnterGame')]"/>
+	<append xpath="//entity_class[@name='playerMale']">
+		<property name="ItemsOnEnterGame.GameModeSurvival" value="drinkJarBoiledWater=2,foodCanChili,medicalFirstAidBandage"/>
+		<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="drinkJarBoiledWater=2,foodCanChili,medicalFirstAidBandage"/>
+		<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="drinkJarBoiledWater=2,foodCanChili,medicalFirstAidBandage"/>
+	</append>
+
+</Ozzland>

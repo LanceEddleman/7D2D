@@ -1,0 +1,5 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,latam,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese,spanish
+buffShockedDesc2,buffs,Buff,,,Holy crap that is way worse then a Tazer.,,Das ist allerdings recht schockierend.,Es bastante impactante.,C'est grisant. Même électrisant.,"È piuttosto scioccante, in effetti.",これは実にショッキングです。,정말 충격적이라는 말 그대로군요.,Iście porażające!,É de assustar mesmo.,Это и правда оглушает.,Şok edici bir durum.,真的好电啊。,這實在是很嚇人。,Es bastante impactante.
+buffShockedName2,buffs,Buff,,,Shocked2,,Schockiert,Impactado,Électrocuté,Shock,ショック状態,충격,Porażające,Choque,Оглушение,Şok,电击,驚嚇,Impactado
+buffShockedTooltip2,buffs,Buff,,,You are shocked and Dying.,,Du bist schockiert.,Estás impactado.,Vous êtes électrocuté.,Sei sotto shock.,ショック状態です。,충격을 받았습니다.,Poraził cię prąd.,Você está em choque.,Вы оглушены.,Şoka uğradın.,你被电击。,你受到了驚嚇。,Estás impactado.
+

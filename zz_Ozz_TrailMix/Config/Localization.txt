@@ -1,0 +1,10 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,English
+trailMixE,items,Food,,,TrailMix-Energy
+trailMixEDesc,items,Food,,,Improve your health and a little more.
+trailMixM,items,Food,,,TrailMix-Morning
+trailMixMDesc,items,Food,,,Improve your health. Most important meal of the day.
+trailMixW,items,Food,,,TrailMix-Winter
+trailMixWDesc,items,Food,,,Improve your health and a little more, Artic version.
+
+buffTrailMixE,buffs,Buff,,,Power Mix
+buffTrailMixEDesc,buffs,Buff,,,TrailMIx like your grandma used to make. Fills you up and keeps you moving.

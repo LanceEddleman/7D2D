@@ -1,0 +1,184 @@
+<configs>
+
+<!--
+	// MODLET:			OZZ - Loot rate
+	// EAC:				Friendly
+	// BUILD:			A17b240
+	// VERSION:			1.0.0
+	// DISCLAIMER:		Be advised, this modlet is created/tested against the stated build.
+	// TERMS OF USE:	N/A
+	// CREDITS:			Ozzland (author)
+-->
+<!-- 
+	<append xpath="//trader_info/tier_items[@level='5000,-1']">
+		<item name="cntVendingMachine" count="1" />
+		<item name="cntVendingMachineTrader" count="1" />
+		<item name="cntVendingMachine2" count="1" />
+	</append>
+ -->
+ <!--
+	// MODLET:			OZZ - Traders buy/sale ratio
+	// EAC:				Friendly
+	// BUILD:			A17b197
+	// DISCLAIMER:		Be advised, this modlet is created/tested against the stated build.
+	// TERMS OF USE:	N/A
+	// CREDITS:			Ozzland (author)
+-->
+	<!-- 	// Trader interval, open, and close -->
+<!-- 
+ 	<set xpath="/traders/trader_info[@id='1']/@open_time">4:05</set>
+ 	<set xpath="/traders/trader_info[@id='1']/@close_time">20:05</set>
+ -->
+	<!-- 	// Trader goods count and interval to stock -->
+<!-- 
+	<set xpath="/traders/trader_info[@id='1']/@min_inventory">25</set>
+	<set xpath="/traders/trader_info[@id='1']/@max_inventory">50</set>
+	<set xpath="/traders/trader_info[@id='1']/@min_items_swapped">15</set>
+	<set xpath="/traders/trader_info[@id='1']/@max_items_swapped">15</set>
+
+	<set xpath="/traders/trader_info[@id='4']/trader_items/@count">5</set>
+ 	<set xpath="/traders/trader_info[@id='4']/@min_items_swapped">2</set>
+	<set xpath="/traders/trader_info[@id='4']/@max_items_swapped">3</set>
+
+ -->
+<!--
+ 	<set xpath="/traders/trader_info[@id='4']/@min_inventory">4</set>
+	<set xpath="/traders/trader_info[@id='4']/@max_inventory">7</set>
+ -->
+
+
+	<!-- Vending Machines found in the world. -->
+	<!--Changing the day cycle and sell ability on all vending machines -->
+	<!-- <set xpath="/traders/trader_info[@id='1']/@reset_interval">3</set> -->
+	<set xpath="/traders/trader_info[@id='3']/@reset_interval">3</set>
+	<set xpath="/traders/trader_info[@id='4']/@reset_interval">3</set>
+	<set xpath="/traders/trader_info[@id='5']/@reset_interval">3</set>
+
+	<!-- Sell at vending machines -->
+	<set xpath="/traders/trader_info[@id='3']/@allow_sell">true</set>
+	<set xpath="/traders/trader_info[@id='4']/@allow_sell">true</set>
+	<set xpath="/traders/trader_info[@id='5']/@allow_sell">true</set>
+
+	<set xpath="/traders/trader_info[@id='3']/@override_buy_markup">0.5</set>
+	<set xpath="/traders/trader_info[@id='4']/@override_buy_markup">0.5</set>
+	<set xpath="/traders/trader_info[@id='5']/@override_buy_markup">0.5</set>
+	<setattribute xpath="/traders/trader_info[@id='3']" name="override_sell_markup">0.5</setattribute>
+	<setattribute xpath="/traders/trader_info[@id='4']" name="override_sell_markup">0.5</setattribute>
+	<setattribute xpath="/traders/trader_info[@id='5']" name="override_sell_markup">0.5</setattribute>
+
+
+	<!-- If using Special Things by hsnfms -->
+<!-- 
+	<setattribute xpath="/traders/trader_info[@id='9']" name="override_sell_markup">0.15</setattribute>
+	<setattribute xpath="/traders/trader_info[@id='9']" name="override_buy_markup">6.15</setattribute>
+ 	<set xpath="/traders/trader_item_groups/trader_item_group[@name='specialtraderitemgroup']/item[(contains(@name, 'melee'))]/@quality">1,6</set>
+	<set xpath="/traders/trader_item_groups/trader_item_group[@name='specialtraderitemgroup']/item[(contains(@name, 'armor'))]/@quality">1,6</set>
+	<set xpath="/traders/trader_item_groups/trader_item_group[@name='specialtraderitemgroup']/item[(contains(@name, 'gun'))]/@quality">1,6</set>
+-->
+	<!-- <remove xpath="/traders/trader_item_groups/trader_item_group[@name='specialtraderitemgroup']/item[(contains(@name, 'Parts'))]" /> -->
+	<!-- <remove xpath="/traders/trader_item_groups/trader_item_group[@name='specialtraderitemgroup']/item[(contains(@name, 'books'))]" /> -->
+	<!-- <remove xpath="/traders/trader_item_groups/trader_item_group[@name='specialtraderitemgroup']/item[(contains(@name, 'Books'))]" /> -->
+	<!-- <remove xpath="/traders/trader_item_groups/trader_item_group[@name='specialtraderitemgroup']/item[(contains(@name, 'Part'))]" /> -->
+	<!-- <remove xpath="/traders/trader_item_groups/trader_item_group[@name='specialtraderitemgroup']/item[(contains(@name, 'book'))]" /> -->
+	<!-- <remove xpath="/traders/trader_item_groups/trader_item_group[@name='specialtraderitemgroup']/item[(contains(@name, 'Book'))]" /> -->
+	<!-- <remove xpath="/traders/trader_item_groups/trader_item_group[@name='specialtraderitemgroup']/item[(contains(@name, 'medicine'))]" /> -->
+	<!-- <remove xpath="/traders/trader_item_groups/trader_item_group[@name='specialtraderitemgroup']/item[(contains(@name, 'Medicine'))]" /> -->
+	<!-- <remove xpath="/traders/trader_item_groups/trader_item_group[@name='specialtraderitemgroup']/item[(contains(@name, 'schematic'))]" /> -->
+	<!-- <remove xpath="/traders/trader_item_groups/trader_item_group[@name='specialtraderitemgroup']/item[(contains(@name, 'Schematic'))]" /> -->
+	<!-- <remove xpath="/traders/trader_item_groups/trader_item_group[@name='specialtraderitemgroup']/item[(contains(@name, 'workstations'))]" /> -->
+	
+	<!-- <remove xpath="/traders/trader_item_groups/trader_item_group[@name='specialtraderitemgroup']/item[(contains(@name, 'vehicle'))]" /> -->
+
+	<!-- Trader Goods -->
+ 	<!-- Lower ammo at trader -->
+<!-- 
+	<set xpath="//trader_item_group[@name='ammo']/item[@name='ammo9mmBulletBall']/@count">10,25</set>
+	<set xpath="//trader_item_group[@name='ammo']/item[@name='ammo9mmBulletAP']/@count">10,25</set>
+	<set xpath="//trader_item_group[@name='ammo']/item[@name='ammo762mmBulletBall']/@count">10,25</set>
+	<set xpath="//trader_item_group[@name='ammo']/item[@name='ammo762mmBulletAP']/@count">10,25</set>
+	<set xpath="//trader_item_group[@name='ammo']/item[@name='ammo44MagnumBulletBall']/@count">10,25</set>
+	<set xpath="//trader_item_group[@name='ammo']/item[@name='ammo44MagnumBulletAP']/@count">10,25</set>
+	<set xpath="//trader_item_group[@name='ammo']/item[@name='ammoShotgunShell']/@count">10,25</set>
+	<set xpath="//trader_item_group[@name='ammo']/item[@name='ammoArrowIron']/@count">10,25</set>
+	<set xpath="//trader_item_group[@name='ammo']/item[@name='ammoArrowSteelAP']/@count">10,25</set>
+	<set xpath="//trader_item_group[@name='ammo']/item[@name='ammoCrossbowBoltIron']/@count">10,25</set>
+	<set xpath="//trader_item_group[@name='ammo']/item[@name='ammoCrossbowBoltSteelAP']/@count">10,25</set>
+
+
+	<remove xpath="//item[(contains(@group, 'Parts'))]" />
+	<remove xpath="//item[(contains(@group, 'books'))]" />
+	<remove xpath="//item[(contains(@group, 'Books'))]" />
+	<remove xpath="//item[(contains(@group, 'medicine'))]" />
+	<remove xpath="//item[(contains(@group, 'Medicine'))]" />
+	<remove xpath="//item[(contains(@group, 'schematic'))]" />
+	<remove xpath="//item[(contains(@group, 'workstations'))]" /> -->
+<!--
+	<remove xpath="//trader_item_group[(contains(@name, 'vehicleParts'))]" />
+	<remove xpath="//trader_item_group[@name='traderGeneral']/item[(contains(@group, 'medicine'))]" />
+ -->
+	<!-- <remove xpath="//trader_item_group/item[(contains(@group, 'medicine'))]" /> -->
+<!-- 	<remove xpath="//trader_item_group[(contains(@name, 'medicine'))]" /> -->
+	<!-- <remove xpath="//trader_item_group/item[(contains(@group, 'books'))]" /> -->
+<!-- 	<remove xpath="//trader_item_group[(contains(@name, 'books'))]" /> -->
+
+	<!-- <remove xpath="//trader_item_group/item[(contains(@group, 'Medicine'))]" /> -->
+<!-- 	<remove xpath="//trader_item_group[(contains(@name, 'Medicine'))]" /> -->
+	<!-- <remove xpath="//trader_item_group/item[(contains(@group, 'Books'))]" /> -->
+<!-- 	<remove xpath="//trader_item_group[(contains(@name, 'Books'))]" /> -->
+	<!-- <remove xpath="//trader_item_group/item[(contains(@group, 'Parts'))]" /> -->
+<!-- 	<remove xpath="//trader_item_group[(contains(@name, 'Parts'))]" /> -->
+
+	
+	<!-- <remove xpath="//trader_item_group/item[(contains(@group, 'Mod'))]" /> -->
+<!-- 	<remove xpath="//trader_item_group[(contains(@name, 'Mod'))]" /> -->
+
+	<!-- <remove xpath="//trader_item_group/item[(contains(@group, 'vehicleParts'))]" /> -->
+	<!-- <remove xpath="//tier_items/item[(contains(@group, 'vehicleParts'))]" /> -->
+	<!-- <remove xpath="//trader_item_group[(contains(@name, 'vehicleParts'))]" /> -->
+	<!-- <remove xpath="//trader_item_group/item[(contains(@group, 'workstations'))]" /> -->
+<!-- 
+	<remove xpath="//trader_item_group[@name='workstations']" />
+	<remove xpath="//trader_item_group[(contains(@name, 'schematic'))]" />
+ -->
+	<!-- <remove xpath="//trader_item_group/item[(contains(@group, 'schematic'))]" /> -->
+
+<!-- 
+	<remove xpath="//trader_info[@id='1']/trader_items[@count='all']/item[(contains(@group, 'weaponsGunParts'))]" />
+	<remove xpath="//trader_info[@id='1']/trader_items[@count='all']/item[(contains(@group, 'modAllT1SecretStash'))]" />
+
+	<remove xpath="//trader_info[@id='1']/tier_items[@level='1,499']/item[(contains(@group, 'weaponsGunParts'))]" />
+	<remove xpath="//trader_info[@id='1']/tier_items[@level='1,499']/item[(contains(@group, 'commonBooks'))]" />
+	<remove xpath="//trader_info[@id='1']/tier_items[@level='1,499']/item[(contains(@group, 'rareBooks'))]" />
+	<remove xpath="//trader_info[@id='1']/tier_items[@level='1,499']/item[(contains(@group, 'perkBooks'))]" />
+	<remove xpath="//trader_info[@id='1']/tier_items[@level='1,499']/item[(contains(@group, 'modMeleeT1'))]" />
+	<remove xpath="//trader_info[@id='1']/tier_items[@level='1,499']/item[(contains(@group, 'vehicleParts'))]" />
+
+	<remove xpath="//trader_info[@id='1']/tier_items[@level='3000,3999']/item[(contains(@group, 'commonBooks'))]" />
+	<remove xpath="//trader_info[@id='1']/tier_items[@level='3000,3999']/item[(contains(@group, 'rareBooks'))]" />
+	<remove xpath="//trader_info[@id='1']/tier_items[@level='3000,3999']/item[(contains(@group, 'perkBooks'))]" />
+	<remove xpath="//trader_info[@id='1']/tier_items[@level='3000,3999']/item[(contains(@group, 'vehicleParts'))]" />
+	<remove xpath="//trader_info[@id='1']/tier_items[@level='3000,3999']/item[(contains(@group, 'modAllT3SecretStash'))]" />
+
+	<remove xpath="//trader_info[@id='1']/tier_items[@level='4000,4999']/item[(contains(@group, 'vehicleParts'))]" />
+	<remove xpath="//trader_info[@id='1']/tier_items[@level='5000,-1']/item[(contains(@group, 'vehicleParts'))]" />
+ -->
+<!-- 
+	<remove xpath="//trader_info[@id='1']/tier_items[@level='4000,4999']/item[(contains(@group, 'commonBooks'))]" />
+	<remove xpath="//trader_info[@id='1']/tier_items[@level='4000,4999']/item[(contains(@group, 'rareBooks'))]" />
+	<remove xpath="//trader_info[@id='1']/tier_items[@level='4000,4999']/item[(contains(@group, 'perkBooks'))]" />
+	<remove xpath="//trader_info[@id='1']/tier_items[@level='4000,4999']/item[(contains(@group, 'modAllT4SecretStash'))]" />
+
+	<remove xpath="//trader_info[@id='1']/tier_items[@level='5000,-1']/item[(contains(@group, 'commonBooks'))]" />
+	<remove xpath="//trader_info[@id='1']/tier_items[@level='5000,-1']/item[(contains(@group, 'rareBooks'))]" />
+	<remove xpath="//trader_info[@id='1']/tier_items[@level='5000,-1']/item[(contains(@group, 'perkBooks'))]" />
+	<remove xpath="//trader_info[@id='1']/tier_items[@level='5000,-1']/item[(contains(@group, 'modAllT5SecretStash'))]" />
+ -->
+
+	<!-- <remove xpath="//trader_item_group[(contains(@name, 'vehicleParts'))]" /> -->
+<!-- 
+	<remove xpath="//trader_item_group[@name='traderGeneral']/item[(contains(@group, 'rareMedicine'))]" />
+	<remove xpath="//trader_item_group[@name='traderGeneral']/item[(contains(@group, 'medicine'))]" />
+ -->
+
+
+</configs>

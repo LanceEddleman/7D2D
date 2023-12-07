@@ -1,0 +1,5 @@
+<Ozzland>
+	<append xpath="/progression/perks/perk[@name='perkMasterChef']/effect_group/passive_effect[@level='1,3']/@tags">,trailMixE</append>
+	<append xpath="/progression/perks/perk[@name='perkMasterChef']/effect_group/passive_effect[@level='1,3']/@tags">,trailMixM</append>
+	<append xpath="/progression/perks/perk[@name='perkMasterChef']/effect_group/passive_effect[@level='1,3']/@tags">,trailMixW</append>
+</Ozzland>

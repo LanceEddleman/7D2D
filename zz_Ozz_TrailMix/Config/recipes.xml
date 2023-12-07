@@ -1,0 +1,37 @@
+<ozzland>
+	<append xpath="//recipes">
+		<!-- // TrailMix1 -->
+		<recipe name="trailMixE" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef">
+			<ingredient name="foodCharredMeat" count="1"/>
+			<ingredient name="treePlantedOak1m" count="5"/>
+			<ingredient name="resourceCropCoffeeBeans" count="1"/>
+			<ingredient name="foodCropBlueberries" count="1"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="5,5" operation="base_add" value="-1" tags="foodCharredMeat"/>
+			</effect_group>
+ 		</recipe>
+
+		<!-- // TrailMix2 -->
+		<recipe name="trailMixM" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef">
+			<ingredient name="foodCharredMeat" count="1"/>
+			<ingredient name="treePlantedMountainPine1m" count="5"/>
+			<ingredient name="resourceCropGoldenrodPlant" count="1"/>
+			<ingredient name="resourceCropChrysanthemumPlant" count="1"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="5,5" operation="base_add" value="-1" tags="foodCharredMeat"/>
+			</effect_group>
+		</recipe>
+
+		<!-- // TrailMix3 -->
+		<recipe name="trailMixW" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef">
+			<ingredient name="foodCharredMeat" count="1"/>
+			<ingredient name="treePlantedMountainPine1m" count="5"/>
+			<ingredient name="resourceCropGoldenrodPlant" count="1"/>
+			<ingredient name="foodCropYuccaFruit" count="1"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="5,5" operation="base_add" value="-1" tags="foodCharredMeat"/>
+			</effect_group>
+		</recipe>
+	</append>
+
+</ozzland>

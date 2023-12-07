@@ -1,0 +1,35 @@
+﻿<Ozzland>
+	<append xpath="/recipes">
+		<!-- Vertical Concrete block Pillar50 -->
+		<recipe name="ConcretePillar50_2H" count="1" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceConcreteMix" count="10"/>
+		</recipe>
+		<recipe name="ConcretePillar50_3H" count="1" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceConcreteMix" count="15"/>
+		</recipe>
+		<recipe name="ConcretePillar50_4H" count="1" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceConcreteMix" count="20"/>
+		</recipe>
+		<recipe name="ConcretePillar50_5H" count="1" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceConcreteMix" count="25"/>
+		</recipe>
+		<recipe name="ConcretePillar50_6H" count="1" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceConcreteMix" count="30"/>
+		</recipe>
+		<recipe name="ConcretePillar50_7H" count="1" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceConcreteMix" count="35"/>
+		</recipe>
+		<recipe name="ConcretePillar50_8H" count="1" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceConcreteMix" count="40"/>
+		</recipe>
+
+		<!-- Furniture -->
+		<recipe name="woodenBear" count="1" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceWood" count="25"/>
+			<ingredient name="resourceSpring" count="5"/>
+			<ingredient name="resourceMechanicalParts" count="2"/>
+			<ingredient name="resourceForgedIron" count="3"/>
+		</recipe>
+
+	</append>
+</Ozzland>

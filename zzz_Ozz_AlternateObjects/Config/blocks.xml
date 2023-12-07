@@ -1,4 +1,5 @@
 ﻿<Ozzland>
+	<!-- Mini cchem station -->
 	<insertAfter xpath="/blocks/block[@name='chemistryStation']">
 		<block name="miniChemStation">
 		<property name="Class" value="Campfire" />

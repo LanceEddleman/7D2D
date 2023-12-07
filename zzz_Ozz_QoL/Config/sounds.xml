@@ -1,0 +1,16 @@
+<configs>
+	<!-- NAILGUN -->	<!-- Sound You Hear When Crouched-->
+	<set xpath="/Sounds/SoundDataNode[starts-with(@name,'nailgun_')]/LocalCrouchVolumeScale/@value">0.1</set>
+	
+	<!-- Sound Zombies Hear When Crouched -->	
+	<set xpath="/Sounds/SoundDataNode[starts-with(@name,'nailgun_')]/CrouchNoiseScale/@value">0.1</set>
+	<set xpath="/Sounds/SoundDataNode[starts-with(@name,'nailgun_')]/NoiseScale/@value">0.1</set>
+	<set xpath="/Sounds/SoundDataNode[starts-with(@name,'nailgun_')]/Noise/@time">0.1</set>
+	<set xpath="/Sounds/SoundDataNode[starts-with(@name,'nailgun_')]/Noise/@muffled_when_crouched">0.2</set>
+	
+	<!-- Sound passed to Sneak Sound Meter (bottom left) -->
+	<set xpath="/Sounds/SoundDataNode[starts-with(@name,'nailgun_')]/Noise/@noise">0.1</set>
+
+
+
+</configs>

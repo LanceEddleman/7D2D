@@ -1,0 +1,29 @@
+<configs>
+
+	<!-- Perks Motherlode and Advanded Engineering are a way too weak for the progression you need. This fixes that to be much more satisfying to earn. -->
+<!-- 
+	<set xpath="/progression/perks/perk[@name='perkMotherLode']/effect_group/passive_effect[@name='HarvestCount']/@value">2,10</set>
+	<set xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/effect_group/passive_effect[@name='CraftingTime']/@value">-0.75</set>
+ -->
+
+<!-- 
+ <append xpath="/progression/perks/perk[@name='perkAutoWeaponsMachineGuns']">
+ 	<effect_group>
+ 		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="ZPop G3 Railgun"/>
+ 	</effect_group>
+ </append>
+ -->
+ <append xpath="/progression/perks/perk[@name='perkMachineGunner']">
+ 	<effect_group>
+ 		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="ZPop G3 Railgun"/>
+ 	</effect_group>
+ </append>
+
+ <append xpath="/progression/perks/perk[@name='perkDeadEye']">
+ 	<effect_group>
+ 		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="ZPop G3 Railgun"/>
+ 	</effect_group>
+ </append>
+
+
+</configs>

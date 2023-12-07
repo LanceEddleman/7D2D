@@ -1,0 +1,67 @@
+<Ozzland>
+
+	<set xpath="//decoration[@blockname='carWrecksRandomHelper' or @blockname='carsRandomHelper']/@prob">0.31</set>
+
+	<append xpath="//decorations">
+		<decoration type="block" blockname="MoreCarsPlaceholder" prob="0.002" randomrotation="true" />
+		<decoration type="block" blockname="MoreCarsPlaceholder" onslopes="true" prob="0.004" randomrotation="true" />
+	</append>
+
+	<set xpath="//poi/blockontop[@blockname='carWrecksRandomHelper' or @blockname='carsRandomHelper']/@prob">0.01</set>
+
+	<append xpath="//poi[@name='City Asphalt']">
+		<blockontop blockname="MoreCarsPlaceholder" onslopes="true" prob="0.0001" randomrotation="true" />
+<!-- 
+		<blockontop blockname="MoreCarsPlaceholder" onslopes="true" prob="0.0001" randomrotation="true" />
+		<blockontop blockname="MoreCarsPlaceholder" onslopes="true" prob="0.0001" randomrotation="true" />
+		<blockontop blockname="MoreCarsPlaceholder" onslopes="true" prob="0.0001" randomrotation="true" /> -->
+
+		<blockontop blockname="MoreCarsPlaceholder" onslopes="true" prob="0.01" randomrotation="true" />
+		<blockontop blockname="MoreCarsPlaceholder" onslopes="true" prob="0.0001" randomrotation="true" />
+<!-- 
+		<blockontop blockname="MoreCarsPlaceholder" onslopes="true" prob="0.0001" randomrotation="true" />
+		<blockontop blockname="MoreCarsPlaceholder" onslopes="true" prob="0.0001" randomrotation="true" /> -->
+
+		<blockontop blockname="carsRandomHelper" prob="0.001" randomrotation="true" />
+		<!-- <blockontop blockname="carsRandomHelper" prob="0.01" randomrotation="true" /> -->
+		<blockontop blockname="carsRandomHelper" prob="0.001" randomrotation="true" />
+		<blockontop blockname="MoreCarsPlaceholder" onslopes="true" prob="0.001" randomrotation="true" />
+<!-- 
+		<blockontop blockname="MoreCarsPlaceholder" onslopes="true" prob="0.0001" randomrotation="true" />
+		<blockontop blockname="MoreCarsPlaceholder" onslopes="true" prob="0.0001" randomrotation="true" /> -->
+
+		<blockontop blockname="carsRandomHelper" prob="0.001" randomrotation="true" />
+		<blockontop blockname="MoreCarsPlaceholder" onslopes="true" prob="0.01" randomrotation="true" />
+<!-- 
+		<blockontop blockname="carsRandomHelper" prob="0.001" randomrotation="true" />
+		<blockontop blockname="carsRandomHelper" prob="0.001" randomrotation="true" /> -->
+
+		<blockontop blockname="carsRandomHelper" prob="0.01" randomrotation="true" />
+		<blockontop blockname="MoreCarsPlaceholder" onslopes="true" prob="0.0001" randomrotation="true" />
+		<!-- <blockontop blockname="carsRandomHelper" prob="0.001" randomrotation="true" /> -->
+		<blockontop blockname="carsRandomHelper" prob="0.001" randomrotation="true" />
+		<blockontop blockname="MoreCarsPlaceholder" onslopes="true" prob="0.001" randomrotation="true" />
+	</append>
+
+	<append xpath="//poi[@name='Country Road Asphalt']">
+		<blockontop blockname="MoreCarsPlaceholder" onslopes="true" prob="0.0015" randomrotation="true" />
+		<blockontop blockname="MoreCarsPlaceholder" onslopes="true" prob="0.015" randomrotation="true" />
+		<blockontop blockname="carsRandomHelper" prob="0.0015" randomrotation="true" />
+		<!-- <blockontop blockname="carsRandomHelper" prob="0.015" randomrotation="true" /> -->
+		<blockontop blockname="MoreCarsPlaceholder" onslopes="true" prob="0.00015" randomrotation="true" />
+		<blockontop blockname="carsRandomHelper" prob="0.00015" randomrotation="true" />
+		<blockontop blockname="MoreCarsPlaceholder" onslopes="true" prob="0.00015" randomrotation="true" />
+		<!-- <blockontop blockname="carsRandomHelper" prob="0.00015" randomrotation="true" /> -->
+		<!-- <blockontop blockname="carsRandomHelper" prob="0.0015" randomrotation="true" /> -->
+		<blockontop blockname="carsRandomHelper" prob="0.0015" randomrotation="true" />
+		<blockontop blockname="MoreCarsPlaceholder" onslopes="true" prob="0.0015" randomrotation="true" />
+	</append>
+
+	<append xpath="//poi[@name='Road Gravel']">
+		<blockontop blockname="MoreCarsPlaceholder" onslopes="true" prob="0.009" randomrotation="true" />
+		<blockontop blockname="MoreCarsPlaceholder" onslopes="true" prob="0.009" randomrotation="true" />
+		<blockontop blockname="carsRandomHelper" prob="0.0009" randomrotation="true" />
+		<!-- <blockontop blockname="carsRandomHelper" prob="0.009" randomrotation="true" /> -->
+	</append>
+
+</Ozzland>

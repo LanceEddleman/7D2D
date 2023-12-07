@@ -1,0 +1,20 @@
+<configs>
+
+<!--	
+	// MODLET:			OZZ - Selection color styles
+	// EAC:				Friendly
+	// BUILD:			A17b197
+	// DISCLAIMER:		Be advised, this modlet is created/tested against the stated build.
+	// TERMS OF USE:	N/A
+	// CREDITS:			Ozzland (author)
+-->
+	<!-- // Toolbelt highlight and active selection -->
+	<append xpath="/styles/global">
+		<style_entry name="lightBlue"	value="0,160,255"/>
+		<style_entry name="lbHover"	value="79,190,255"/>
+	</append>
+ 
+	<set xpath="/styles/style[@name='itemStack']/style_entry[@name='highlight_color']/@value">[lightBlue]</set>
+	<set xpath="/styles/style[@name='itemStack']/style_entry[@name='holding_color']/@value">[lbHover]</set>
+
+</configs>

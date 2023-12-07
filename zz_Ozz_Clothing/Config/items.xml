@@ -1,9 +1,8 @@
 <Ozzland>
-
 <!--
 	// MODLET:			Ozz Clothing Changes
-	// BUILD:			A21.1,A18b155
-	// VERSION:			1.0.1
+	// BUILD:			A21.2,A18b155
+	// VERSION:			1.0.2
 	// CREDITS:			Ozzland (author)
 -->
 
@@ -13,7 +12,7 @@
 	<setattribute xpath="/items/item[contains(@name, 'apparel')]/effect_group" name="tiered">true</setattribute>
 	<setattribute xpath="/items/item[contains(@name, 'apparel')]/effect_group/passive_effect[@name='ModSlots']" name="tier">1,6</setattribute>
 	<set xpath="//item[contains(@name, 'apparel')]/effect_group/passive_effect[@name='ModSlots']/@value">1,2,3,4,5,5</set>
-
+	<set xpath="//item[contains(@name, 'apparel')]/property[@name='Weight']/@value">80</set>
 	<!-- <set xpath="/items/item[@name='apparelGothBoots']/property[@name='Tags']/@value">head,clothing,canHaveCosmetic</set> -->
 
 

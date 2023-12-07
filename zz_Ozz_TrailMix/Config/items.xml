@@ -1,0 +1,111 @@
+<Ozzland>
+
+	<append xpath="/items">
+		<item name="trailMixE">
+			<property name="DescriptionKey" value="trailMixEDesc"/>
+			<property name="Tags" value="food"/>
+			<property name="HoldType" value="3"/>
+			<property name="DisplayType" value="waterCoffee"/>
+			<property name="Meshfile" value="@:Other/Items/Food/bottled_waterPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Food/bottled_waterPrefab.prefab"/>
+			<property name="Material" value="Morganic"/>
+			<property name="Stacknumber" value="20"/> <!-- STK food -->
+			<property name="EconomicValue" value="124"/>
+			<property name="CraftingIngredientTime" value="0.25"/>
+			<property name="UnlockedBy" value="perkMasterChef"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="drinkJarCoffee"/><property name="CustomIconTint" value="ff80d5"/>
+			<property name="TintColor" value="ff80d5"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Use_time" value="..."/>
+				<property name="Sound_start" value="player_eating"/>
+			</property>
+			<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
+
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="25"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="water" operation="add" value="-5"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="25"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="10"/>
+				<display_value name="dStaminaRegen" value=".2"/>
+				<display_value name="dDuration" value="120"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffCoffeeDuration" operation="add" value="123"/>
+				<display_value name="$waterAmountAdd" value="-5"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables,buffTrailMixE"/>
+			</effect_group>
+		</item>
+
+		<item name="trailMixM">
+			<property name="DescriptionKey" value="trailMixMDesc"/>
+			<property name="Tags" value="food"/>
+			<property name="HoldType" value="3"/>
+			<property name="DisplayType" value="waterGoldenrod"/>
+			<property name="Meshfile" value="@:Other/Items/Food/bottled_waterPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Food/bottled_waterPrefab.prefab"/>
+			<property name="Material" value="Morganic"/>
+			<property name="Stacknumber" value="20"/> <!-- STK food -->
+			<property name="EconomicValue" value="124"/>
+			<property name="CraftingIngredientTime" value="0.25"/>
+			<property name="UnlockedBy" value="perkMasterChef"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="drinkJarGoldenRodTea"/><property name="CustomIconTint" value="FFA62F"/>
+			<property name="TintColor" value="FFA62F"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Use_time" value="..."/>
+				<property name="Sound_start" value="player_eating"/>
+			</property>
+			<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
+
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="45"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="water" operation="add" value="-5"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="30"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="10"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+				<display_value name="$waterAmountAdd" value="-5"/>
+			</effect_group>
+		</item>
+
+		<item name="trailMixW">
+			<property name="DescriptionKey" value="trailMixWDesc"/>
+			<property name="Tags" value="food"/>
+			<property name="HoldType" value="3"/>
+			<property name="DisplayType" value="water"/>
+			<property name="Meshfile" value="@:Other/Items/Food/bottled_waterPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Food/bottled_waterPrefab.prefab"/>
+			<property name="Material" value="Morganic"/>
+			<property name="Stacknumber" value="20"/> <!-- STK food -->
+			<property name="EconomicValue" value="124"/>
+			<property name="CraftingIngredientTime" value="0.25"/>
+			<property name="UnlockedBy" value="perkMasterChef"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="drinkJarYuccaJuice"/><property name="CustomIconTint" value="99ccff"/>
+			<property name="TintColor" value="99ccff"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Use_time" value="..."/>
+				<property name="Sound_start" value="player_eating"/>
+			</property>
+			<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
+
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="35"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="water" operation="add" value="-5"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="25"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="10"/>
+				<display_value name="dStaminaRegen" value=".2"/>
+				<display_value name="dDuration" value="120"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffCoffeeDuration" operation="add" value="123"/>
+				<display_value name="$waterAmountAdd" value="-5"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables,buffTrailMixE"/>
+			</effect_group>
+		</item>
+
+	</append>
+
+</Ozzland>

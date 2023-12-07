@@ -1,0 +1,28 @@
+Key,Source,Context,Changes,English
+
+ZPopG3RailgunDesc,items,item,New,"Designed with the apocalypse in mind.\n\nUnlocked by AutomaticWeapons or DeadEye or Machine Gunner.\nDual perk bonus: AutomaticWeapons/DeadEye\nFast Attack & High Damage.\n\n-Expensive\nVariety of ammo types.\nAdd points to MachineGunner for better quality."
+
+ZPopG3-BPDesc,items,item,New,"Code Name: ZPop G3BP\nZPop additional magazine space and stabilizer.\nAdds additional rounds and protection against gun damage by passing each round through electrically charged oil solution."
+
+ZPopG3-SCDesc,items,item,New,"Code Name: ZPop G3SC\nZPop Damage Modifier, increases the velocity of the round fired"
+
+ZPopG3S2Rb,items,item,New,"ZPop G3 S2R-b"
+ZPopG3S2RbDesc,items,item,New,"Code Name: ZPop G3-S2R-b\nZPop Railgun Experimental Component.\n \n- Complete specs unknown."
+
+ZPopG3Recharger,items,item,New,ZPop G3 Recharger
+ZPopG3RechargerDesc,items,item,New,"ZPop Gen3 -R, allows recharge of the ZPop Gen3 Railgun to its full potential.\n \n- Slow recharging time.\n \nNi-Cad base + Plutonium core\n(Plutonium-239)"
+
+G3Caseless,items,item,New,"G3 Caseless Round"
+G3CaselessDesc,items,item,"G3 Caseless Round","G3 Caseless\n \nCommon ammo, cheap to produce.\nBetter damage than top .762 ammo thanks to the ZPop charging system.\n"
+
+G3ArmorPen,items,item,New,G3 Armorpen Round
+G3ArmorPenDesc,items,item,"G3 Armorpen Round","G3 Armor Piercing\n \nDiamond dust particulates are added during the smelting process. Allowing these rounds to slice through nearly anything.\nThis also adds a slow bleed to any tissue it passes through.\nSniperAPammo Perk adds additional damage.\n"
+
+G3Heat,items,item,New,"G3 Heat Round"
+G3HeatDesc,items,item,"G3 Heat Round","G3 Heat\n \nNapalm Infused Tip.\nExplodes on impact releasing small splash of Napalm.\nProven effective against living and undead.\nAdditional damage for those with the DemolitionsExpert perk.\n"
+
+G3Rads,items,item,New,"G3 Radiation Round"
+G3RadsDesc,items,item,"G3 Radiation Round","G3 Gamma\n \nInfused Plutonium Tip.\nEmits a burning sensation on contact that is strong enough disable enemies temporarily.\nGreat against anything, no seriously!.\nYou are not immune to its effects, do not drop or place in mouth for any reason.\n"
+
+G3Cracker,items,item,New,"G3 Cracker Round"
+G3CrackerDesc,items,item,"G3 Cracker Round","G3 Cracker\n \nElectric blasting caps & compressed hydrogen infused pellets in the tip & shell casing.\nExplodes via eclectic charges on impact.\nEffective against all surfaces, monsters, creatures, anything really.\n"

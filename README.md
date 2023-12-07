@@ -5,58 +5,67 @@ Mods for 7 Days 2 Die
 Personal updates to existing creators mods. 
 All gen mods should be tagged for original creator. Alterations to these mods was done for basic formatting, cleanup, and / or value alterations to better suit me and my groups play style. These mods/updates are not available from me
 
-- Ozz_Mods - Mods created by me or updates to others mod specific to what my server is running
+- Ozz Mods - Mods created by me or updates to others mod specific to what my server is running
 Often extensions for wants/needs based on other mods and basic game tweaks that better fit my groups play style.
 
-- A21 Updates: 	\* = completed
-	Working on
-	<br />Gen - Add LHG info panel to server, add notes and sections based on mods that need more info -not added to git
-				use LHG_InfoPanel mod to list info on mods used in game
-	
-	*look at vertical blocks see why round is starting square
+\* = completed
 
-	1. Update MoreContainer images and icons to show name on all crates for easier selection -not added to git
-		TODO:
-		-- crafting storage to House Parts
-		-- gun crafting needs title added
-		-- forge storage needs title
-		-- chem storage needs title
-		-- mining storage needs title
-		-- barter needs title
-		-- need a basic overflow
-		-- need car overflow or car parts only
-		-- gun crafting to weapon crafting title
-		-- need armor overflow
+- Setting up for New Server A21.2
+	<br />\* 
+	<br />\* Review all current mods
+	<br />\* Remove unused mods
+	<br />\* Add new mods as listed below
+	<br />\* Review and clean all new mods
+	<br /> Build new map
+	<br /> Finish storage container now images
 
-	2. start making bundles for resources, food, drink, cloth, ect...
+- A21.2 New Server:
+	<br />\* Validate all current mods, cleanup and removal of unused mods
+	<br />\* New mods added for A21.2 server: each one has been reviewed, cleaned, stripped, adjusted to lower loot -not added to git
+		A21-Reapers Legendary Armor and Clothing
+		Cloud's Scuba Mask
+		durable clothing
+		Improved Business Suits
+		Slightly Better Glasses wBartering
+		StabilityNerdyGlasses
+		FPS Trader Number 9
+		FPS Lootables V3
+		All_Harvest_Zombs
+		lootableEverything
+		Tanman's Extended Gun Attachments
+		Challenge Quests
+		Scaling Steel Quest Rewards
+		Sneak Attack Standing Up
+		GMCAmbulance
+		UnmarkedInterceptor
+		WhiteGandalfs_VariousUpdates
+		Duriel's Little Tweaks
+		khzmusik_Gas_Shortage
+		More Stackables EXTENDED (Alpha 21)
+		Alpha5TAG-UltimateTools, removed from tradera nd loot uped recipe 50%
+		radiosvideogames1
+		addsolarPanel
+		CTVI, all mods but wine as it had an error: was missing items file
+		Alternate_Signs_and_storage_box
+		FPS Challenging Treasure Maps
+		InfiniteVariations_ElementalZombies
+		Shado47_ImmersiveDays
+		WaterCooler_Bundles_JarateJoshsMod
+		Prefab - InfectedPassNGas
+		Prefab - Quick Cabs
+		<br />\* Gen - lootableEverything, Rename Loot_lootableEverything, Rework loot tables dropped 80% -not added to git
+		<br />\* Gen - FPS Lootables V3, Rename Loot_FPS Lootables V3, Rework loot tables dropped 80% -not added to git
+		<br />\* Gen - All_Harvest_Zombs, Rename Loot_All_Harvest_Zombs, Rework loot tables dropped 80% -not added to git
+		<br />\* Gen - Challenge Quests, Rename Quest_Challenge Quests
+		<br />\* Gen - Skill points quest reward balanced, Quest_Skill points quest reward balanced
+		<br />\* Gen - Duriel's Little Tweaks, Rename x_QoL_Duriel's Little Tweaks, -- Removed: vehicles, traders, recipes 99%, progression 90%, loot 90%, localization 90%, items 20%, entityclasses, blocks 50%, windows -not added to git
+	<br />\* Ozz - Ozz_QoL, murky water and collection time updates for dew collector
+	<br />\* Ozz - Ozz_ModChanges, update to mod slots based on item level
+	<br />\* Ozz - Ozz_ShortTutorial, changed ItemsOnEnterGame options
+	<br />\* Gen - Add Server information panel, R4PT-EZ_ESC_RULES_A21 -not added to git
 
-	3. convert CK vehicles to be spawned in the world gen very low chance
-		combine into a pack
 
-
-	finish current mod reviews, Review all current mods
-	review nexus mods for 7d
-
-	lawn mover we never got to a point of using it
-
-	break up my mods in to better components
-
-Sections for Info Panel
-		Map colors
-		<!--terrOreCoal Black-->
-		<!--terrOreLead Blue -->
-		<!--terrOreIron Green -->
-		<!--terrOreOilDeposit Red-->
-		<!--terrOrePotassiumNitrate White-->
-
-		
-		advanced lockpicking error this is coming from 0-SCore
-
-		fix to much cloth on clothes break down or make clothes amount individual not all the same
-
-
-
-
+- A21.1 Updates: 	\* = completed
 	<br />
 	<br />Nov 26-29, 2023
 	<!-- Updates -->
