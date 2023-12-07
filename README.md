@@ -1,4 +1,4 @@
-# 7D2D A21
+# 7D2D A21.2
 Mods for 7 Days 2 Die
 
 - Gen Mods
@@ -8,7 +8,22 @@ All gen mods should be tagged for original creator. Alterations to these mods wa
 - Ozz Mods - Mods created by me or updates to others mod specific to what my server is running
 Often extensions for wants/needs based on other mods and basic game tweaks that better fit my groups play style.
 
-\* = completed
+A21.2 Updates: 	\* = completed
+	<br />
+	<br />Nov 26-29, 2023
+	<br />\* Gen - Updated: OcbStopFuelWaste, updated to latest version 1.0.2 -not added to git
+	<br />\* Gen - Updated: 03_InfiniteVariations_ElementalZombies, changed possible spawn ratio -not added to git
+	<br />\* Gen - Updated: WRG02_Aeyos's Terraforming Experience, trying to get this working -not added to git
+	<br />\* Gen - Updated background: XUi_Khelldon-CustomMenu -not added to git
+	<br />\* Ozz - Updated: zzz_Ozz_QoL, Stay within for quests attempt to update to 75 radius
+	<br />\* Ozz - Updated quality colors: zz_Ozz_SelectionColors
+	
+Issue: Campfire and workstations error no tools fields
+Issue: Error OcbStopFuelWaste, updated to latest version 1.0.2
+Issue: Super zombies at stage 1
+Issue: quest range is to small for strong zombie horde
+Issue: ground material hp not setting correctly
+
 
 - Setting up for New Server A21.2
 	<br />\* 
